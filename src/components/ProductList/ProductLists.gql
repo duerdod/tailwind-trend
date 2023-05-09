@@ -1,0 +1,148 @@
+#import "@jetshop/core/data/fragments/ProductPriceFragment.gql"
+#import "@jetshop/core/data/fragments/BadgeFragment.gql"
+
+## productsQuery
+query ProductsFromProductList($articleNumbers: [String]) {
+  products(articleNumbers: $articleNumbers) {
+    variants {
+      ...VariantsDetail
+    }
+    ...ProductDetail
+  }
+}
+
+## query
+query ProductList($id: ID) {
+  customerProductList(id: $id) {
+    ...ProductListFragment
+  }
+}
+
+## add
+mutation AddToProductList($id: ID, $items: [AddToCustomerProductListInput!]!) {
+  addToCustomerProductList(id: $id, items: $items) {
+    customerProductList {
+      ...MinimalProductListDetail
+    }
+  }
+}
+
+## remove article from product list
+mutation RemoveFromProductList($id: ID, $articleNumbers: [String!]) {
+  removeFromCustomerProductList(id: $id, articleNumbers: $articleNumbers) {
+    customerProductList {
+      ...MinimalProductListDetail
+    }
+  }
+}
+
+## update
+mutation UpdateProductListItem($input: UpdateCustomerProductListItemInput!) {
+  updateCustomerProductListItem(input: $input) {
+    customerProductList {
+      ...MinimalProductListDetail
+    }
+  }
+}
+
+## login
+mutation MergeProductLists($id: ID, $items: [AddToCustomerProductListInput!]!) {
+  addToCustomerProductList(id: $id, items: $items) {
+    customerProductList {
+      ...MinimalProductListDetail
+    }
+  }
+}
+
+fragment MinimalProductListDetail on CustomerProductList {
+  id
+  name
+  # TODO
+  # typeId {...}
+  # description
+  items {
+    variant {
+      articleNumber
+    }
+    product {
+      articleNumber
+    }
+  }
+}
+
+fragment VariantDetail on ProductVariant {
+  id
+  articleNumber
+  values
+  stockStatus {
+    buyable
+    text
+  }
+  images {
+    modifiedDate
+    alt
+    title
+    url
+  }
+}
+
+fragment VariantsDetail on ProductVariants {
+  options {
+    name
+    values
+  }
+  values {
+    ...VariantDetail
+  }
+}
+
+fragment ProductDetail on Product {
+  id
+  articleNumber
+  name
+  subName
+  hasConfigurations
+  hasVariants
+  isPreOrder
+  isPackage
+  hidePrice
+  stockStatus {
+    buyable
+    text
+  }
+  primaryRoute {
+    id
+    path
+    slug
+  }
+  ...ProductPrice
+  badges {
+    ...Badge
+  }
+  images {
+    modifiedDate
+    alt
+    title
+    url
+  }
+  variants {
+    ...VariantsDetail
+  }
+}
+
+fragment ProductListFragment on CustomerProductList {
+  id
+  description
+  name
+  shareToken
+  items {
+    quantity
+    description
+    product {
+      ...ProductDetail
+    }
+    variant {
+      ...VariantDetail
+    }
+  }
+}

@@ -1,0 +1,17 @@
+export const cs = () => import('./cs.json');
+export const da = () => import('./da.json');
+export const de = () => import('./de.json');
+export const en = () => import('./en.json');
+export const es = () => import('./es.json');
+export const et = () => import('./et.json');
+export const fi = () => import('./fi.json');
+export const fr = () => import('./fr.json');
+export const it = () => import('./it.json');
+export const lv = () => import('./lv.json');
+export const nb = () => import('./nb.json');
+export const nl = () => import('./nl.json');
+export const pl = () => import('./pl.json');
+export const ru = () => import('./ru.json');
+export const sk = () => import('./sk.json');
+export const sr = () => import('./sr.json');
+export const sv = () => import('./sv.json');

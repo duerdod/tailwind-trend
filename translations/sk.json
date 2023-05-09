@@ -1,0 +1,788 @@
+{
+  "a_to_z_96baaedc": {
+    "message": "Od A do Z"
+  },
+  "about_70c18bba": {
+    "message": "Informácie"
+  },
+  "add_to_cart_fe03d709": {
+    "message": "Pridať do košíka"
+  },
+  "added_quantity_items_to_bag_96a4a656": {
+    "message": "Do tašky bol pridaný nasledujúci počet položiek: { quantity }"
+  },
+  "added_to_bag_4be2af1": {
+    "message": "Pridané do tašky"
+  },
+  "address_e7cb7f63": {
+    "message": "Adresa"
+  },
+  "an_error_occured_please_try_again_9ee6abca": {
+    "message": "Došlo k chybe. Skúste to znova!"
+  },
+  "an_error_occurred_details_e4aea7ad": {
+    "message": "Došlo k chybe. Podrobnosti:"
+  },
+  "apply_781a2546": {
+    "message": "Použiť"
+  },
+  "apply_filters_26351a5c": {
+    "message": "Použiť filtre"
+  },
+  "are_you_sure_26795d3c": {
+    "message": "Ste si istý(-á)?"
+  },
+  "billingaddress_countrycode_97f1bc8e": {
+    "message": "fakturačnáAdresa.kódKrajiny"
+  },
+  "cancel_caeb1e68": {
+    "message": "Zrušiť"
+  },
+  "cart_4f6dbcaa": {
+    "message": "Košík"
+  },
+  "cart_total_c0110f50": {
+    "message": "Celková suma košíka"
+  },
+  "categories_9d537a7a": {
+    "message": "Kategórie"
+  },
+  "change_password_20192c50": {
+    "message": "Zmena hesla"
+  },
+  "change_password_d96f4e06": {
+    "message": "Zmeniť heslo"
+  },
+  "check_out_fcf51117": {
+    "message": "Zaplatiť"
+  },
+  "choose_country_351b807a": {
+    "message": "Vybrať krajinu"
+  },
+  "city_69953629": {
+    "message": "Mesto"
+  },
+  "clear_all_filters_40e65e3b": {
+    "message": "Vymazať všetky filtre"
+  },
+  "clear_filter_5b3a182d": {
+    "message": "Vymazať filtre"
+  },
+  "clear_list_93c0d4e3": {
+    "message": "Vymazať zoznam"
+  },
+  "close_d634289d": {
+    "message": "Zavrieť"
+  },
+  "company_a53a19ad": {
+    "message": "Spoločnosť"
+  },
+  "company_contact_name_dbedb9da": {
+    "message": "Meno kontaktnej osoby v spoločnosti"
+  },
+  "company_registration_number_4d68074": {
+    "message": "Registračné číslo spoločnosti"
+  },
+  "contact_a6e7f6da": {
+    "message": "Kontakt"
+  },
+  "contact_details_3e898892": {
+    "message": "Kontaktné údaje"
+  },
+  "count_plural_0_one_1_item_other_count_items_e48de617": {
+    "message": "{ count, plural, =0 {} one {1 položka} other {{ count } položky/položiek} }"
+  },
+  "country_b9f6d984": {
+    "message": "Krajina"
+  },
+  "county_c41f243f": {
+    "message": "Okres"
+  },
+  "create_profile_33fafbf1": {
+    "message": "Vytvoriť profil"
+  },
+  "create_profile_fc47c26d": {
+    "message": "Vytvorenie profilu"
+  },
+  "currency_d6b3d5f6": {
+    "message": "Mena"
+  },
+  "customercommentname_is_required_f5c2f377": {
+    "message": "Položka { customerCommentName } je povinná"
+  },
+  "delete_account_4e52440b": {
+    "message": "Odstrániť účet"
+  },
+  "delete_account_81ef7d97": {
+    "message": "Odstránenie účtu"
+  },
+  "delivery_2a07e73e": {
+    "message": "Dodanie:"
+  },
+  "delivery_8864b1d9": {
+    "message": "Dodanie"
+  },
+  "delivery_address_872728d": {
+    "message": "Dodacia adresa"
+  },
+  "department_6abddd98": {
+    "message": "Oddelenie"
+  },
+  "desired_password_391ab563": {
+    "message": "Požadované heslo"
+  },
+  "directions_eef85bfe": {
+    "message": "Pokyny"
+  },
+  "discounts_dfde4231": {
+    "message": "Zľavy"
+  },
+  "distance_a377c748": {
+    "message": "Vzdialenosť"
+  },
+  "does_not_match_new_password_566ea944": {
+    "message": "Nové heslo sa nezhoduje"
+  },
+  "e_mail_address_11245d70": {
+    "message": "E-mailová adresa"
+  },
+  "email_address_6e0443a5": {
+    "message": "E-mailová adresa"
+  },
+  "email_password_fe282e30": {
+    "message": "E-mail a heslo"
+  },
+  "enter_email_address_25b6381d": {
+    "message": "Zadajte e-mailovú adresu"
+  },
+  "express_1_2_working_days_5b7007b": {
+    "message": "Expresné, 1 – 2 pracovné dni"
+  },
+  "extra_address_b1f2c88": {
+    "message": "Ďalšia adresa"
+  },
+  "failed_adding_to_bag_6911bfca": {
+    "message": "Pridanie do tašky zlyhalo"
+  },
+  "favourites_d8a7f913": {
+    "message": "Obľúbené položky"
+  },
+  "field_does_not_match_required_format_1511ccd9": {
+    "message": "Pole nemá požadovaný formát"
+  },
+  "filter_e3398407": {
+    "message": "Filtrovať"
+  },
+  "find_product_in_store_7a4af069": {
+    "message": "Nájsť produkt v obchode"
+  },
+  "find_store_2d93488b": {
+    "message": "Vyhľadanie obchodu"
+  },
+  "find_store_ec52678f": {
+    "message": "Nájsť obchod"
+  },
+  "find_the_closest_store_using_your_location_696c8e5a": {
+    "message": "Nájdite najbližší obchod pomocou svojej polohy"
+  },
+  "first_name_75f38a3e": {
+    "message": "Meno"
+  },
+  "forgot_password_69eea15b": {
+    "message": "Zabudnuté heslo"
+  },
+  "free_for_your_order_34aba239": {
+    "message": "Bezplatne pre vašu objednávku"
+  },
+  "free_shipping_and_return_355b42d1": {
+    "message": "Bezplatné dodanie a vrátenie"
+  },
+  "go_to_country_517a8515": {
+    "message": "Prejsť na { country }"
+  },
+  "got_it_2c06b54a": {
+    "message": "Rozumiem."
+  },
+  "hi_firstname_lastname_bc7684c1": {
+    "message": "Dobrý deň, { firstName } { lastName }"
+  },
+  "high_to_low_b6eda134": {
+    "message": "zhora nadol"
+  },
+  "hold_on_a_moment_5a9f3c1d": {
+    "message": "Chvíľu počkajte..."
+  },
+  "hold_on_a_moment_a3f09a64": {
+    "message": "Chvíľu počkajte..."
+  },
+  "home_351838cd": {
+    "message": "Domov"
+  },
+  "homepage_4b84763d": {
+    "message": "DOMOVSKÁ STRÁNKA"
+  },
+  "i_don_t_want_newsletters_a1a3e929": {
+    "message": "Nechcem dostávať informačné bulletiny"
+  },
+  "i_understand_please_delete_my_account_5f49bf66": {
+    "message": "Rozumiem, odstrániť môj účet"
+  },
+  "i_want_newsletters_58c52364": {
+    "message": "Chcem dostávať informačné bulletiny"
+  },
+  "image_not_found_2f99135": {
+    "message": "Obrázok sa nenašiel"
+  },
+  "in_stock_859385c7": {
+    "message": "Na sklade"
+  },
+  "included_in_campaign_46a7230b": {
+    "message": "Zahrnuté v kampani:"
+  },
+  "included_in_package_5d7f4d3d": {
+    "message": "Súčasťou balenia:"
+  },
+  "invalid_email_address_8d0d5e33": {
+    "message": "Neplatná e-mailová adresa"
+  },
+  "it_looks_like_you_are_visiting_us_from_country_do__832ec546": {
+    "message": "Zdá sa, že ste v krajine { country }. Chcete navštíviť stránku pre krajinu { country }?"
+  },
+  "join_the_newsletter_fbefaa77": {
+    "message": "Prihlásiť sa na odber noviniek"
+  },
+  "km_km_24f9536d": {
+    "message": "{ km } km"
+  },
+  "language_6b3e2c7c": {
+    "message": "Jazyk"
+  },
+  "learn_more_a79a7918": {
+    "message": "Ďalšie informácie"
+  },
+  "link_7262adec": {
+    "message": "Prepojenie"
+  },
+  "loading_more_data_e8df9877": {
+    "message": "Načítavajú sa ďalšie údaje ..."
+  },
+  "loading_package_details_31166b02": {
+    "message": "Načítavajú sa údaje balíka..."
+  },
+  "loading_page_currentpage_2c9871c1": {
+    "message": "Načítava sa stránka { currentPage }…"
+  },
+  "loading_search_results_for_term_23278c26": {
+    "message": "Načítavajú sa výsledky vyhľadávania pre výraz { term }…"
+  },
+  "loading_your_saved_items_5293335e": {
+    "message": "Načítavajú sa uložené položky…"
+  },
+  "log_in_c9e240ef": {
+    "message": "Prihlásiť sa"
+  },
+  "log_out_379ba28a": {
+    "message": "Odhlásiť sa"
+  },
+  "login_6f3d6249": {
+    "message": "Prihlásenie"
+  },
+  "login_failed_please_try_again_841d7c15": {
+    "message": "Prihlásenie sa nepodarilo. Skúste to znova"
+  },
+  "look_up_my_info_6436db80": {
+    "message": "Vyhľadať moje informácie"
+  },
+  "low_to_high_2400fc78": {
+    "message": "zdola nahor"
+  },
+  "m_m_6aa9a961": {
+    "message": "{ m } m"
+  },
+  "maxorderquantity_is_the_maximum_order_quantity_96e527df": {
+    "message": "{ maxOrderQuantity } je maximálne množstvo objednávky"
+  },
+  "menu_39cb0e8e": {
+    "message": "Ponuka"
+  },
+  "mobile_phone_number_cb092391": {
+    "message": "Číslo mobilného telefónu"
+  },
+  "my_orders_40e3ddbe": {
+    "message": "Moje objednávky"
+  },
+  "my_orders_474fd888": {
+    "message": "Moje objednávky"
+  },
+  "my_pages_c8e29a68": {
+    "message": "Moje stránky"
+  },
+  "my_profile_16c38091": {
+    "message": "Môj profil"
+  },
+  "my_profile_d97eb90d": {
+    "message": "Môj profil"
+  },
+  "n_a_d5d5a207": {
+    "message": "neaplikovateľné"
+  },
+  "name_1aed4a1b": {
+    "message": "Meno"
+  },
+  "national_id_social_security_number_ffa20629": {
+    "message": "Číslo preukazu totožnosti/sociálneho poistenia"
+  },
+  "new_password_again_fa83f67e": {
+    "message": "Znovu nové heslo"
+  },
+  "new_password_eb44a9a4": {
+    "message": "Nové heslo"
+  },
+  "newsletters_a04708fd": {
+    "message": "Informačné bulletiny"
+  },
+  "next_40e12421": {
+    "message": "Ďalej"
+  },
+  "no_e16d9132": {
+    "message": "Nie"
+  },
+  "no_items_in_cart_cf9df6d4": {
+    "message": "Žiadne položky v košíku."
+  },
+  "no_orders_found_ed613bce": {
+    "message": "Nenašli sa žiadne objednávky"
+  },
+  "no_results_for_term_7528ef47": {
+    "message": "Žiadne výsledky pre <Term />"
+  },
+  "no_valid_items_to_add_to_cart_c53b9043": {
+    "message": "Žiadne platné položky na pridanie do košíka"
+  },
+  "not_available_487d3648": {
+    "message": "Nie je k dispozícii"
+  },
+  "note_if_you_were_directed_here_via_a_link_we_are_g_47b83052": {
+    "message": "POZNÁMKA. Ak ste sem boli presmerovaný(-á) pomocou prepojenia, boli by sme radi, keby ste nás informovali o tom, ktoré prepojenie to bolo, aby sme mohli vyriešiť problém."
+  },
+  "notify_me_when_back_in_stock_7f40774": {
+    "message": "Upozorniť ma, keď bude produkt znovu na sklade"
+  },
+  "of_which_vat_9b4c95d5": {
+    "message": "Z toho DPH"
+  },
+  "ok_c47544a2": {
+    "message": "OK"
+  },
+  "old_password_c735e1a5": {
+    "message": "Staré heslo"
+  },
+  "one_moment_301b2df": {
+    "message": "Chvíľu počkajte…"
+  },
+  "opening_hours_77ceb9c8": {
+    "message": "Otváracie hodiny"
+  },
+  "optionname_is_required_4ef88446": {
+    "message": "Položka { optionName } je povinná"
+  },
+  "or_ef4e808": {
+    "message": "alebo"
+  },
+  "or_scroll_down_to_fill_in_the_rest_manually_d9502b2f": {
+    "message": "Alebo prejdite nadol a zvyšok vyplňte manuálne"
+  },
+  "order_date_9b7fe95f": {
+    "message": "Dátum objednávky"
+  },
+  "order_number_fe66c52c": {
+    "message": "Číslo objednávky"
+  },
+  "order_value_4a159b2c": {
+    "message": "Hodnota objednávky"
+  },
+  "out_of_stock_cf144338": {
+    "message": "Nie je na sklade"
+  },
+  "out_of_stock_ed56c3c": {
+    "message": "Nie je na sklade"
+  },
+  "package_34ed7777": {
+    "message": "Balík"
+  },
+  "package_discount_66e25640": {
+    "message": "Zľava na balík"
+  },
+  "page_currentpage_of_totalpages_a773c744": {
+    "message": "Strana { currentPage } z { totalPages }"
+  },
+  "payment_method_84a444f1": {
+    "message": "Spôsob platby"
+  },
+  "person_lookup_failed_87cc2ec4": {
+    "message": "Vyhľadanie osoby sa nepodarilo."
+  },
+  "phone_70d50cdb": {
+    "message": "Telefón:"
+  },
+  "please_enter_a_valid_quantity_f9adbf72": {
+    "message": "Zadajte platné množstvo"
+  },
+  "please_enter_your_new_password_f261c25f": {
+    "message": "Zadajte nové heslo"
+  },
+  "please_fill_in_your_contact_details_for_shipping_a_285963ce": {
+    "message": "Vyplňte kontaktné údaje, aby bolo možné uskutočniť prepravu a komunikáciu."
+  },
+  "post_code_e64b6004": {
+    "message": "PSČ"
+  },
+  "pre_order_date_required_8c33e235": {
+    "message": "Dátum predbežnej objednávky je povinný"
+  },
+  "prev_f82cbc48": {
+    "message": "Späť"
+  },
+  "price_ffd8b80": {
+    "message": "Cena"
+  },
+  "private_3883d133": {
+    "message": "Súkromné"
+  },
+  "product_39cf144f": {
+    "message": "Produkt"
+  },
+  "product_description_3edb94a9": {
+    "message": "Popis produktu"
+  },
+  "product_is_not_in_stock_fc5a972b": {
+    "message": "Produkt nie je na sklade"
+  },
+  "product_matches_17fac93": {
+    "message": "Zhodné výsledky pre produkt"
+  },
+  "product_no_longer_available_b6ad7087": {
+    "message": "Produkt už nie je k dispozícii."
+  },
+  "productcount_plural_1_add_product_to_cart_other_ad_b37e18fc": {
+    "message": "{ productCount, plural,     =1 {Pridať # produkt do košíka} other {Pridať # produkty/produktov do košíka} }"
+  },
+  "productcount_plural_1_product_added_to_the_cart_ot_e20e0dc8": {
+    "message": "{ productCount, plural,     =1 {Do košíka bol pridaný # produkt.} other {Do košíka bol pridaný nasledujúci počet produktov: #} }"
+  },
+  "productname_has_been_added_to_the_cart_fba79585": {
+    "message": "Produkt { productName } bol pridaný do košíka"
+  },
+  "products_c5f0793": {
+    "message": "Produkty"
+  },
+  "quantity_20164bff": {
+    "message": "Množstvo"
+  },
+  "recent_orders_1068c934": {
+    "message": "Nedávne objednávky"
+  },
+  "region_939f2a6c": {
+    "message": "Región"
+  },
+  "related_products_8fcc0081": {
+    "message": "Súvisiace produkty"
+  },
+  "repeat_desired_password_34086d81": {
+    "message": "Opakovať požadované heslo"
+  },
+  "required_da89d67d": {
+    "message": "(Povinné)"
+  },
+  "reset_95a81614": {
+    "message": "Resetovať"
+  },
+  "retry_ebd5f8ba": {
+    "message": "Skúsiť znova"
+  },
+  "save_11a80ec3": {
+    "message": "Uložiť"
+  },
+  "saved_items_583185b1": {
+    "message": "Uložené položky"
+  },
+  "search_280d00bd": {
+    "message": "Vyhľadať"
+  },
+  "select_country_1da181c6": {
+    "message": "Vybrať krajinu"
+  },
+  "select_missingoptions_to_see_store_status_in_store_a7433fed": {
+    "message": "Výberom položky { missingOptions } zobrazíte stav položky v obchode"
+  },
+  "select_option_3e8f2943": {
+    "message": "Vybrať { option }"
+  },
+  "select_optionname_fc590c42": {
+    "message": "Vybrať { optionName }"
+  },
+  "select_options_9ee7b227": {
+    "message": "Vybrať možnosti"
+  },
+  "select_the_variants_b3aa2844": {
+    "message": "Vybrať varianty"
+  },
+  "select_your_country_9ee72cf7": {
+    "message": "Vyberte krajinu"
+  },
+  "selected_categories_863af37b": {
+    "message": "Vybrané kategórie"
+  },
+  "selected_products_1bd5b165": {
+    "message": "Vybrané produkty"
+  },
+  "share_location_6d9a73cf": {
+    "message": "Zdieľať polohu"
+  },
+  "shop_by_category_b9ba84ab": {
+    "message": "Nakupovať podľa kategórie"
+  },
+  "show_all_orders_3c6119ee": {
+    "message": "Zobraziť všetky objednávky"
+  },
+  "show_details_d6f1ca0c": {
+    "message": "Zobraziť podrobnosti"
+  },
+  "show_fewer_stores_56b2065a": {
+    "message": "Zobraziť menej obchodov"
+  },
+  "show_less_574a758b": {
+    "message": "Zobraziť menej"
+  },
+  "show_more_fae1328": {
+    "message": "Zobraziť viac"
+  },
+  "signup_d25ec5f5": {
+    "message": "Registrácia"
+  },
+  "social_security_number_7c8fc49b": {
+    "message": "Číslo sociálneho poistenia"
+  },
+  "something_went_wrong_d238c551": {
+    "message": "Niečo sa pokazilo"
+  },
+  "something_went_wrong_please_check_your_email_and_t_9dd179bd": {
+    "message": "Niečo sa pokazilo. Skontrolujte svoj e-mail a skúste to znova."
+  },
+  "something_went_wrong_please_check_your_input_or_tr_d8daab95": {
+    "message": "Niečo sa pokazilo. Skontrolujte zadané údaje alebo to skúste znova neskôr."
+  },
+  "something_went_wrong_please_try_again_37244f67": {
+    "message": "Niečo sa pokazilo. Skúste to znova."
+  },
+  "something_went_wrong_please_try_again_fd8c66fd": {
+    "message": "Niečo sa pokazilo, skúste to znova!"
+  },
+  "something_went_wrong_saving_information_try_again_87e1303e": {
+    "message": "Pri ukladaní informácií došlo k chybe. Skúsiť znova?"
+  },
+  "something_went_wrong_updating_password_is_your_old_c95e5bd1": {
+    "message": "Pri aktualizácii hesla došlo k chybe. Je vaše staré heslo správne?"
+  },
+  "something_went_wrong_when_placeholder_e336fd86": {
+    "message": "Pri { placeholder } došlo k chybe."
+  },
+  "something_went_wrong_when_retrieving_order_id_plea_994c3a5": {
+    "message": "Pri načítavaní objednávky { id } došlo k chybe. Skúste to znova neskôr."
+  },
+  "sort_by_72dbba9c": {
+    "message": "Zoradiť podľa"
+  },
+  "sort_by_e75f9e3e": {
+    "message": "Zoradiť podľa"
+  },
+  "specifications_ee3fcf8e": {
+    "message": "Špecifikácie"
+  },
+  "spend_price_more_to_qualify_for_free_shipping_76fdedab": {
+    "message": "Zakúpte si ďalšie produkty v hodnote { price } a získajte dopravu zadarmo!"
+  },
+  "standard_2_5_working_days_d4ac0406": {
+    "message": "Štandardné, 2 – 5 pracovných dní"
+  },
+  "submit_a3cc6859": {
+    "message": "Odoslať"
+  },
+  "submitting_75cdf9ab": {
+    "message": "Prebieha odosielanie..."
+  },
+  "successfully_added_83dcf29": {
+    "message": "Úspešne pridané!"
+  },
+  "surname_df38bed": {
+    "message": "Priezvisko"
+  },
+  "telephone_number_9cbafa6e": {
+    "message": "Telefónne číslo"
+  },
+  "the_address_provided_is_incorrect_please_check_the_1b76d82f": {
+    "message": "Zadaná adresa je nesprávna. Skontrolujte, či ste ju napísali správne a skúste to znova."
+  },
+  "the_form_could_not_be_submitted_please_try_again_l_9a8b7579": {
+    "message": "Formulár sa nepodarilo odoslať. Skúste to znova neskor."
+  },
+  "there_are_no_products_in_your_saved_items_list_2870abb5": {
+    "message": "Vo vašom zozname uložených položiek nie sú žiadne produkty."
+  },
+  "this_could_be_due_to_the_following_a40f2a5": {
+    "message": "Dôvodom môže byť toto:"
+  },
+  "this_field_is_required_fa58c4a": {
+    "message": "Toto pole je povinné"
+  },
+  "this_is_where_you_find_our_stores_get_informed_abo_19de699f": {
+    "message": "Tu nájdete naše obchody. Tu získate informácie o stave zásob v miestnom obchode. Vyhľadajte a vyberte obchod, ktorý je k vám najbližšie."
+  },
+  "this_product_is_out_of_stock_c6eac862": {
+    "message": "Tento produkt nie je na sklade."
+  },
+  "this_website_uses_cookies_to_ensure_you_get_the_be_f59eb226": {
+    "message": "Táto webová stránka používa súbory cookies, aby vám zabezpečila čo najlepší zážitok."
+  },
+  "to_checkout_63f3b715": {
+    "message": "Do pokladne"
+  },
+  "total_71a4807": {
+    "message": "Celkom"
+  },
+  "total_excl_vat_ae61fef3": {
+    "message": "Spolu bez DPH"
+  },
+  "total_incl_vat_f281354b": {
+    "message": "Spolu s DPH"
+  },
+  "total_plural_1_item_other_items_1c76aa07": {
+    "message": "{ productCount, plural, =1 {# položka} other {# položiek} }"
+  },
+  "total_plural_1_item_other_items_matching_for_term_22b0ede7": {
+    "message": "{ productCount, plural, =1 {# položka sa zhoduje s výrazom} other {# položky/položiek sa zhodujú s výrazom} } \"{ term }\""
+  },
+  "total_price_1c872c0a": {
+    "message": "Celková cena"
+  },
+  "totalproducts_products_b80002da": {
+    "message": "Celkový počet produktov: { totalProducts }"
+  },
+  "track_delivery_6339cf6f": {
+    "message": "Sledovanie zásielky:"
+  },
+  "trend_31ce9aff": {
+    "message": "Trend"
+  },
+  "type_your_search_here_58fca7de": {
+    "message": "Tu zadajte hľadanú položku"
+  },
+  "update_4d8ee62": {
+    "message": "Aktualizovať"
+  },
+  "update_information_95c5f1b4": {
+    "message": "Aktualizovať informácie"
+  },
+  "updating_price_3f7c4661": {
+    "message": "Aktualizuje sa cena... "
+  },
+  "vat_39a079c0": {
+    "message": "+ DPH"
+  },
+  "view_all_in_category_531e2499": {
+    "message": "Zobraziť všetko v { category }"
+  },
+  "view_all_stores_d0f8a7f1": {
+    "message": "Zobraziť všetky obchody"
+  },
+  "view_password_ec63cb11": {
+    "message": "Zobraziť heslo"
+  },
+  "visit_product_page_to_add_54331147": {
+    "message": "Ak chcete pridať produkt, navštívte stránku produktu"
+  },
+  "welcome_to_our_online_store_enter_your_social_secu_dbc50460": {
+    "message": "Vitajte v našom internetovom obchode! Zadajte svoje číslo sociálneho poistenia a my sa pokúsime načítať požadované informácie. Môžete ich zadať aj manuálne."
+  },
+  "welcome_to_our_online_store_we_need_to_create_a_pr_90e8e9ce": {
+    "message": "Vitajte v našom internetovom obchode! Pred pokračovaním musíme vytvoriť váš profil."
+  },
+  "what_is_your_email_address_631180c6": {
+    "message": "Aká je vaša e-mailová adresa?"
+  },
+  "when_your_account_is_deleted_all_order_history_wil_71260053": {
+    "message": "Po odstránení vášho účtu sa vymaže celá história objednávok."
+  },
+  "whoops_54a74974": {
+    "message": "Ľutujeme"
+  },
+  "yes_dde87d5": {
+    "message": "Áno"
+  },
+  "you_are_now_subscribed_71495f41": {
+    "message": "Teraz ste prihlásený(-á) na odber."
+  },
+  "you_are_now_subscribed_7695dd6b": {
+    "message": "Teraz ste prihlásený(-á) na odber"
+  },
+  "you_are_trying_to_use_an_old_address_that_no_longe_1d4e8dff": {
+    "message": "Pokúšate sa použiť starú adresu, ktorá už neexistuje alebo sa mohla zmeniť."
+  },
+  "you_can_now_login_with_your_new_password_99ae2294": {
+    "message": "Teraz sa môžete { login } pomocou nového hesla."
+  },
+  "you_have_already_signed_up_with_this_email_address_71af5f92": {
+    "message": "Pomocou tejto e-mailovej adresy ste sa už zaregistrovali"
+  },
+  "you_have_already_subscribed_to_the_newsletter_8a2c3d54": {
+    "message": "Už ste sa prihlásili na odber bulletinu!"
+  },
+  "you_have_attempted_to_download_a_page_that_does_no_13db419e": {
+    "message": "Pokúsili ste sa prevziať stránku, ktorá neexistuje na serveri Jetshop."
+  },
+  "you_may_have_used_an_old_bookmark_if_you_are_sure__1daf83b8": {
+    "message": "Možno ste použili starú záložku. Ak ste si istý(-á), že ste použili správnu adresu stránky, problém môže byť spôsobený dočasným prerušením služby. Skúste to znova neskôr."
+  },
+  "your_password_has_been_reset_53d7f84e": {
+    "message": "Vaše heslo bolo resetované."
+  },
+  "your_password_has_been_successfully_updated_cacea448": {
+    "message": "Vaše heslo bolo úspešne aktualizované."
+  },
+  "your_password_reset_request_has_been_submitted_che_104311b6": {
+    "message": "Vaša žiadosť o resetovanie hesla bola odoslaná. V e-maile nájdete prepojenie na obnovenie hesla."
+  },
+  "your_password_reset_token_has_expired_or_is_invali_4f6d0945": {
+    "message": "Platnosť tokenu na resetovanie hesla skončila alebo je token neplatný."
+  },
+  "your_preferences_have_been_updated_6729d3f8": {
+    "message": "Vaše preferencie boli aktualizované."
+  },
+  "z_to_a_75ce9568": {
+    "message": "Od Z do A"
+  },
+  "pid_is_invalid_2a8f005e": {
+    "message": "Uvedené číslo sociálneho poistenia nie je platné."
+  },
+  "email_address_is_invalid_dd753229": {
+    "message": "Zadaná e-mailová adresa nie je platná."
+  },
+  "postal_code_is_invalid_438e6940": {
+    "message": "Zadané poštové číslo nie je platné."
+  },
+  "postal_code_is_required_ca3b7a32": {
+    "message": "Vyžaduje sa PSČ.."
+  },
+  "this_pid_is_already_registered_83895f84": {
+    "message": "Uvedené číslo sociálneho poistenia je už zaregistrované."
+  },
+  "your_email_address_is_already_registered_3d806453": {
+    "message": "Zadaná e-mailová adresa je už zaregistrovaná."
+  },
+  "pid_is_required_68787e3": {
+    "message": "Číslo sociálneho poistenia je povinné."
+  },
+  "email_address_is_required_24d62494": {
+    "message": "Vyžaduje sa e-mailová adresa."
+  }
+}

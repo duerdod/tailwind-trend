@@ -1,0 +1,11 @@
+schema:
+  https://storeapi.jetshop.io:
+    headers:
+      token: 359fd7c1-8e72-4270-b899-2bda9ae6ef57
+      shopid: demostore
+extensions:
+  codegen:
+    generates:
+      ./schema.graphql:
+        plugins:
+          - schema-ast

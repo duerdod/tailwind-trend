@@ -1,0 +1,84 @@
+query OrderDetail($orderId: ID!) {
+  order(orderId: $orderId) {
+    id
+    currency {
+      format {
+        code
+        culture
+      }
+    }
+    total {
+      exVat
+      incVat
+      vat
+    }
+    deliveryMethod {
+      name
+      fee {
+        exVat
+        incVat
+        vat
+      }
+      tracking {
+        trackingUrl
+        trackingUrlText
+      }
+    }
+    paymentMethod {
+      name
+    }
+    deliveryInfo {
+      ...ContactInfo
+    }
+    billingInfo {
+      ...ContactInfo
+    }
+    items {
+      articleNumber
+      name
+      quantity
+      variant {
+        values
+        images {
+          modifiedDate
+          alt
+          url
+        }
+      }
+      total {
+        incVat
+        exVat
+        vat
+      }
+      product {
+        subName
+        primaryRoute {
+          id
+          path
+          slug
+        }
+        images {
+          modifiedDate
+          alt
+          url
+        }
+      }
+      variantOptionNames
+    }
+  }
+}
+
+fragment ContactInfo on OrderInfo {
+  address {
+    city
+    country {
+      name
+    }
+    postcode
+    region
+    street
+  }
+  firstName
+  lastName
+  phone
+}

@@ -1,0 +1,7 @@
+#import "./ContentPage/ContentPageFragment.gql"
+
+query PagePreviewQuery($id: Int = null) {
+  page(id: $id) {
+    ...ContentPage
+  }
+}

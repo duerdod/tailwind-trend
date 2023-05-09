@@ -1,0 +1,9 @@
+#import "./cartFragment.gql"
+
+mutation incrementItemQuantity($input: ChangeByOneItemQuantityInput!) {
+  incrementItemQuantity(input: $input) {
+    cart {
+      ...Cart
+    }
+  }
+}

@@ -1,0 +1,36 @@
+#import "@jetshop/core/data/fragments/ProductPriceFragment.gql"
+#import "@jetshop/core/data/fragments/BadgeFragment.gql"
+
+fragment StartPageProductGrid on Product {
+  id
+  articleNumber
+  name
+  subName
+  shortDescription
+  description
+  mainHeader
+  primaryRoute {
+    id
+    path
+    slug
+    breadcrumbs
+  }
+  ...ProductPrice
+  images {
+    modifiedDate
+    alt
+    title
+    url
+  }
+  badges {
+    ...Badge
+  }
+  customFields {
+    key
+    type
+    title
+    ... on CustomStringField {
+      stringValue: value
+    }
+  }
+}

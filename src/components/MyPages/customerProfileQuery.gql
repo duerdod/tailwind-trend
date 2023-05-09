@@ -1,0 +1,52 @@
+query Profile {
+  customer {
+    id
+    email
+    ... on PrivateCustomer {
+      pid
+    }
+    ... on BusinessCustomer {
+      organizationNumber
+    }
+    store {
+      id
+    }
+    language {
+      culture
+    }
+    communication {
+      acceptsEmail
+      acceptsPostal
+      acceptsSms
+    }
+    billingAddress {
+      ...CustomerAddressFragment
+    }
+    deliveryAddresses {
+      ...CustomerAddressFragment
+    }
+  }
+}
+
+fragment CustomerAddressFragment on CustomerAddress {
+  id
+  addressName
+  city
+  co
+  company
+  companyAtt
+  country {
+    id
+    code
+    name
+  }
+  department
+  firstName
+  lastName
+  mobilePhone
+  municipality
+  phone
+  postalCode
+  region
+  streetName
+}

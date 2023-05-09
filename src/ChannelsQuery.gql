@@ -1,0 +1,7 @@
+#import "@jetshop/core/data/fragments/ChannelsFragment.gql"
+
+query ChannelsQuery {
+  channels {
+    ...ChannelsFragment
+  }
+}

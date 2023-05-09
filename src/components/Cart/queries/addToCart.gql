@@ -1,0 +1,9 @@
+#import "./cartFragment.gql"
+
+mutation addToCart($input: AddToCartInput!) {
+  addToCart(input: $input) {
+    cart {
+      ...Cart
+    }
+  }
+}

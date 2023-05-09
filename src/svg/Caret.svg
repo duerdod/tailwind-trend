@@ -1,0 +1,12 @@
+<svg width="13" height="7" viewBox="0 0 13 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Vector</title>
+<desc>Created using Figma</desc>
+<g id="CaretCanvas" transform="translate(24600 -16313)">
+<g id="CaretVector">
+<use xlink:href="#caret_path0_stroke" transform="matrix(8.01574e-16 -1 1 1.03516e-15 -24598.8 16319.2)"/>
+</g>
+</g>
+<defs>
+<path id="caret_path0_stroke" d="M 0 5.69451L -0.359736 5.34725L -0.694954 5.69451L -0.359736 6.04177L 0 5.69451ZM 5.13729 -0.347261L -0.359736 5.34725L 0.359736 6.04177L 5.85677 0.347261L 5.13729 -0.347261ZM -0.359736 6.04177L 5.13729 11.7363L 5.85677 11.0418L 0.359736 5.34725L -0.359736 6.04177Z"/>
+</defs>
+</svg>

@@ -1,0 +1,9 @@
+fragment StartPageCategoryGrid on Category {
+  name
+  images {
+    url
+  }
+  primaryRoute {
+    path
+  }
+}

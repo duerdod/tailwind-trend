@@ -1,0 +1,12 @@
+<svg width="16" height="13" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Shape</title>
+<desc>Created using Figma</desc>
+<g id="CheckCanvas" transform="translate(24868 -15859)">
+<g id="CheckShape">
+<use xlink:href="#check_path0_fill" transform="translate(-24867.4 15860)" fill="#1471EB"/>
+</g>
+</g>
+<defs>
+<path id="check_path0_fill" fill-rule="evenodd" d="M 4.78178 9.05122L 1.19544 5.46489L 0 6.66034L 4.78178 11.4421L 15.0284 1.19544L 13.833 0L 4.78178 9.05122Z"/>
+</defs>
+</svg>

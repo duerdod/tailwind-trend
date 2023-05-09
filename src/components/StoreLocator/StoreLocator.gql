@@ -1,0 +1,7 @@
+#import "./StoreFragment.gql"
+
+query StoreLocator {
+  stores {
+    ...StoreFragment
+  }
+}

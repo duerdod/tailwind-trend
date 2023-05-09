@@ -1,0 +1,8 @@
+#import "./ProductPage/ProductPageFragment.gql"
+
+query ProductPreviewQuery($articleNumber: String = null, $id: Int = null) {
+  product(articleNumber: $articleNumber, id: $id) {
+    id
+    ...ProductPage
+  }
+}

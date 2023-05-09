@@ -1,0 +1,23 @@
+#import "@jetshop/core/data/fragments/RouteMetaFragment.gql"
+#import "@jetshop/core/data/fragments/HeadFragment.gql"
+#import "./CategoryPage/CategoryPageFragment.gql"
+#import "./ContentPage/ContentPageFragment.gql"
+#import "./ProductPage/ProductPageFragment.gql"
+query route(
+  $path: String!
+  $first: Paging = 16
+  $offset: Int = 0
+  $orderBy: ProductOrderOptions
+  $orderByDirection: SortDirection
+  $filters: FilterInput
+) {
+  route(path: $path) {
+    ...RouteMeta
+    object {
+      ...Head
+      ...CategoryPage
+      ...ContentPage
+      ...ProductPage
+    }
+  }
+}

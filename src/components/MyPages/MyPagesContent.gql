@@ -1,0 +1,5 @@
+query MyPagesContent {
+  myPagesContent {
+    welcomeText
+  }
+}

@@ -1,0 +1,9 @@
+#import "./cartFragment.gql"
+
+mutation decrementItemQuantity($input: ChangeByOneItemQuantityInput!) {
+  decrementItemQuantity(input: $input) {
+    cart {
+      ...Cart
+    }
+  }
+}

@@ -1,0 +1,105 @@
+#import "@jetshop/core/data/fragments/PriceFragment.gql"
+#import "@jetshop/core/data/fragments/ProductPriceFragment.gql"
+#import "@jetshop/core/data/fragments/ProductVariantPriceFragment.gql"
+#import "@jetshop/core/data/fragments/CommentsFragment.gql"
+
+fragment Cart on Cart {
+  __optimistic @client
+  id
+  externalCheckoutUrl
+  totalQuantity
+  productTotal {
+    ...Price
+  }
+  productPreviousTotal {
+    ...Price
+  }
+  discountTotal {
+    ...Price
+  }
+  aggregatedDiscounts {
+    name
+    value {
+      ...Price
+    }
+    description
+    campaign {
+      name
+    }
+  }
+  items {
+    id
+    customerComments {
+      name
+      value
+    }
+    configurations {
+      name
+      option {
+        id
+        name
+      }
+    }
+    quantity
+    articleNumber
+    subHeading
+    variant {
+      values
+      articleNumber
+      images {
+        modifiedDate
+        alt
+        title
+        url
+      }
+      ...ProductVariantPrice
+    }
+    discounts {
+      name
+      description
+      type
+      value {
+        ...Price
+      }
+    }
+    discount {
+      ...Price
+    }
+    total {
+      ...Price
+    }
+    previousTotal {
+      ...Price
+    }
+    previousUnitPrice {
+      ...Price
+    }
+    product {
+      ...CommentsFragment
+      id
+      name
+      articleNumber
+      ...ProductPrice
+      primaryRoute {
+        id
+        path
+        breadcrumbs
+      }
+      customFields {
+        key
+        type
+        title
+        ... on CustomStringField {
+          stringValue: value
+        }
+      }
+      images {
+        modifiedDate
+        alt
+        title
+        url
+      }
+    }
+    variantOptionNames
+  }
+}

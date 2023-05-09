@@ -1,0 +1,112 @@
+#import "@jetshop/core/data/fragments/ProductPriceFragment.gql"
+#import "@jetshop/core/data/fragments/ProductVariantPriceFragment.gql"
+#import "@jetshop/core/data/fragments/StockStatusFragment.gql"
+#import "../CategoryPage/ProductGridFragment.gql"
+#import "@jetshop/core/data/fragments/BadgeFragment.gql"
+#import "@jetshop/core/data/fragments/CommentsFragment.gql"
+#import "@jetshop/core/data/fragments/ProductCampaignFragment.gql"
+#import "@jetshop/core/data/fragments/ProductConfigurationsFragment.gql"
+#import "@jetshop/core/data/fragments/PriceFragment.gql"
+#import "./InPackagesFragment.gql"
+#import "./StockStatus/WarehouseStockFragment.gql"
+
+fragment ProductPage on Product {
+  id
+  articleNumber
+  name
+  subName
+  breadcrumbText
+  shortDescription
+  description
+  hasVariants
+  isPackage
+  hidePrice
+  canonicalCategory {
+    primaryRoute {
+      path
+    }
+  }
+  categories {
+    primaryRoute {
+      path
+    }
+  }
+  primaryRoute {
+    path
+    id
+    breadcrumbs
+  }
+  ...ProductPrice
+  stockStatus {
+    ...StockStatus
+  }
+  warehouseStock {
+    ...WarehouseStock
+  }
+  ...CommentsFragment
+  variants {
+    options {
+      name
+      values
+    }
+    values {
+      warehouseStock {
+        ...WarehouseStock
+      }
+      values
+      articleNumber
+      images {
+        url
+        modifiedDate
+      }
+      ...ProductVariantPrice
+      stockStatus {
+        ...StockStatus
+      }
+    }
+  }
+  images {
+    alt
+    title
+    url
+    modifiedDate
+  }
+  relatedProducts {
+    ...ProductGrid
+  }
+  customFields {
+    key
+    type
+    title
+    ... on CustomBoolField {
+      boolValue: value
+    }
+    ... on CustomStringField {
+      stringValue: value
+    }
+    ... on CustomHtmlField {
+      htmlValue: value
+    }
+    ... on CustomListField {
+      listValues: value
+    }
+    ... on CustomMultiLevelListField {
+      items {
+        id
+        parentId
+        title
+        value
+      }
+    }
+  }
+  badges {
+    ...Badge
+  }
+  preOrder {
+    fromDate
+    toDate
+  }
+  ...InPackages
+  ...ProductConfigurations
+  ...ProductCampaign
+}

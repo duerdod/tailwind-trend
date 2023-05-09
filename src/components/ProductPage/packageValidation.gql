@@ -1,0 +1,18 @@
+#import "@jetshop/core/data/fragments/ProductPriceFragment.gql"
+
+query PackageValidation(
+  $articleNumber: String
+  $products: [PackagePriceInput]
+) {
+  product(articleNumber: $articleNumber) {
+    id
+    package(articleNumbers: $products) {
+      price {
+        ...Price
+      }
+      discountValue {
+        ...Price
+      }
+    }
+  }
+}

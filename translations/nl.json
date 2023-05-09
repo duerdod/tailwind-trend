@@ -1,0 +1,788 @@
+{
+  "a_to_z_96baaedc": {
+    "message": "A tot Z"
+  },
+  "about_70c18bba": {
+    "message": "Over"
+  },
+  "add_to_cart_fe03d709": {
+    "message": "Voeg toe aan winkelwagen"
+  },
+  "added_quantity_items_to_bag_96a4a656": {
+    "message": "{ quantity } producten toegevoegd aan winkelwagen"
+  },
+  "added_to_bag_4be2af1": {
+    "message": "Toegevoegd aan de winkelwagen"
+  },
+  "address_e7cb7f63": {
+    "message": "Adres"
+  },
+  "an_error_occured_please_try_again_9ee6abca": {
+    "message": "Er is een fout opgetreden. Probeer het alstublieft opnieuw!"
+  },
+  "an_error_occurred_details_e4aea7ad": {
+    "message": "Er is een fout opgetreden. Details:"
+  },
+  "apply_781a2546": {
+    "message": "Toepassen"
+  },
+  "apply_filters_26351a5c": {
+    "message": "Filters toepassen"
+  },
+  "are_you_sure_26795d3c": {
+    "message": "Weet u het zeker?"
+  },
+  "billingaddress_countrycode_97f1bc8e": {
+    "message": "factuurAdres.landCode"
+  },
+  "cancel_caeb1e68": {
+    "message": "Annuleren"
+  },
+  "cart_4f6dbcaa": {
+    "message": "Winkelwagen"
+  },
+  "cart_total_c0110f50": {
+    "message": "Winkelwagen totaal"
+  },
+  "categories_9d537a7a": {
+    "message": "Categorieën"
+  },
+  "change_password_20192c50": {
+    "message": "Wijzig wachtwoord"
+  },
+  "change_password_d96f4e06": {
+    "message": "Wijzig wachtwoord"
+  },
+  "check_out_fcf51117": {
+    "message": "Ga naar de kassa"
+  },
+  "choose_country_351b807a": {
+    "message": "Kies land"
+  },
+  "city_69953629": {
+    "message": "Stad"
+  },
+  "clear_all_filters_40e65e3b": {
+    "message": "Wis alle filters"
+  },
+  "clear_filter_5b3a182d": {
+    "message": "Wis filter"
+  },
+  "clear_list_93c0d4e3": {
+    "message": "Lijst wissen"
+  },
+  "close_d634289d": {
+    "message": "Sluiten"
+  },
+  "company_a53a19ad": {
+    "message": "Bedrijf"
+  },
+  "company_contact_name_dbedb9da": {
+    "message": "Naam bedrijfscontactpersoon"
+  },
+  "company_registration_number_4d68074": {
+    "message": "Bedrijfsregistratienummer"
+  },
+  "contact_a6e7f6da": {
+    "message": "Contact"
+  },
+  "contact_details_3e898892": {
+    "message": "Contact details"
+  },
+  "count_plural_0_one_1_item_other_count_items_e48de617": {
+    "message": "{ count, plural, =0 {} one {1 product} other {{ count } producten} }"
+  },
+  "country_b9f6d984": {
+    "message": "Land"
+  },
+  "county_c41f243f": {
+    "message": "Provincie"
+  },
+  "create_profile_33fafbf1": {
+    "message": "Maak een profiel aan"
+  },
+  "create_profile_fc47c26d": {
+    "message": "Maak een profiel aan"
+  },
+  "currency_d6b3d5f6": {
+    "message": "Valuta"
+  },
+  "customercommentname_is_required_f5c2f377": {
+    "message": "{ customerCommentName } is verplicht"
+  },
+  "delete_account_4e52440b": {
+    "message": "Verwijder account"
+  },
+  "delete_account_81ef7d97": {
+    "message": "Verwijder account"
+  },
+  "delivery_2a07e73e": {
+    "message": "Levering:"
+  },
+  "delivery_8864b1d9": {
+    "message": "Levering:"
+  },
+  "delivery_address_872728d": {
+    "message": "Bezorgadres"
+  },
+  "department_6abddd98": {
+    "message": "Afdeling"
+  },
+  "desired_password_391ab563": {
+    "message": "Gewenst wachtwoord"
+  },
+  "directions_eef85bfe": {
+    "message": "Instructies"
+  },
+  "discounts_dfde4231": {
+    "message": "Kortingen"
+  },
+  "distance_a377c748": {
+    "message": "Afstand"
+  },
+  "does_not_match_new_password_566ea944": {
+    "message": "Komt niet overeen met nieuw wachtwoord"
+  },
+  "e_mail_address_11245d70": {
+    "message": "E-mailadres"
+  },
+  "email_address_6e0443a5": {
+    "message": "E-mailadres"
+  },
+  "email_password_fe282e30": {
+    "message": "E-mail & Wachtwoord"
+  },
+  "enter_email_address_25b6381d": {
+    "message": "Voer e-mailadres in"
+  },
+  "express_1_2_working_days_5b7007b": {
+    "message": "Express 1–2 werkdagen"
+  },
+  "extra_address_b1f2c88": {
+    "message": "Extra adres"
+  },
+  "failed_adding_to_bag_6911bfca": {
+    "message": "Toevoegen aan winkelwagen mislukt"
+  },
+  "favourites_d8a7f913": {
+    "message": "Favorieten"
+  },
+  "field_does_not_match_required_format_1511ccd9": {
+    "message": "Veld heeft niet het vereiste formaat"
+  },
+  "filter_e3398407": {
+    "message": "Filter"
+  },
+  "find_product_in_store_7a4af069": {
+    "message": "Vind het product in de winkel"
+  },
+  "find_store_2d93488b": {
+    "message": "Zoek winkel"
+  },
+  "find_store_ec52678f": {
+    "message": "Zoek winkel"
+  },
+  "find_the_closest_store_using_your_location_696c8e5a": {
+    "message": "Zoek de dichtstbijzijnde winkel door uw locatie te gebruiken "
+  },
+  "first_name_75f38a3e": {
+    "message": "Voornaam"
+  },
+  "forgot_password_69eea15b": {
+    "message": "Wachtwoord vergeten"
+  },
+  "free_for_your_order_34aba239": {
+    "message": "Gratis bij uw bestelling"
+  },
+  "free_shipping_and_return_355b42d1": {
+    "message": "Gratis verzending en retour"
+  },
+  "go_to_country_517a8515": {
+    "message": "Ga naar { country }"
+  },
+  "got_it_2c06b54a": {
+    "message": "Begrepen!"
+  },
+  "hi_firstname_lastname_bc7684c1": {
+    "message": "Hallo, { firstName } { lastName }"
+  },
+  "high_to_low_b6eda134": {
+    "message": "hoog naar laag"
+  },
+  "hold_on_a_moment_5a9f3c1d": {
+    "message": "Een moment alstublieft..."
+  },
+  "hold_on_a_moment_a3f09a64": {
+    "message": "Een moment alstublieft…"
+  },
+  "home_351838cd": {
+    "message": "Home"
+  },
+  "homepage_4b84763d": {
+    "message": "STARTPAGINA"
+  },
+  "i_don_t_want_newsletters_a1a3e929": {
+    "message": "Ik wil geen nieuwsbrieven"
+  },
+  "i_understand_please_delete_my_account_5f49bf66": {
+    "message": "Ik begrijp het, verwijder alstublieft mijn account"
+  },
+  "i_want_newsletters_58c52364": {
+    "message": "Ik wil nieuwsbrieven"
+  },
+  "image_not_found_2f99135": {
+    "message": "Afbeelding niet gevonden"
+  },
+  "in_stock_859385c7": {
+    "message": "Op voorraad"
+  },
+  "included_in_campaign_46a7230b": {
+    "message": "Inbegrepen in de aanbieding:"
+  },
+  "included_in_package_5d7f4d3d": {
+    "message": "Inbegrepen in pakket:"
+  },
+  "invalid_email_address_8d0d5e33": {
+    "message": "Ongeldig e-mailadres"
+  },
+  "it_looks_like_you_are_visiting_us_from_country_do__832ec546": {
+    "message": "Het lijkt erop dat u ons bezoekt vanuit { country }. Wilt u onze { country } website bezoeken?"
+  },
+  "join_the_newsletter_fbefaa77": {
+    "message": "Meld u aan voor de nieuwsbrief"
+  },
+  "km_km_24f9536d": {
+    "message": "{ km } km"
+  },
+  "language_6b3e2c7c": {
+    "message": "Taal"
+  },
+  "learn_more_a79a7918": {
+    "message": "Meer informatie"
+  },
+  "link_7262adec": {
+    "message": "Link"
+  },
+  "loading_more_data_e8df9877": {
+    "message": "Meer gegevens aan het laden…"
+  },
+  "loading_package_details_31166b02": {
+    "message": "Pakketdetails laden..."
+  },
+  "loading_page_currentpage_2c9871c1": {
+    "message": "Pagina aan het laden { currentPage }…"
+  },
+  "loading_search_results_for_term_23278c26": {
+    "message": "De zoekresultaten voor { term } aan het laden…"
+  },
+  "loading_your_saved_items_5293335e": {
+    "message": "Uw bewaarde producten laden…"
+  },
+  "log_in_c9e240ef": {
+    "message": "Inloggen"
+  },
+  "log_out_379ba28a": {
+    "message": "Log uit"
+  },
+  "login_6f3d6249": {
+    "message": "Login"
+  },
+  "login_failed_please_try_again_841d7c15": {
+    "message": "Aanmelden mislukt. Probeer het alstublieft opnieuw"
+  },
+  "look_up_my_info_6436db80": {
+    "message": "Zoek mijn gegevens op"
+  },
+  "low_to_high_2400fc78": {
+    "message": "laag naar hoog"
+  },
+  "m_m_6aa9a961": {
+    "message": "{ m } m"
+  },
+  "maxorderquantity_is_the_maximum_order_quantity_96e527df": {
+    "message": "{ maxOrderQuantity } is de maximale bestelhoeveelheid"
+  },
+  "menu_39cb0e8e": {
+    "message": "Menu"
+  },
+  "mobile_phone_number_cb092391": {
+    "message": "Mobiele telefoonnummer"
+  },
+  "my_orders_40e3ddbe": {
+    "message": "Mijn bestellingen"
+  },
+  "my_orders_474fd888": {
+    "message": "Mijn bestellingen"
+  },
+  "my_pages_c8e29a68": {
+    "message": "Mijn pagina's"
+  },
+  "my_profile_16c38091": {
+    "message": "Mijn profiel"
+  },
+  "my_profile_d97eb90d": {
+    "message": "Mijn profiel"
+  },
+  "n_a_d5d5a207": {
+    "message": "Niet beschikbaar"
+  },
+  "name_1aed4a1b": {
+    "message": "Naam"
+  },
+  "national_id_social_security_number_ffa20629": {
+    "message": "Nationaal ID/Burgerservicenummer"
+  },
+  "new_password_again_fa83f67e": {
+    "message": "Nogmaals nieuw wachtwoord"
+  },
+  "new_password_eb44a9a4": {
+    "message": "Nieuw wachtwoord"
+  },
+  "newsletters_a04708fd": {
+    "message": "Nieuwsbrieven"
+  },
+  "next_40e12421": {
+    "message": "Volgende"
+  },
+  "no_e16d9132": {
+    "message": "Nee"
+  },
+  "no_items_in_cart_cf9df6d4": {
+    "message": "Geen items in de winkelwagen"
+  },
+  "no_orders_found_ed613bce": {
+    "message": "Geen bestellingen gevonden"
+  },
+  "no_results_for_term_7528ef47": {
+    "message": "Geen resultaten voor <Term />"
+  },
+  "no_valid_items_to_add_to_cart_c53b9043": {
+    "message": "Geen geldige items om toe te voegen aan winkelwagen"
+  },
+  "not_available_487d3648": {
+    "message": "Niet beschikbaar"
+  },
+  "note_if_you_were_directed_here_via_a_link_we_are_g_47b83052": {
+    "message": "LET OP! Als u hier via een link bent terechtgekomen, zouden we graag van u weten welke link dit was, zodat we het probleem kunnen oplossen"
+  },
+  "notify_me_when_back_in_stock_7f40774": {
+    "message": "Laat het me weten wanneer het weer op voorraad is"
+  },
+  "of_which_vat_9b4c95d5": {
+    "message": "Waarvan btw"
+  },
+  "ok_c47544a2": {
+    "message": "OK"
+  },
+  "old_password_c735e1a5": {
+    "message": "Oud wachtwoord"
+  },
+  "one_moment_301b2df": {
+    "message": "Een ogenblik alstublieft…"
+  },
+  "opening_hours_77ceb9c8": {
+    "message": "Openingstijden"
+  },
+  "optionname_is_required_4ef88446": {
+    "message": "{ optionName } is verplicht"
+  },
+  "or_ef4e808": {
+    "message": "of"
+  },
+  "or_scroll_down_to_fill_in_the_rest_manually_d9502b2f": {
+    "message": "Of scrol naar beneden om de rest handmatig in te vullen"
+  },
+  "order_date_9b7fe95f": {
+    "message": "Besteldatum"
+  },
+  "order_number_fe66c52c": {
+    "message": "Bestelnummer"
+  },
+  "order_value_4a159b2c": {
+    "message": "Bestelwaarde"
+  },
+  "out_of_stock_cf144338": {
+    "message": "Niet op voorraad"
+  },
+  "out_of_stock_ed56c3c": {
+    "message": "Niet op voorraad"
+  },
+  "package_34ed7777": {
+    "message": "Pakket"
+  },
+  "package_discount_66e25640": {
+    "message": "Pakketkorting"
+  },
+  "page_currentpage_of_totalpages_a773c744": {
+    "message": "Pagina { currentPage } van { totalPages }"
+  },
+  "payment_method_84a444f1": {
+    "message": "Betaalmethode"
+  },
+  "person_lookup_failed_87cc2ec4": {
+    "message": "Persoon opzoeken is mislukt."
+  },
+  "phone_70d50cdb": {
+    "message": "Telefoon:"
+  },
+  "please_enter_a_valid_quantity_f9adbf72": {
+    "message": "Voer alstublieft een geldige hoeveelheid in"
+  },
+  "please_enter_your_new_password_f261c25f": {
+    "message": "Voer alstublieft uw nieuwe wachtwoord in"
+  },
+  "please_fill_in_your_contact_details_for_shipping_a_285963ce": {
+    "message": "Vul alstublieft uw contactgegevens in voor verzending en contact."
+  },
+  "post_code_e64b6004": {
+    "message": "Postcode"
+  },
+  "pre_order_date_required_8c33e235": {
+    "message": "Pre-order datum vereist"
+  },
+  "prev_f82cbc48": {
+    "message": "Vorige"
+  },
+  "price_ffd8b80": {
+    "message": "Prijs"
+  },
+  "private_3883d133": {
+    "message": "Privé"
+  },
+  "product_39cf144f": {
+    "message": "Product"
+  },
+  "product_description_3edb94a9": {
+    "message": "Productbeschrijving"
+  },
+  "product_is_not_in_stock_fc5a972b": {
+    "message": "Het product is niet op voorraad"
+  },
+  "product_matches_17fac93": {
+    "message": "Bijpassende producten"
+  },
+  "product_no_longer_available_b6ad7087": {
+    "message": "Het product is niet langer beschikbaar"
+  },
+  "productcount_plural_1_add_product_to_cart_other_ad_b37e18fc": {
+    "message": "{ productCount, plural,     =1 {Add # product to cart}  other {Voeg # producten toe aan uw winkelwagen}}"
+  },
+  "productcount_plural_1_product_added_to_the_cart_ot_e20e0dc8": {
+    "message": "{ productCount, plural,     =1 {# product added to the cart.}  other {# producten zijn toegevoegd aan uw winkelwagen.}}"
+  },
+  "productname_has_been_added_to_the_cart_fba79585": {
+    "message": "{ productName } is toegevoegd aan uw winkelwagen"
+  },
+  "products_c5f0793": {
+    "message": "Producten"
+  },
+  "quantity_20164bff": {
+    "message": "Aantal"
+  },
+  "recent_orders_1068c934": {
+    "message": "Recente bestellingen"
+  },
+  "region_939f2a6c": {
+    "message": "Regio"
+  },
+  "related_products_8fcc0081": {
+    "message": "Gerelateerde producten"
+  },
+  "repeat_desired_password_34086d81": {
+    "message": "Herhaal het gewenste wachtwoord"
+  },
+  "required_da89d67d": {
+    "message": "(Vereist)"
+  },
+  "reset_95a81614": {
+    "message": "Herstellen"
+  },
+  "retry_ebd5f8ba": {
+    "message": "Opnieuw proberen"
+  },
+  "save_11a80ec3": {
+    "message": "Opslaan"
+  },
+  "saved_items_583185b1": {
+    "message": "Bewaarde producten"
+  },
+  "search_280d00bd": {
+    "message": "Zoeken"
+  },
+  "select_country_1da181c6": {
+    "message": "Selecteer land"
+  },
+  "select_missingoptions_to_see_store_status_in_store_a7433fed": {
+    "message": "Selecteer { missingOptions } om de winkelstatus in de winkel te zien"
+  },
+  "select_option_3e8f2943": {
+    "message": "Selecteer { option }"
+  },
+  "select_optionname_fc590c42": {
+    "message": "Selecteer { optionName }"
+  },
+  "select_options_9ee7b227": {
+    "message": "Selecteer opties"
+  },
+  "select_the_variants_b3aa2844": {
+    "message": "Selecteer de varianten"
+  },
+  "select_your_country_9ee72cf7": {
+    "message": "Selecteer uw land"
+  },
+  "selected_categories_863af37b": {
+    "message": "Geselecteerde categorieën"
+  },
+  "selected_products_1bd5b165": {
+    "message": "Geselecteerde producten"
+  },
+  "share_location_6d9a73cf": {
+    "message": "Deel locatie"
+  },
+  "shop_by_category_b9ba84ab": {
+    "message": "Shop op categorie"
+  },
+  "show_all_orders_3c6119ee": {
+    "message": "Toon alle bestellingen"
+  },
+  "show_details_d6f1ca0c": {
+    "message": "Toon details"
+  },
+  "show_fewer_stores_56b2065a": {
+    "message": "Toon minder winkels"
+  },
+  "show_less_574a758b": {
+    "message": "Toon minder"
+  },
+  "show_more_fae1328": {
+    "message": "Toon meer"
+  },
+  "signup_d25ec5f5": {
+    "message": "Aanmelden"
+  },
+  "social_security_number_7c8fc49b": {
+    "message": "Burgerservicenummer"
+  },
+  "something_went_wrong_d238c551": {
+    "message": "Er is iets misgegaan"
+  },
+  "something_went_wrong_please_check_your_email_and_t_9dd179bd": {
+    "message": "Er is iets misgegaan. Controleer alstublieft uw e-mail en probeer het opnieuw."
+  },
+  "something_went_wrong_please_check_your_input_or_tr_d8daab95": {
+    "message": "Er is iets misgegaan. Controleer uw invoer of probeer het later opnieuw."
+  },
+  "something_went_wrong_please_try_again_37244f67": {
+    "message": "Er is iets misgegaan. Probeer het later opnieuw."
+  },
+  "something_went_wrong_please_try_again_fd8c66fd": {
+    "message": "Er is iets misgegaan, probeer het later opnieuw!"
+  },
+  "something_went_wrong_saving_information_try_again_87e1303e": {
+    "message": "Er is iets misgegaan bij het opslaan van de informatie. Opnieuw proberen?"
+  },
+  "something_went_wrong_updating_password_is_your_old_c95e5bd1": {
+    "message": "Er is iets misgegaan bij het vernieuwen van het wachtwoord. Is uw oude wachtwoord correct?"
+  },
+  "something_went_wrong_when_placeholder_e336fd86": {
+    "message": "Er is iets misgegaan toen { placeholder }"
+  },
+  "something_went_wrong_when_retrieving_order_id_plea_994c3a5": {
+    "message": "Er is iets misgegaan bij het terugvinden van bestelling { id }. Probeer het alstublieft later opnieuw."
+  },
+  "sort_by_72dbba9c": {
+    "message": "Sorteer op"
+  },
+  "sort_by_e75f9e3e": {
+    "message": "Sorteren op"
+  },
+  "specifications_ee3fcf8e": {
+    "message": "Specificaties"
+  },
+  "spend_price_more_to_qualify_for_free_shipping_76fdedab": {
+    "message": "Nog { price } om in aanmerking te komen voor gratis verzending!"
+  },
+  "standard_2_5_working_days_d4ac0406": {
+    "message": "Standaard 2–5 werkdagen"
+  },
+  "submit_a3cc6859": {
+    "message": "Verstuur"
+  },
+  "submitting_75cdf9ab": {
+    "message": "Aan het versturen…"
+  },
+  "successfully_added_83dcf29": {
+    "message": "Succesvol toegevoegd!"
+  },
+  "surname_df38bed": {
+    "message": "Achternaam"
+  },
+  "telephone_number_9cbafa6e": {
+    "message": "Telefoonnummer"
+  },
+  "the_address_provided_is_incorrect_please_check_the_1b76d82f": {
+    "message": "Het opgegeven adres is niet juist. Controleer de spelling en probeer het opnieuw."
+  },
+  "the_form_could_not_be_submitted_please_try_again_l_9a8b7579": {
+    "message": "Het formulier kon niet worden verzonden. Probeer het later opnieuw."
+  },
+  "there_are_no_products_in_your_saved_items_list_2870abb5": {
+    "message": "Er zijn geen producten in uw lijst met opgeslagen producten."
+  },
+  "this_could_be_due_to_the_following_a40f2a5": {
+    "message": "Dit kan komen door het volgende:"
+  },
+  "this_field_is_required_fa58c4a": {
+    "message": "Dit veld is verplicht"
+  },
+  "this_is_where_you_find_our_stores_get_informed_abo_19de699f": {
+    "message": "Hier kunt u onze winkels vinden. Laat u hier informeren over de voorraadstatus in uw lokale winkel. Zoek en selecteer de winkel die het dichtst bij u in de buurt is."
+  },
+  "this_product_is_out_of_stock_c6eac862": {
+    "message": "Dit product is niet op voorraad."
+  },
+  "this_website_uses_cookies_to_ensure_you_get_the_be_f59eb226": {
+    "message": "Deze website maakt gebruik van cookies om ervoor te zorgen dat u de beste ervaring krijgt."
+  },
+  "to_checkout_63f3b715": {
+    "message": "Naar de kassa"
+  },
+  "total_71a4807": {
+    "message": "Totaal:"
+  },
+  "total_excl_vat_ae61fef3": {
+    "message": "Totaal excl. btw"
+  },
+  "total_incl_vat_f281354b": {
+    "message": "Totaal incl. btw"
+  },
+  "total_plural_1_item_other_items_1c76aa07": {
+    "message": "{ total, plural, =1 {# product} other {# producten} }"
+  },
+  "total_plural_1_item_other_items_matching_for_term_22b0ede7": {
+    "message": "{ total, plural, =1 {# product} other {# producten} } die overeenkomen met \"{ term }\""
+  },
+  "total_price_1c872c0a": {
+    "message": "Totaalprijs"
+  },
+  "totalproducts_products_b80002da": {
+    "message": "{ totalProducts } Producten"
+  },
+  "track_delivery_6339cf6f": {
+    "message": "Volg uw levering:"
+  },
+  "trend_31ce9aff": {
+    "message": "Trend"
+  },
+  "type_your_search_here_58fca7de": {
+    "message": "Typ hier uw zoekopdracht"
+  },
+  "update_4d8ee62": {
+    "message": "Bijwerken"
+  },
+  "update_information_95c5f1b4": {
+    "message": "Informatie bijwerken"
+  },
+  "updating_price_3f7c4661": {
+    "message": "Prijs bijwerken... "
+  },
+  "vat_39a079c0": {
+    "message": "+ btw"
+  },
+  "view_all_in_category_531e2499": {
+    "message": "Vis alle i { category }"
+  },
+  "view_all_stores_d0f8a7f1": {
+    "message": "Bekijk alle winkels"
+  },
+  "view_password_ec63cb11": {
+    "message": "Bekijk wachtwoord"
+  },
+  "visit_product_page_to_add_54331147": {
+    "message": "Bezoek de productpagina om { Product } toe te voegen"
+  },
+  "welcome_to_our_online_store_enter_your_social_secu_dbc50460": {
+    "message": "Welkom in onze online winkel! Voer uw Burgerservicenummer in en dan zullen we proberen de vereiste informatie te vinden. U kunt deze ook handmatig invoeren."
+  },
+  "welcome_to_our_online_store_we_need_to_create_a_pr_90e8e9ce": {
+    "message": "Welkom in onze online winkel! We moeten een profiel aanmaken voordat u verder kunt gaan."
+  },
+  "what_is_your_email_address_631180c6": {
+    "message": "Wat is uw e-mailadres?"
+  },
+  "when_your_account_is_deleted_all_order_history_wil_71260053": {
+    "message": "Als uw account verwijderd wordt, zal de bestelgeschiedenis gewist worden."
+  },
+  "whoops_54a74974": {
+    "message": "Oeps"
+  },
+  "yes_dde87d5": {
+    "message": "Ja"
+  },
+  "you_are_now_subscribed_71495f41": {
+    "message": "U bent nu ingeschreven."
+  },
+  "you_are_now_subscribed_7695dd6b": {
+    "message": "U bent nu ingeschreven"
+  },
+  "you_are_trying_to_use_an_old_address_that_no_longe_1d4e8dff": {
+    "message": "U probeert een oud adres te gebruiken dat niet meer bestaat of dat gewijzigd is."
+  },
+  "you_can_now_login_with_your_new_password_99ae2294": {
+    "message": "U kunt nu { login } met uw nieuwe wachtwoord"
+  },
+  "you_have_already_signed_up_with_this_email_address_71af5f92": {
+    "message": "U heeft zich al aangemeld met dit e-mailadres"
+  },
+  "you_have_already_subscribed_to_the_newsletter_8a2c3d54": {
+    "message": "U bent al ingeschreven voor onze nieuwsbrief!"
+  },
+  "you_have_attempted_to_download_a_page_that_does_no_13db419e": {
+    "message": "U hebt geprobeerd een pagina te downloaden die niet bestaat op de server van Jetshop."
+  },
+  "you_may_have_used_an_old_bookmark_if_you_are_sure__1daf83b8": {
+    "message": "U hebt wellicht een oude bladwijzer gebruikt. Als u zeker weet dat u het juiste adres hebt gebruikt, kan het probleem wellicht opgetreden zijn vanwege een tijdelijke storing. Probeer het alstublieft later nog eens."
+  },
+  "your_password_has_been_reset_53d7f84e": {
+    "message": "Uw wachtwoord is gereset."
+  },
+  "your_password_has_been_successfully_updated_cacea448": {
+    "message": "Uw wachtwoord is succesvol geüpdatet."
+  },
+  "your_password_reset_request_has_been_submitted_che_104311b6": {
+    "message": "Uw verzoek om uw wachtwoord opnieuw in te stellen is verzonden. Controleer uw e-mail voor een link om uw wachtwoord opnieuw in te stellen."
+  },
+  "your_password_reset_token_has_expired_or_is_invali_4f6d0945": {
+    "message": "Uw token voor het opnieuw instellen van uw wachtwoord is verlopen of ongeldig."
+  },
+  "your_preferences_have_been_updated_6729d3f8": {
+    "message": "Uw voorkeuren zijn bijgewerkt."
+  },
+  "z_to_a_75ce9568": {
+    "message": "Z tot A"
+  },
+  "pid_is_invalid_2a8f005e": {
+    "message": "Het opgegeven sofinummer is niet geldig"
+  },
+  "email_address_is_invalid_dd753229": {
+    "message": "Het opgegeven e-mailadres is niet geldig"
+  },
+  "postal_code_is_invalid_438e6940": {
+    "message": "Het opgegeven postnummer is niet geldig"
+  },
+  "postal_code_is_required_ca3b7a32": {
+    "message": "ZIP-code is vereist."
+  },
+  "this_pid_is_already_registered_83895f84": {
+    "message": "Het opgegeven sofinummer is al geregistreerd"
+  },
+  "your_email_address_is_already_registered_3d806453": {
+    "message": "Het opgegeven e-mailadres is al geregistreerd"
+  },
+  "pid_is_required_68787e3": {
+    "message": "Sofinummer is verplicht."
+  },
+  "email_address_is_required_24d62494": {
+    "message": "E-mailadres is vereist"
+  }
+}

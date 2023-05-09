@@ -1,0 +1,9 @@
+query CustomerName {
+  customer {
+    id
+    billingAddress {
+      firstName
+      lastName
+    }
+  }
+}

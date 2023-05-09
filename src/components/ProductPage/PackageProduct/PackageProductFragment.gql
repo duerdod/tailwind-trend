@@ -1,0 +1,68 @@
+#import "@jetshop/core/data/fragments/PriceFragment.gql"
+#import "@jetshop/core/data/fragments/StockStatusFragment.gql"
+#import "@jetshop/core/data/fragments/ProductVariantPriceFragment.gql"
+
+fragment PackageProductFragment on Product {
+  isPackage
+  package {
+    price {
+      ...Price
+    }
+    discountValue {
+      ...Price
+    }
+    items {
+      product {
+        id
+        name
+        articleNumber
+        hasVariants
+        stockStatus {
+          ...StockStatus
+        }
+        subName
+        primaryRoute {
+          path
+          id
+        }
+        images {
+          modifiedDate
+          alt
+          title
+          url
+        }
+        variants {
+          options {
+            name
+            values
+          }
+          values {
+            articleNumber
+            values
+            stockStatus {
+              ...StockStatus
+            }
+            ...ProductVariantPrice
+          }
+        }
+      }
+      minQuantity
+      discount {
+        ... on PackageDiscountPercentage {
+          percentage
+        }
+        ... on PackageDiscountValue {
+          valueExVat
+          valueIncVat
+          valueVat
+        }
+      }
+      price {
+        ...Price
+      }
+      previousPrice {
+        ...Price
+      }
+    }
+  }
+}

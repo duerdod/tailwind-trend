@@ -1,0 +1,13 @@
+query EmptySearchCategories($root: Int, $levels: Int, $includeHidden: Boolean) {
+  categories(root: $root, levels: $levels, includeHidden: $includeHidden) {
+    id
+    name
+    primaryRoute {
+      path
+      id
+    }
+    images {
+      url
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<svg width="13" height="13" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 7.11</title>
+<desc>Created using Figma</desc>
+<g id="CrossCanvas" transform="translate(17955 -19634)">
+<g id="Cross_Group_7_11">
+<g id="Cross_Group_6_6">
+<g id="CrossVector">
+<use xlink:href="#cross_path0_stroke" transform="matrix(1 -1.44723e-16 -6.58127e-17 1 -17948.7 19634.8)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Cross_Group_6_8">
+<g id="CrossVector">
+<use xlink:href="#cross_path0_stroke" transform="matrix(-1 2.67188e-16 -5.66519e-17 -1 -17948.7 19645.7)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="cross_path0_stroke" d="M 0 5.45936L -0.347204 5.09957L -0.720038 5.45936L -0.347204 5.81915L 0 5.45936ZM 5.31008 -0.359791L -0.347204 5.09957L 0.347204 5.81915L 6.00449 0.359791L 5.31008 -0.359791ZM -0.347204 5.81915L 5.31008 11.2785L 6.00449 10.5589L 0.347204 5.09957L -0.347204 5.81915Z"/>
+</defs>
+</svg>

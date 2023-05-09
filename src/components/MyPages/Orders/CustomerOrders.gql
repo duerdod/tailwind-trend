@@ -1,0 +1,29 @@
+#import "@jetshop/core/data/fragments/PriceFragment.gql"
+
+query CustomerOrders($first: Int, $offset: Int) {
+  customer {
+    id
+    orderHeaders(first: $first, offset: $offset) {
+      totalResults
+      result {
+        hasOrderDetails
+        currency {
+          format {
+            code
+            culture
+          }
+        }
+        id
+        orderNumber
+        orderDate
+        status {
+          id
+          description
+        }
+        total {
+          ...Price
+        }
+      }
+    }
+  }
+}

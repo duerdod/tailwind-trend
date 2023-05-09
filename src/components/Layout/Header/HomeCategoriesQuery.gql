@@ -1,0 +1,23 @@
+query HomeCategories($root: Int, $levels: Int, $includeHidden: Boolean) {
+  categories(root: $root, levels: $levels, includeHidden: $includeHidden) {
+    ...HomeCategoryFragment
+    subcategories {
+      ...HomeCategoryFragment
+      subcategories {
+        ...HomeCategoryFragment
+      }
+    }
+  }
+}
+
+fragment HomeCategoryFragment on Category {
+  id
+  name
+  level
+  parentId
+  hasSubcategories
+  primaryRoute {
+    id
+    path
+  }
+}

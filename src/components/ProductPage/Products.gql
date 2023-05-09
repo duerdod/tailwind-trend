@@ -1,0 +1,7 @@
+#import "../CategoryPage/ProductGridFragment.gql"
+
+query Products($articles: [String]) {
+  products(articleNumbers: $articles) {
+    ...ProductGrid
+  }
+}

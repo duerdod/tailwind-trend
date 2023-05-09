@@ -1,0 +1,15 @@
+#import "./CategoryPage/CategoryPageFragment.gql"
+
+query CategoryPreview(
+  $id: Int!
+  $first: Paging = 16
+  $offset: Int = 0
+  $filters: FilterInput
+  $orderBy: ProductOrderOptions
+  $orderByDirection: SortDirection
+) {
+  category(id: $id) {
+    id
+    ...CategoryPage
+  }
+}

@@ -1,0 +1,3 @@
+include:
+  project: 'jetshop/flight-ci'
+  file: 'pipelines/pipeline-kaniko.yaml'

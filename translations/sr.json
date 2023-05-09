@@ -1,0 +1,464 @@
+{
+  "about_70c18bba": {
+    "message": "O nama"
+  },
+  "add_to_cart_fe03d709": {
+    "message": "Dodaj u korpu"
+  },
+  "added_to_bag_4be2af1": {
+    "message": "Dodato u torbu"
+  },
+  "address_e7cb7f63": {
+    "message": "Adresa"
+  },
+  "an_error_occured_please_try_again_9ee6abca": {
+    "message": "Dogodila se greška. Molimo pokušajte ponovo!"
+  },
+  "an_error_occurred_details_e4aea7ad": {
+    "message": "Dogodila se greška. Detalji:"
+  },
+  "apply_781a2546": {
+    "message": "Primeni"
+  },
+  "are_you_sure_26795d3c": {
+    "message": "Jeste li sigurni?"
+  },
+  "billingaddress_countrycode_97f1bc8e": {
+    "message": "billingAddress.countryCode"
+  },
+  "cancel_caeb1e68": {
+    "message": "Odustani"
+  },
+  "cart_4f6dbcaa": {
+    "message": "Korpa"
+  },
+  "cart_total_c0110f50": {
+    "message": "Korpa ukupno"
+  },
+  "change_password_20192c50": {
+    "message": "Promeni lozinku"
+  },
+  "change_password_d96f4e06": {
+    "message": "Promeni lozinku"
+  },
+  "check_out_fcf51117": {
+    "message": "Izlaz"
+  },
+  "clear_all_filters_40e65e3b": {
+    "message": "Poništi sve filtere"
+  },
+  "clear_filter_5b3a182d": {
+    "message": "Poništi filter"
+  },
+  "close_d634289d": {
+    "message": "Zatvori"
+  },
+  "contact_a6e7f6da": {
+    "message": "Kontakt"
+  },
+  "count_plural_0_one_1_item_other_count_items_e48de617": {
+    "message": "{ count, plural,  =0 {}  one {1 stavka}  other {{ count } stavke}  }"
+  },
+  "country_b9f6d984": {
+    "message": "Zemlja"
+  },
+  "create_profile_33fafbf1": {
+    "message": "Napravi profil"
+  },
+  "create_profile_fc47c26d": {
+    "message": "Napravi profil"
+  },
+  "currency_d6b3d5f6": {
+    "message": "Valuta"
+  },
+  "delete_account_4e52440b": {
+    "message": "Obriši nalog"
+  },
+  "delete_account_81ef7d97": {
+    "message": "Obriši nalog"
+  },
+  "delivery_2a07e73e": {
+    "message": "Dostava:"
+  },
+  "delivery_8864b1d9": {
+    "message": "Dostava"
+  },
+  "delivery_address_872728d": {
+    "message": "Adresa za dostavu"
+  },
+  "directions_eef85bfe": {
+    "message": "Uputstva"
+  },
+  "discounts_dfde4231": {
+    "message": "Popusti"
+  },
+  "distance_a377c748": {
+    "message": "Razdaljina"
+  },
+  "e_mail_address_11245d70": {
+    "message": "E-mail adresa"
+  },
+  "email_address_6e0443a5": {
+    "message": "E-mail adresa"
+  },
+  "email_password_fe282e30": {
+    "message": "E-mail i lozinka"
+  },
+  "enter_email_address_25b6381d": {
+    "message": "Unesi e-mail adresu"
+  },
+  "express_1_2_working_days_5b7007b": {
+    "message": "Ekspres 1-2 radna dana"
+  },
+  "failed_adding_to_bag_6911bfca": {
+    "message": "Greška pri dodavanju u torbu"
+  },
+  "filter_e3398407": {
+    "message": "Filter"
+  },
+  "find_store_2d93488b": {
+    "message": "Pronađi radnju"
+  },
+  "find_store_ec52678f": {
+    "message": "Pronađi radnju"
+  },
+  "find_the_closest_store_using_your_location_696c8e5a": {
+    "message": "Pronađi najbližu radnju koristeći svoju lokaciju"
+  },
+  "forgot_password_69eea15b": {
+    "message": "Zaboravljena lozinka"
+  },
+  "free_for_your_order_34aba239": {
+    "message": "Slobodna za tvoju narudžbinu"
+  },
+  "free_shipping_and_return_355b42d1": {
+    "message": "Besplatna dostava i povraćaj"
+  },
+  "hi_firstname_lastname_bc7684c1": {
+    "message": "Zdravo, { firstName } { lastName }"
+  },
+  "hold_on_a_moment_5a9f3c1d": {
+    "message": "Sačekaj momenat..."
+  },
+  "hold_on_a_moment_a3f09a64": {
+    "message": "Sačekaj momenat..."
+  },
+  "homepage_4b84763d": {
+    "message": "Početna stranica"
+  },
+  "i_don_t_want_newsletters_a1a3e929": {
+    "message": "Ne želim biltene"
+  },
+  "i_understand_please_delete_my_account_5f49bf66": {
+    "message": "Razumem, obriši moj nalog"
+  },
+  "i_want_newsletters_58c52364": {
+    "message": "Želim biltene"
+  },
+  "included_in_campaign_46a7230b": {
+    "message": "Uključeno u kampanju:"
+  },
+  "included_in_package_5d7f4d3d": {
+    "message": "Uključeno u paket:"
+  },
+  "km_km_24f9536d": {
+    "message": "{ km } km"
+  },
+  "language_6b3e2c7c": {
+    "message": "Jezik"
+  },
+  "link_7262adec": {
+    "message": "Link"
+  },
+  "loading_more_data_e8df9877": {
+    "message": "Učitavanje dodatnih podataka..."
+  },
+  "loading_page_currentpage_2c9871c1": {
+    "message": "Učitavanje stranice { currentPage }…"
+  },
+  "loading_search_results_for_term_23278c26": {
+    "message": "Učitavanje rezultata pretrage za { term }…"
+  },
+  "log_in_c9e240ef": {
+    "message": "Uloguj se"
+  },
+  "log_out_379ba28a": {
+    "message": "Odjavi se"
+  },
+  "look_up_my_info_6436db80": {
+    "message": "Potraži moje informacije"
+  },
+  "m_m_6aa9a961": {
+    "message": "{ m } m"
+  },
+  "menu_39cb0e8e": {
+    "message": "Meni"
+  },
+  "my_orders_40e3ddbe": {
+    "message": "Moje porudžbine"
+  },
+  "my_orders_474fd888": {
+    "message": "Moje porudžbine"
+  },
+  "my_pages_c8e29a68": {
+    "message": "Moje stranice"
+  },
+  "my_profile_d97eb90d": {
+    "message": "Moj profil"
+  },
+  "n_a_d5d5a207": {
+    "message": "n/a"
+  },
+  "name_1aed4a1b": {
+    "message": "Ime"
+  },
+  "new_password_again_fa83f67e": {
+    "message": "Nova lozinka ponovo"
+  },
+  "new_password_eb44a9a4": {
+    "message": "Nova lozinka"
+  },
+  "newsletters_a04708fd": {
+    "message": "Bilteni"
+  },
+  "no_items_in_cart_cf9df6d4": {
+    "message": "Nema predmeta u korpi."
+  },
+  "no_orders_found_ed613bce": {
+    "message": "Nisu pronađene porudžbine"
+  },
+  "no_results_for_term_7528ef47": {
+    "message": "Nema rezultata za <Term />"
+  },
+  "note_if_you_were_directed_here_via_a_link_we_are_g_47b83052": {
+    "message": "NAPOMENA! Ako ste ovde upućeni preko linka, bili bismo zahvalni ukoliko biste nas obavestili koji je link u pitanju, kako bismo rešili problem."
+  },
+  "notify_me_when_back_in_stock_7f40774": {
+    "message": "Obavesti me kada ponovo bude na stanju"
+  },
+  "of_which_vat_9b4c95d5": {
+    "message": "od cega je iznos PDV-a"
+  },
+  "ok_c47544a2": {
+    "message": "OK"
+  },
+  "old_password_c735e1a5": {
+    "message": "Stara lozinka"
+  },
+  "opening_hours_77ceb9c8": {
+    "message": "Radno vreme"
+  },
+  "or_scroll_down_to_fill_in_the_rest_manually_d9502b2f": {
+    "message": "Ili nastavi dole kako bi ručno popunili ostatak"
+  },
+  "order_date_9b7fe95f": {
+    "message": "Datum porudžbine"
+  },
+  "order_number_fe66c52c": {
+    "message": "Broj porudžbine"
+  },
+  "order_value_4a159b2c": {
+    "message": "Vrednost porudžbine"
+  },
+  "package_discount_66e25640": {
+    "message": "Popust na paket"
+  },
+  "payment_method_84a444f1": {
+    "message": "Način plaćanja"
+  },
+  "phone_70d50cdb": {
+    "message": "Telefon:"
+  },
+  "please_enter_your_new_password_f261c25f": {
+    "message": "Molimo, unesite novu lozinku"
+  },
+  "price_ffd8b80": {
+    "message": "Cena"
+  },
+  "product_39cf144f": {
+    "message": "Proizvod"
+  },
+  "product_description_3edb94a9": {
+    "message": "Opis proizvoda"
+  },
+  "product_matches_17fac93": {
+    "message": "Podudaranje proizvoda"
+  },
+  "product_no_longer_available_b6ad7087": {
+    "message": "Proizvod više nije dostupan."
+  },
+  "quantity_20164bff": {
+    "message": "Količina"
+  },
+  "recent_orders_1068c934": {
+    "message": "Nedavne porudžbine"
+  },
+  "related_products_8fcc0081": {
+    "message": "Slični proizvodi"
+  },
+  "required_da89d67d": {
+    "message": "(Obavezno)"
+  },
+  "reset_95a81614": {
+    "message": "Poništi"
+  },
+  "save_11a80ec3": {
+    "message": "Sačuvaj"
+  },
+  "search_280d00bd": {
+    "message": "Pronađi"
+  },
+  "select_your_country_9ee72cf7": {
+    "message": "Odaberi zemlju"
+  },
+  "selected_categories_863af37b": {
+    "message": "Odaberi kategoriju"
+  },
+  "selected_products_1bd5b165": {
+    "message": "Odaberi proizvode"
+  },
+  "share_location_6d9a73cf": {
+    "message": "Deli lokaciju"
+  },
+  "shop_by_category_b9ba84ab": {
+    "message": "Kupuj po kategorijama"
+  },
+  "show_all_orders_3c6119ee": {
+    "message": "Prikaži sve porudžbine"
+  },
+  "show_details_d6f1ca0c": {
+    "message": "Prikaži detalje"
+  },
+  "show_less_574a758b": {
+    "message": "Prikaži manje"
+  },
+  "social_security_number_7c8fc49b": {
+    "message": "Matični broj"
+  },
+  "something_went_wrong_please_check_your_email_and_t_9dd179bd": {
+    "message": "Nešto nije u redu. Molimo, proverite e-mail i pokušajte ponovo."
+  },
+  "something_went_wrong_when_retrieving_order_id_plea_994c3a5": {
+    "message": "Nešto nije u redu sa preuzimanjem porudžbine { id }. Molimo, pokušajte ponovo kasnije."
+  },
+  "sort_by_72dbba9c": {
+    "message": "Sortiraj po"
+  },
+  "specifications_ee3fcf8e": {
+    "message": "Specifikacije"
+  },
+  "spend_price_more_to_qualify_for_free_shipping_76fdedab": {
+    "message": "Potrošite { price } više da biste se kvalifikovali za besplatnu dostavu!"
+  },
+  "standard_2_5_working_days_d4ac0406": {
+    "message": "Standardno 2-5 radnih dana"
+  },
+  "submit_a3cc6859": {
+    "message": "Podnesi"
+  },
+  "submitting_75cdf9ab": {
+    "message": "Podnošenje..."
+  },
+  "the_address_provided_is_incorrect_please_check_the_1b76d82f": {
+    "message": "Navedena adresa nije ispravna. Molimo, proverite pravopis i pokušajte ponovo."
+  },
+  "this_could_be_due_to_the_following_a40f2a5": {
+    "message": "Ovo može biti rezultat sledećeg:"
+  },
+  "this_is_where_you_find_our_stores_get_informed_abo_19de699f": {
+    "message": "Ovde možete pronaći naše radnje. Informišite se o stanju u lokalnoj radnji ovde. Pronađite i odaberite radnju najbližu vama."
+  },
+  "to_checkout_63f3b715": {
+    "message": "Na kasu"
+  },
+  "total_71a4807": {
+    "message": "Ukupno"
+  },
+  "total_excl_vat_ae61fef3": {
+    "message": "Ukupno bez PDV-a"
+  },
+  "total_incl_vat_f281354b": {
+    "message": "Ukupno sa PDV-om"
+  },
+  "total_plural_1_item_other_items_1c76aa07": {
+    "message": "{ total, plural,  =1 {# stavka}  other {# stavke}  }"
+  },
+  "total_plural_1_item_other_items_matching_for_term_22b0ede7": {
+    "message": "{ total, plural,  =1 {# stavka}  other {# stavke}  } odgovarajući za \"{ term }\""
+  },
+  "total_price_1c872c0a": {
+    "message": "Ukupna cena"
+  },
+  "totalproducts_products_b80002da": {
+    "message": "{ totalProducts } Proizvodi"
+  },
+  "track_delivery_6339cf6f": {
+    "message": "Prati dostavu:"
+  },
+  "trend_31ce9aff": {
+    "message": "Trend"
+  },
+  "update_4d8ee62": {
+    "message": "Ažuriranje"
+  },
+  "update_information_95c5f1b4": {
+    "message": "Ažuriranje podataka"
+  },
+  "vat_39a079c0": {
+    "message": "plus PDV"
+  },
+  "view_all_in_category_531e2499": {
+    "message": "Prikaži sve u { category }"
+  },
+  "view_password_ec63cb11": {
+    "message": "Vidi lozinku"
+  },
+  "welcome_to_our_online_store_enter_your_social_secu_dbc50460": {
+    "message": "Dobrodošli u našu internet prodavnicu! Unesite matični broj i pokušaćemo da pronađemo tražene informacije. Takođe ih možete uneti ručno."
+  },
+  "welcome_to_our_online_store_we_need_to_create_a_pr_90e8e9ce": {
+    "message": "Dobrodošli u našu internet prodavnicu! Moramo kreirati profil pre nego što nastavite."
+  },
+  "what_is_your_email_address_631180c6": {
+    "message": "Koja je vaša e-mail adresa?"
+  },
+  "when_your_account_is_deleted_all_order_history_wil_71260053": {
+    "message": "Prilikom brisanja profila, celokupna istorija porudžbina će biti obrisana."
+  },
+  "whoops_54a74974": {
+    "message": "Ups"
+  },
+  "you_are_now_subscribed_71495f41": {
+    "message": "Sada ste pretplaćeni."
+  },
+  "you_are_now_subscribed_7695dd6b": {
+    "message": "Sada ste pretplaćeni"
+  },
+  "you_are_trying_to_use_an_old_address_that_no_longe_1d4e8dff": {
+    "message": "Pokušavate da iskoristite staru adresu koja više ne postoji ili je promenjena."
+  },
+  "you_can_now_login_with_your_new_password_99ae2294": {
+    "message": "Sada se možete { login } koristeći novu lozinku"
+  },
+  "you_have_already_subscribed_to_the_newsletter_8a2c3d54": {
+    "message": "Već ste se pretplatili na bilten!"
+  },
+  "you_have_attempted_to_download_a_page_that_does_no_13db419e": {
+    "message": "Pokušali ste da skinete stranicu koja ne postoji na Jetshop serveru."
+  },
+  "you_may_have_used_an_old_bookmark_if_you_are_sure__1daf83b8": {
+    "message": "Možda ste koristili stari obeleživač. Ako ste sigurni da ste koristili ispravnu adresu na sajtu, problem je možda uzrokovan privremenim prekidom servisa. Molimo, pokušajte ponovo kasnije."
+  },
+  "your_password_has_been_reset_53d7f84e": {
+    "message": "Lozinka je resetovana."
+  },
+  "your_password_has_been_successfully_updated_cacea448": {
+    "message": "Lozinka je uspešno ažurirana."
+  },
+  "your_password_reset_request_has_been_submitted_che_104311b6": {
+    "message": "Zahtev za resetovanje lozinke je podnesen. Proverite e-mail sa linkom za resetovanje lozinke."
+  },
+  "your_preferences_have_been_updated_6729d3f8": {
+    "message": "Podešavanja su ažurirana."
+  }
+}

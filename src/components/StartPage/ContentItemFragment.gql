@@ -1,0 +1,30 @@
+#import "./StartPageProductGridFragment.gql"
+#import "./StartPageCategoryGridFragment.gql"
+
+fragment ContentItemFragment on ContentItem {
+  type
+  properties(getImageAsImageValue: true) {
+    name
+    type
+    valueType
+    value {
+      ... on ImageValue {
+        value
+        focalPointX
+        focalPointY
+      }
+      ... on Product {
+        ...StartPageProductGrid
+      }
+      ... on Category {
+        ...StartPageCategoryGrid
+      }
+      ... on StringValue {
+        value
+      }
+      ... on BoolValue {
+        value
+      }
+    }
+  }
+}

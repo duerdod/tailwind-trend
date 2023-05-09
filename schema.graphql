@@ -1,0 +1,2457 @@
+input ActivateExternalCustomerByIdInput {
+  externalCustomerId: String!
+}
+
+type ActivateExternalCustomerByIdResult {
+  success: Boolean!
+  token: Token
+}
+
+input ActivateExternalCustomerByTokenInput {
+  externalCustomerToken: String!
+}
+
+type ActivateExternalCustomerByTokenResult {
+  success: Boolean!
+  customer: ExternalCustomer
+}
+
+enum ActivationStatusSource {
+  PREEXISTING_CUSTOMER
+  ACTIVATION_REQUIRED
+  ADDITIONAL_USER_DATA_REQUIRED
+  NON_EXISTING_CUSTOMER
+  COUNTRY_NOT_VALID
+}
+
+input AddMultipleToCartInput {
+  articleNumber: String!
+
+  """Default value is 1."""
+  quantity: Int
+  comments: [InputComment]
+  configurationIds: [ID]
+  preOrderDate: DateTime
+}
+
+input AddToCartInput {
+  """Not specifying cart id will create new cart."""
+  cartId: String
+  articleNumber: String!
+
+  """Default value is 1."""
+  quantity: Int
+  comments: [InputComment]
+  configurationIds: [ID]
+  preOrderDate: DateTime
+}
+
+input AddToCustomerProductListInput {
+  articleNumber: String!
+  quantity: Int = 1
+  description: String
+}
+
+type AlternateRoute {
+  channelId: Int
+  culture: String
+  route: String
+  alias: String
+}
+
+type BooleanFilter implements Filter {
+  default: Boolean
+  id: String!
+  name: String!
+}
+
+input BooleanFilterInput {
+  id: String!
+
+  """null is equivalent to excluding the filter."""
+  value: Boolean
+}
+
+type BoolValue {
+  value: Boolean
+}
+
+type BusinessCustomer implements Customer {
+  organizationId: String @deprecated(reason: "Use `organizationNumber` instead.")
+  organizationNumber: String
+  id: ID!
+  memberId: String
+  email: String
+
+  """Customer id for external system"""
+  externalId: String
+  subscribedToNewsletter: Boolean @deprecated(reason: "Use communication.acceptsEmail")
+  language: Language
+  billingAddress: CustomerAddress
+  deliveryAddresses: [CustomerAddress]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  orderHeaders(
+    """Will fetch all if this is set to 0"""
+    first: Int = 0
+    offset: Int = 0
+  ): OrderHeaderResult
+  communication: CustomerCommunication
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  store: Store
+  dynamicContent: String
+  externalAttributes: [CustomerExternalAttribute]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  googleUserId: String
+}
+
+type Cart {
+  id: String
+  totalQuantity: Int
+  productTotal: Price
+  productPreviousTotal: Price
+  discountTotal: Price
+  aggregatedDiscounts: [Discount]
+  externalCheckoutUrl: Uri
+  items: [CartItem]
+}
+
+type CartItem {
+  id: String!
+  quantity: Int!
+  articleNumber: String!
+  images: [ProductImage] @deprecated(reason: "Please use images on product instead.")
+  subHeading: String
+  variant: ProductVariant
+  variantOptionNames: [String]
+  customerComments: [CartItemComment]
+  discounts: [Discount]
+
+  """Total price, including discounts"""
+  total: Price!
+
+  """Total price, excluding discounts"""
+  previousTotal: Price!
+
+  """Unit price, including discounts"""
+  unitPrice: Price!
+
+  """Unit price, excluding discounts"""
+  previousUnitPrice: Price!
+
+  """Discount total"""
+  discount: Price
+  product: Product
+  configurations: [SelectedProductConfiguration]
+  preOrderDate: DateTime
+}
+
+type CartItemComment {
+  name: String
+  value: String
+}
+
+type CartMutation {
+  cart: Cart
+}
+
+type Category implements Document {
+  id: Int!
+  parentId: Int @deprecated(reason: "Use parent.id instead")
+  name: String!
+  level: Int!
+
+  """The time interval of the campaign/category"""
+  activeDateSpan: CategoryActiveDateSpan
+
+  """
+  Whether or not this category and all its children are considered hidden
+  """
+  isHidden: Boolean! @deprecated(reason: "This field should no longer be used and will always be false.")
+
+  """When empty will display the value of the name field"""
+  mainHeader: String
+  content: String
+  externalId: String
+  externalDiscountId: String
+  images: [CategoryImage]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  products(first: Paging = 12, offset: Int = 0, orderBy: ProductOrderOptions, orderByDirection: SortDirection, filters: FilterInput): PagedResult
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  head: HtmlHead
+
+  """
+  The primary route of this Category. NB: Carries a performance cost, as asking
+  for this will result in a separate API call in the backend.
+  """
+  primaryRoute: Route
+  breadcrumbText: String
+  hasSubcategories: Boolean
+  subcategories: [Category]
+  parentCategory: Category @deprecated(reason: "Use parent instead")
+  parent: Category
+
+  """
+  A dynamic category has no fixed products; products are dynamically included
+  based on filters defined on the category in Admin. N.B. Products found on a
+  dynamic category has no route that includes said category, instead
+  product.primaryRoute will have to be used.
+  """
+  isDynamic: Boolean!
+
+  """
+  The category's dynamic filtersNB: Carries a performance cost, as asking for
+  this will result in a separate API call in the backend.
+  """
+  dynamicFiltering: [CategoryDynamicFilter]
+
+  """
+  Get content data set via the Content Editor. NB: Carries a performance cost,
+  as asking for this will result in a separate API call in the backend.
+  """
+  data: Content
+
+  """
+  When set to false, the category will be excluded from sitemap. The frontend
+  implementation should use this value to set meta tags to exclude the category
+  from being indexed by crawlers. Defaults to true.
+  """
+  allowWebIndexing: Boolean
+}
+
+type CategoryActiveDateSpan {
+  startDate: DateTime
+  endDate: DateTime
+}
+
+type CategoryAutoCompleteResult {
+  result: [Category]
+}
+
+type CategoryDynamicFilter {
+  type: String
+  value: CategoryDynamicFilterValue
+}
+
+union CategoryDynamicFilterValue = StringValue | ListStringValue | BoolValue
+
+type CategoryImage {
+  width: Int
+  height: Int
+  url: Uri
+}
+
+type CategorySearchResult {
+  result: [Category]
+  totalResults: Int
+}
+
+input ChangeByOneItemQuantityInput {
+  cartId: String!
+  itemId: String!
+}
+
+"""
+Every channel has its own URL and can have different design, selection of
+products, prices and own settings for example shipping and payment.
+"""
+type Channel {
+  id: Int!
+  name: String
+  displayName: String
+  groupName: String
+  isDefault: Boolean
+  url: Uri
+  settings: ChannelSettings
+  languages: [Language]
+  defaultLanguage: Language
+  currencies: [Currency]
+  defaultCurrency: Currency
+  countries: [Country]
+
+  """
+  The root url of images, this can be used to build image urls if needed.
+  """
+  imageUrl: String
+
+  """This channel requires a user to be authorized."""
+  requiresAuth: Boolean
+}
+
+type ChannelSettings {
+  pricesIncVat: Boolean
+  countrySettings: [CountrySettings]
+  tracking: Tracking
+  nostoAccountId: String
+}
+
+type Consent {
+  id: ID!
+  name: String
+  title: String
+  text: String
+  linkText: String
+  page: Page
+  isMandatory: Boolean
+}
+
+type Content {
+  name: String
+  id: ID!
+  items: [ContentItem]
+  tags: [String]
+}
+
+type ContentItem {
+  name: String
+  type: String!
+  properties(
+    """
+    If true image content property will return `ImageValue` instead of a string
+    """
+    getImageAsImageValue: Boolean = false
+  ): [ContentItemProperty]
+  children: [ContentItem]
+}
+
+type ContentItemProperty {
+  name: String!
+  type: String!
+  valueType: ContentPropertyValueType
+  value: ContentItemPropertyValue
+}
+
+union ContentItemPropertyValue = StringValue | ImageValue | BoolValue | Product | Category
+
+enum ContentPropertyValueType {
+  OBJECT
+  SCALAR
+}
+
+type Coordinates {
+  latitude: Decimal!
+  longitude: Decimal!
+}
+
+type Country {
+  id: ID!
+  code: String
+  name: String
+  isDefault: Boolean
+}
+
+type CountrySettings {
+  countryCode: String!
+  paymentTypes: [paymentType]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  privateCustomerFields: [CustomerField]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  businessCustomerFields: [CustomerField]
+  shipping: Shipping
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  
+  This will use localization, and will work well when requesting one `channel`,
+  but may give unpredictable results when getting multiple channels via `channels`
+  """
+  privateCustomerConsents: [Consent]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  
+  This will use localization, and will work well when requesting one `channel`,
+  but may give unpredictable results when getting multiple channels via `channels`
+  """
+  businessCustomerConsents: [Consent]
+}
+
+input CreateCustomerProductListInput {
+  """The type of list created. Omit this and the default type will be used."""
+  typeId: Int
+  name: String!
+  description: String
+}
+
+type Currency {
+  id: String!
+  name: String
+  isDefault: Boolean
+  format: CurrencyFormat
+}
+
+type CurrencyFormat {
+  culture: String! @deprecated(reason: "For currency formatting to a specific culture, instead use whichever culture makes sense contextually.")
+  code: String!
+  decimals: Int!
+}
+
+type CustomBoolField implements CustomField {
+  value: Boolean!
+  type: ProductCustomFieldType
+  key: String
+  title: String
+}
+
+interface Customer {
+  id: ID!
+  memberId: String
+  email: String
+
+  """Customer id for external system"""
+  externalId: String
+  subscribedToNewsletter: Boolean @deprecated(reason: "Use communication.acceptsEmail")
+  language: Language
+  billingAddress: CustomerAddress
+  deliveryAddresses: [CustomerAddress]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  orderHeaders(
+    """Will fetch all if this is set to 0"""
+    first: Int = 0
+    offset: Int = 0
+  ): OrderHeaderResult
+  communication: CustomerCommunication
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  store: Store
+  dynamicContent: String
+  externalAttributes: [CustomerExternalAttribute]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  googleUserId: String
+}
+
+type CustomerAddress {
+  id: Int
+  addressName: String
+  firstName: String
+  lastName: String
+  companyAtt: String
+  company: String
+  department: String
+  streetName: String
+  co: String
+  postalCode: String
+  city: String
+  municipality: String
+  region: String
+  country: Country
+  phone: String
+  mobilePhone: String
+}
+
+type CustomerCommunication {
+  acceptsEmail: Boolean
+  acceptsPostal: Boolean
+  acceptsSms: Boolean
+}
+
+type CustomerExternalAttribute {
+  name: String!
+  value: String!
+}
+
+type CustomerField {
+  id: ID!
+  required: Boolean!
+  pattern: String
+  fields: [CustomerField]
+  name: ID!
+}
+
+type CustomerLoyalty {
+  bonusChecks: [CustomerLoyaltyBonusCheck]
+  pointCards: [CustomerLoyaltyPointCard]
+  discounts(includeRedeemed: Boolean! = false): [CustomerLoyaltyDiscount]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  bonusPoints: CustomerLoyaltyBonusPoints
+}
+
+type CustomerLoyaltyBonusCheck {
+  externalId: String
+  name: String
+  startDate: DateTime
+  endDate: DateTime
+  redeemed: Boolean
+  redeemedOn: DateTime
+
+  """
+  For display purposes, not guaranteed to match up with a currency on the channel.
+  """
+  currency: String
+  value: Decimal
+}
+
+type CustomerLoyaltyBonusPoints {
+  points: Int
+}
+
+type CustomerLoyaltyDiscount {
+  name: String
+  description: String
+  startDate: DateTime
+  endDate: DateTime
+  externalData: CustomerLoyaltyDiscountOfferExternalData
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  category: Category
+  isActivatedByDiscountCode: Boolean!
+  discountCode: String
+}
+
+type CustomerLoyaltyDiscountOfferExternalData {
+  name: String
+  description: String
+  startDate: DateTime
+  endDate: DateTime
+  externalId: String
+  externalReference: String
+  heading: String
+  redeemed: Boolean
+  redeemedOn: DateTime
+  imageUrl: String
+  link: String
+}
+
+type CustomerLoyaltyPointCard {
+  externalId: String
+  name: String
+  lastStampTime: DateTime
+  numberOfSlots: Int
+  numberOfSlotsRemaining: Int
+  isActive: Boolean
+}
+
+type CustomerProductList {
+  id: ID!
+  shareToken: String
+  name: String
+  description: String
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  type: CustomerProductListType
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  items: [CustomerProductListItem]
+}
+
+type CustomerProductListItem {
+  description: String
+  quantity: Int
+  variant: ProductVariant
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  product: Product
+}
+
+type CustomerProductListResult {
+  success: Boolean
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  customerProductList: CustomerProductList
+}
+
+type CustomerProductListType {
+  id: ID!
+  name: String
+}
+
+enum CustomerType {
+  PRIVATE
+  COMPANY
+}
+
+"""
+Fields that are required to have a value is determined by CustomerFields found in CountrySettings
+"""
+input CustomerUpdateBillingAddressInput {
+  mobilePhone: String
+  phone: String
+  region: String
+  countryCode: String
+  city: String
+  postalCode: String
+  streetName: String
+  co: String
+  department: String
+  municipality: String
+  companyAtt: String
+  company: String
+  lastName: String
+  firstName: String
+  addressName: String
+}
+
+input CustomerUpdateConsentInput {
+  id: String
+  value: Boolean
+}
+
+input CustomerUpdateDeliveryAddressInput {
+  """If this field is left empty, a new DeliveryAddress will be created."""
+  id: Int
+  mobilePhone: String
+  phone: String
+  region: String
+  countryCode: String
+  city: String
+  postalCode: String
+  streetName: String
+  co: String
+  department: String
+  municipality: String
+  companyAtt: String
+  company: String
+  lastName: String
+  firstName: String
+  addressName: String
+}
+
+input CustomerUpdateExternalAttribute {
+  name: String!
+  value: String!
+}
+
+input CustomerUpdateInput {
+  pid: String
+  organizationNumber: String
+  billingAddress: CustomerUpdateBillingAddressInput!
+  deliveryAddresses: [CustomerUpdateDeliveryAddressInput]
+  preferences: CustomerUpdatePreferenceInput
+  consents: [CustomerUpdateConsentInput]
+  externalAttributes: [CustomerUpdateExternalAttribute]
+  dynamicContent: String
+}
+
+input CustomerUpdatePreferenceInput {
+  type: CustomerUpdatePreferencesCommunicationInput
+  storeLocationId: Int
+}
+
+input CustomerUpdatePreferencesCommunicationInput {
+  acceptsEmail: Boolean
+  acceptsPostal: Boolean
+  acceptsSms: Boolean
+  culture: String
+}
+
+"""
+Responds with a bool value whether the update has been successful or not
+"""
+type CustomerUpdateResponse {
+  success: Boolean!
+}
+
+interface CustomField {
+  type: ProductCustomFieldType
+  key: String
+  title: String
+}
+
+type CustomHtmlField implements CustomField {
+  value: String!
+  type: ProductCustomFieldType
+  key: String
+  title: String
+}
+
+type CustomItem {
+  id: Int!
+  name: String!
+  content: String
+  linkUrl: Uri
+  image: Image
+}
+
+type CustomListField implements CustomField {
+  value: [String]
+  type: ProductCustomFieldType
+  key: String
+  title: String
+}
+
+type CustomMultiLevelListField implements CustomField {
+  items: [CustomMultiLevelListFieldItem]
+  type: ProductCustomFieldType
+  key: String
+  title: String
+}
+
+type CustomMultiLevelListFieldItem {
+  id: Int!
+  parentId: Int
+  title: String!
+  value: String!
+}
+
+type CustomStringField implements CustomField {
+  value: String!
+  type: ProductCustomFieldType
+  key: String
+  title: String
+}
+
+"""
+The `DateTime` scalar type represents a date and time. `DateTime` expects
+timestamps to be formatted in accordance with the
+[ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) standard.
+"""
+scalar DateTime
+
+scalar Decimal
+
+type DeleteCustomerProductListResult {
+  success: Boolean
+}
+
+type Discount {
+  externalId: ID
+  name: String
+  value: Price
+  type: DiscountType
+  description: String
+  campaign: Category
+}
+
+enum DiscountType {
+  """No discount defined"""
+  UNDEFINED
+
+  """Discount drops price of the order total by defined amount"""
+  FIXED_AMOUNT
+
+  """Discount drops price of the product by X %"""
+  PERCENT
+
+  """
+  Discount will get the amount of the cheapest product and use this as a discount
+  """
+  ITEMS
+
+  """
+  Discount drops total price of the product if there is at least X of them in cart
+  """
+  ITEMS_PERCENTAGE_LIMIT
+
+  """Only a collection of products"""
+  ONLY_USE_LANDING_PAGE
+
+  """Discount drops price of the least expensive product in cart"""
+  PERCENT_ON_LEAST_EXPENSIVE_ITEM
+
+  """Discount drops price of the most expensive product in cart"""
+  PERCENT_ON_MOST_EXPENSIVE_ITEM
+
+  """Discount allows to get a free gift when the product is added"""
+  FREE_PRODUCT
+
+  """Discount allows to get free shipping option for the product"""
+  FREE_SHIPPING
+
+  """
+  Discount drops price for the package when all products in the package is added to cart
+  """
+  PACKAGE_DISCOUNT
+
+  """Discount on the order total from a voucher"""
+  BONUS_VOUCHER_DISCOUNT
+
+  """
+  Discount allows to buy amount of X of the article, but pay only for amount of Y
+  """
+  BUY_X_ARTICLES_PAY_Y_AMOUNT
+}
+
+interface Document {
+  head: HtmlHead
+  primaryRoute: Route
+  breadcrumbText: String
+}
+
+type ExternalCustomer {
+  externalId: String
+  email: MaskedProperty
+  firstName: MaskedProperty
+  lastName: MaskedProperty
+  co: MaskedProperty
+  address: MaskedProperty
+  city: MaskedProperty
+  postalCode: MaskedProperty
+  country: MaskedProperty
+  countryCode: String
+  phoneNumber: MaskedProperty
+  mobilePhoneNumber: MaskedProperty
+  pid: MaskedProperty
+}
+
+"""
+The activation status has 4 states; 
+PREEXISTING_CUSTOMER: No customer info will be returned and the customer is advised to login to the preexisting account.
+ACTIVATION_REQUIRED: The customer account needs to be activated. Email (masked),
+FirstName (masked) and externalId will be the only fields set on `customer`.
+ADDITIONAL_USER_DATA_REQUIRED: Additional data needed to register the customer,
+the existing customer info will be available with masking on customer.
+NON_EXISTING_CUSTOMER: Customer does not exist in any system and will have to do a sign up.
+COUNTRY_NOT_VALID: The customer account may not be activated on this channel as
+it's missing the customer country. Email (masked), FirstName (masked),
+externalId and countryCode will be the only fields set on `customer`.
+
+
+"""
+type ExternalCustomerResult {
+  status: ActivationStatusSource
+  customer: ExternalCustomer
+}
+
+type ExternalOrderData {
+  name: String!
+  value: String!
+}
+
+type FacebookConversionsApi {
+  accessToken: String
+  pixelId: String
+}
+
+interface Filter {
+  id: String!
+  name: String!
+}
+
+input FilterInput {
+  listFilters: [ListFilterInput]
+  rangeFilters: [RangeFilterInput]
+  booleanFilters: [BooleanFilterInput]
+  multiListFilters: [MultiListFilterInput]
+}
+
+type FreeShippingLimit {
+  incVat: Decimal
+  exVat: Decimal
+}
+
+type GoogleAnalytics {
+  trackingId: String
+  useArticleNumberAsId: Boolean
+}
+
+type GoogleAnalytics4 {
+  trackingId: String
+  useArticleNumberAsId: Boolean
+}
+
+type GoogleTagManager {
+  containerId: String
+  useGa4Events: Boolean
+}
+
+type HtmlHead {
+  title: String
+  metaTags: [HtmlMetaTag]
+}
+
+type HtmlMetaTag {
+  name: String
+  content: String
+}
+
+type Image {
+  title: String
+  url: Uri
+  width: Int
+  height: Int
+}
+
+type ImageValue {
+  value: String
+  focalPointX: Int
+  focalPointY: Int
+}
+
+input InputComment {
+  name: String!
+  value: String
+}
+
+type Language {
+  id: String!
+  name: String!
+  culture: String!
+  isDefault: Boolean
+}
+
+type Link {
+  target: String
+  link: Uri
+}
+
+type ListFilter implements Filter {
+  items: [ListFilterItem]!
+  id: String!
+  name: String!
+}
+
+input ListFilterInput {
+  id: String!
+  values: [String]
+}
+
+type ListFilterItem {
+  text: String!
+  id: String!
+  value: String!
+  resultCount: Int
+}
+
+type ListStringValue {
+  value: [String]
+}
+
+input LoginExternalCustomerInput {
+  externalCustomerToken: String!
+}
+
+type LoginExternalCustomerResult {
+  token: Token
+}
+
+"""
+The response will contain a authorization token if the login was successful
+"""
+type LoginResponse {
+  token: Token!
+}
+
+type MaskedProperty {
+  masked: String
+  encrypted: String
+}
+
+type MultiListFilter implements Filter {
+  lists: [MultiListFilterList]!
+  id: String!
+  name: String!
+}
+
+input MultiListFilterInput {
+  id: String!
+  values: [String]
+}
+
+type MultiListFilterList {
+  id: String!
+  name: String!
+  items: [ListFilterItem]!
+}
+
+type MultipleContent {
+  notFoundIds: [ID]!
+  content: [Content]!
+}
+
+type Mutation {
+  subscribeToStockNotifications(email: String!, articleNumber: String!): Boolean
+
+  """
+  This mutation's purpose is to subscribe a customer to a newsletter. In order
+  to subscribe a customer a valid email address is required 
+  
+  Responds with a boolean value whether the subscription has been successful or not
+  """
+  subscribeToNewsletter(email: String!): Boolean
+
+  """
+  ## Description
+  Adds items to product list, null id adds items to the default product list.
+  ## Error Codes
+  ### Unauthorized
+  Unauthorized
+  ### AddToProductListFailed
+  Error in underlying API call, more info may be contained in the error message.
+  ### InvalidArticleNumber
+  Article number cannot be empty
+  ### ProductNotFound
+  No match on article number
+  ### MoreThanOneMatchOnArticleNumber
+  Article number matched more than one article
+  
+  """
+  addToCustomerProductList(id: ID, items: [AddToCustomerProductListInput!]!): CustomerProductListResult
+
+  """
+  ## Description
+  Creates a product list for a logged in customer
+  ## Error Codes
+  ### Unauthorized
+  
+  ### UnableToCreateProductList
+  Error in underlying API call, more info may be contained in the error message.
+  
+  """
+  createCustomerProductList(input: CreateCustomerProductListInput!): CustomerProductListResult
+
+  """
+  ## Description
+  Deletes a product list for a logged in customer
+  ## Error Codes
+  ### Unauthorized
+  
+  ### ProductListNotFound
+  Argument `id` did not match any list for this customer.
+  ### UnableToDeleteProductList
+  Error in underlying API call, more info may be contained in the error message.
+  
+  """
+  deleteCustomerProductList(id: ID!): DeleteCustomerProductListResult
+
+  """
+  ## Description
+  Removes an item from a product list for a logged in customer, null id removes item in the default product list.
+  ## Error Codes
+  ### Unauthorized
+  
+  ### ProductListNotFound
+  Argument `id` did not match any list for this customer.
+  ### RemoveFromProductListFailed
+  Error in underlying API call, more info may be contained in the error message.
+  ### ProductNotFound
+  Argument `articleNumbers` did not match any products or variants.
+  ### MoreThanOneMatchOnArticleNumber
+  Argument `articleNumbers` matched more than one product/variant.
+  ### InvalidArticleNumber
+  Argument `articleNumbers` cannot be null or empty.
+  
+  """
+  removeFromCustomerProductList(id: ID, articleNumbers: [String!]): CustomerProductListResult
+
+  """
+  ## Description
+  Updates an item in product list, null id updates item in the default product list.
+  ## Error Codes
+  ### Unauthorized
+  
+  ### ProductListNotFound
+  Argument `id` did not match any list for this customer.
+  ### UnableToUpdateProductListItem
+  Error in underlying API call, more info may be contained in the error message.
+  ### ProductNotFound
+  Argument `articleNumber` did not match any products or variants.
+  ### MoreThanOneMatchOnArticleNumber
+  Argument `articleNumber` matched more than one product/variant.
+  ### InvalidArticleNumber
+  Argument `articleNumber` cannot be null or empty.
+  
+  """
+  updateCustomerProductListItem(input: UpdateCustomerProductListItemInput!): CustomerProductListResult
+
+  """
+  ## Description
+  Updates a product list for a logged in customer
+  ## Error Codes
+  ### Unauthorized
+  
+  ### ProductListNotFound
+  Argument `id` did not match any list for this customer.
+  ### UnableToUpdateProductList
+  Error in underlying API call, more info may be contained in the error message.
+  
+  """
+  updateCustomerProductList(input: UpdateCustomerProductListInput!): CustomerProductListResult
+
+  """
+  Error codes: CustomerNotFound, CustomerAlreadyActivated,
+  UnableToActivateCustomer, UnableToLoginCustomer, InvalidCustomerActivateInput
+  """
+  activateExternalCustomerById(input: ActivateExternalCustomerByIdInput): ActivateExternalCustomerByIdResult
+
+  """
+  Error codes: CustomerNotFound, CustomerAlreadyActivated,
+  UnableToActivateCustomer, UnableToLoginCustomer, InvalidCustomerActivateInput
+  """
+  activateExternalCustomerByToken(input: ActivateExternalCustomerByTokenInput): ActivateExternalCustomerByTokenResult
+
+  """
+  This mutation deletes a customer. An authorization token is needed in the
+  request, in order to be able to delete the customer.
+  """
+  deleteCustomer: Boolean
+  loginExternalCustomer(input: LoginExternalCustomerInput): LoginExternalCustomerResult
+
+  """
+  LoginMutation will log a user in. 
+  One of email, pid, externalId, memberNumber or customerId is required, along with a password. 
+  Returns an authorization token if the login was successful.
+  """
+  login(password: String, email: String, pid: String, externalId: String, memberNumber: String, externalHashId: String, timeStamp: String, customerId: Int): LoginResponse
+
+  """
+  Requires a valid email and returns boolean value if successful, otherwise an error will be thrown
+  """
+  requestPasswordReset(email: String!): RequestPasswordResetResult
+
+  """
+  Requires a valid resetPasswordToken and a new password and if successful will return a authentication token
+  """
+  resetPassword(
+    """A reset password token that is solely used during a password reset"""
+    resetPasswordToken: String!
+    newPassword: String!
+  ): ResetPassword
+
+  """
+  The SignUp-mutation is used for creating a customer.
+  
+  If the sign up is successful the customer may be considered to be logged on and an authentication token will be returned
+  """
+  signUp(input: SignUpInput!): SignUpResponse
+
+  """
+  ## Description
+  This mutation's purpose is to update a existing customer's group using an
+  access code. An authorization token is needed in the request, in order to be
+  able to update the customer.
+  ## Error Codes
+  ### Unauthorized
+  Unauthorized
+  ### UnableToUpdateCustomer
+  Error in underlying API call, more info may be contained in the error message.
+  ### CustomerAlreadyUpdated
+  Customer already in the customer group
+  ### CustomerNotFound
+  No match on customer with access code
+  
+  """
+  updateCustomerGroup(customerGroupAccessCode: String!): UpdateCustomerGroupResult
+
+  """
+  This mutation's purpose is to update a existing customer's information. An
+  authorization token is needed in the request, in order to be able to update the customer.
+  """
+  updateCustomer(input: CustomerUpdateInput!): CustomerUpdateResponse
+
+  """
+  This mutation's purpose is to update a existing customer's price list using an
+  access code. An authorization token is needed in the request, in order to be
+  able to update the customer.
+  """
+  updateCustomerPriceList(priceListAccessCode: String!): UpdateCustomerPriceListResult
+
+  """
+  The updatePassword mutation updates the customers password. Both the old password and a new password is a requirement.
+  """
+  updatePassword(oldPassword: String!, newPassword: String!): UpdatePasswordResult
+
+  """
+  Adds products to the cart where you can add comments to the products and
+  determine their quantities. Replies with the affected cart if a cartId has
+  been presented, otherwise a new cart will be created. 
+  """
+  addMultipleToCart(
+    """Not specifying cart id will create new cart."""
+    cartId: String
+    items: [AddMultipleToCartInput]!
+  ): CartMutation
+
+  """
+  Adds a product to the cart where you can add a comment to the product and
+  determine the quantity. Replies with the affected cart if a cartId has been
+  presented, otherwise a new cart will be created. 
+  """
+  addToCart(input: AddToCartInput!): CartMutation
+
+  """
+  This mutation is used to reduce the quantity of a product in the cart, replies
+  with the affected cart ruled by the cartId in the input.
+  """
+  decrementItemQuantity(input: ChangeByOneItemQuantityInput!): CartMutation
+
+  """
+  Used to add a specific quantity to a product in the cart. Replies with the affected cart ruled by the cartId in the input
+  """
+  setItemQuantity(input: SetItemQuantityInput!): CartMutation
+
+  """
+  This mutation is used to increase the quantity of a product in the cart,
+  replies with the affected cart ruled by the cartId in the input
+  """
+  incrementItemQuantity(input: ChangeByOneItemQuantityInput!): CartMutation
+
+  """Removes a specific product in the cart, replies with the affected cart"""
+  removeFromCart(input: RemoveFromCartInput!): CartMutation
+
+  """Removes specific items from the cart, replies with the affected cart"""
+  removeMultipleFromCart(input: RemoveMultipleFromCartInput!): CartMutation
+
+  """Responds with the affected cart."""
+  updateCart(input: UpdateCartInput!): UpdateCartMutation
+}
+
+type MyPagesContent {
+  """Text that will show on the landing page on MyPages"""
+  welcomeText: String
+}
+
+type NumericRangeFilter implements Filter {
+  min: Decimal!
+  max: Decimal!
+  id: String!
+  name: String!
+}
+
+type Order {
+  id: ID!
+  orderNumber: String
+  status: OrderStatus
+  items(
+    """Will fetch all if this is set to 0"""
+    first: Int = 0
+    offset: Int = 0
+  ): [OrderItem]
+  billingInfo: OrderInfo
+  deliveryInfo: OrderInfo
+  paymentMethod: OrderPaymentMethod
+  deliveryMethod: OrderDeliveryMethod
+  giftVouchers: [OrderGiftVoucher]
+  total: Price
+  orderDate: DateTime
+  currency: Currency
+  attachments: [OrderAttachment]
+  orderPurchaseLocation: String
+}
+
+type OrderAddress {
+  street: String
+  postcode: String
+  city: String
+  region: String
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  country: Country
+}
+
+type OrderAttachment {
+  id: ID!
+  url: String
+}
+
+type OrderDeliveryMethod {
+  name: String
+  fee: Price
+  tracking: OrderDeliveryMethodTracking
+}
+
+type OrderDeliveryMethodTracking {
+  trackingUrl: String
+  trackingUrlText: String
+}
+
+type OrderGiftVoucher {
+  name: String
+  amount: Decimal
+  charged: Decimal
+  validUntil: DateTime
+}
+
+type OrderHeader {
+  id: ID!
+  orderNumber: String
+  status: OrderStatus
+  statusTimeline: [OrderStatus]
+
+  """
+  If this is false, a call to `order` for this order will result in a failure.
+  """
+  hasOrderDetails: Boolean
+  total: Price
+  orderDate: DateTime
+  trackingId: String
+  currency: Currency
+}
+
+type OrderHeaderResult {
+  result: [OrderHeader]
+  totalResults: Int
+}
+
+type OrderInfo {
+  firstName: String
+  lastName: String
+  company: String
+  phone: String
+  address: OrderAddress
+}
+
+type OrderItem {
+  articleNumber: String
+
+  """
+  Name of the Product at the time the order was placed (may since have changed).
+  Use this as a fallback if the 'product' field itself is null. 
+  """
+  name: String
+  quantity: Int
+  unitPrice: Price
+  total: Price
+  discounts: [OrderItemDiscount]
+
+  """N.B. this may be null if the Product has since been removed."""
+  product: Product
+
+  """
+  N.B. this may be null if the Product itself or the Variant has since been removed.
+  """
+  variant: ProductVariant
+
+  """N.B. this may be null if the Product has since been removed."""
+  variantOptionNames: [String]
+
+  """
+  Value of the Variant at the time the order was placed (may since have
+  changed). Use this as a fallback if the 'variant' field itself is null. Will
+  be null when the OrderItem is not a Variant.
+  """
+  variantValue: String
+  preOrderDate: DateTime
+
+  """list of name, value fields from orders coming from external systems."""
+  externalOrderData: [ExternalOrderData]
+}
+
+type OrderItemDiscount {
+  value: Price
+}
+
+type OrderPaymentMethod {
+  name: String
+  fee: Price
+}
+
+type OrderStatus {
+  id: ID
+  description: String
+  timestamp: DateTime
+}
+
+type Package {
+  id: ID!
+  items: [PackageItem!]!
+
+  """The current package price with any potential discount"""
+  price: Price
+
+  """The previous package price without any potential discount"""
+  previousPrice: Price
+
+  """Total package discount amount"""
+  discountValue: Price
+
+  """Total package discount in percentage"""
+  discountPercentage: Decimal
+}
+
+union PackageDiscount = PackageDiscountPercentage | PackageDiscountValue
+
+type PackageDiscountPercentage {
+  percentage: Decimal!
+}
+
+type PackageDiscountValue {
+  valueIncVat: Decimal!
+  valueExVat: Decimal!
+  valueVat: Decimal!
+}
+
+type PackageItem {
+  product: Product
+  minQuantity: Int!
+  discount: PackageDiscount
+
+  """The current package price with any potential discount"""
+  price: Price
+
+  """The previous package price without any potential discount"""
+  previousPrice: Price
+}
+
+input PackagePriceInput {
+  product: ID!
+  variant: ID
+}
+
+type Page implements Document {
+  id: ID!
+  name: String!
+  mainHeader: String
+  content: String
+  hasExternalUrl: Boolean
+
+  """External URL if page is set to URL, null if not."""
+  externalUrl: Link
+  images: [Image]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  head: HtmlHead
+
+  """
+  The primary route of this Page. NB: Carries a performance cost, as asking for
+  this will result in a separate API call in the backend.
+  """
+  primaryRoute: Route
+  breadcrumbText: String
+
+  """
+  Get content data set via the Content Editor. NB: Carries a performance cost,
+  as asking for this will result in a separate API call in the backend.
+  """
+  data: Content
+
+  """
+  * If this page was fetched by ID using the `page(id)` query, `parent` will be returned even if it is hidden.
+  * If this page was fetched using the `pages` query, `parent` will not be returned if it is hidden
+  """
+  parent: Page
+
+  """
+  * If this page was fetched by ID using the `page(id)` query, `subPages` will
+  be returned even if they are hidden. This can be overridden with the
+  `includeHidden` flag.
+  * If this page was fetched using the `pages` query, `subPages` will not be
+  returned if they are hidden. The `includeHidden` flag has no effect on this.
+  """
+  subPages(includeHidden: Boolean = true): [Page!]
+
+  """
+  When set to false, the page will be excluded from sitemap. The frontend
+  implementation should use this value to set meta tags to exclude the page from
+  being indexed by crawlers. Defaults to true.
+  """
+  allowWebIndexing: Boolean
+}
+
+type PagedResult {
+  totalResults: Int
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  sortOrders: [ProductSortOrder]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  filters(
+    """
+    Optional: ID's of filters to fetch. If not set all filters will be returned.
+    """
+    ids: [String]
+  ): [Filter]
+  result: [Product]!
+}
+
+"""The `Paging` scalar type represents a numeric values between <1; 100>"""
+scalar Paging
+
+input PagingInput {
+  first: Paging = 12
+  offset: Int = 0
+}
+
+type paymentType {
+  name: String!
+  apiClientId: String!
+  availableForBusiness: Boolean!
+  availableForPrivate: Boolean!
+}
+
+type PersonLookup {
+  firstName: MaskedProperty
+  lastName: MaskedProperty
+  co: MaskedProperty
+  address: MaskedProperty
+  city: MaskedProperty
+  postalCode: MaskedProperty
+  country: MaskedProperty
+  phoneNumber: MaskedProperty
+  mobilePhoneNumber: MaskedProperty
+}
+
+type Price {
+  incVat: Decimal!
+  exVat: Decimal!
+  vat: Decimal!
+}
+
+type PriceHistory {
+  timestamp: DateTime
+  price: Price
+}
+
+type PrivateCustomer implements Customer {
+  pid: String
+  id: ID!
+  memberId: String
+  email: String
+
+  """Customer id for external system"""
+  externalId: String
+  subscribedToNewsletter: Boolean @deprecated(reason: "Use communication.acceptsEmail")
+  language: Language
+  billingAddress: CustomerAddress
+  deliveryAddresses: [CustomerAddress]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  orderHeaders(
+    """Will fetch all if this is set to 0"""
+    first: Int = 0
+    offset: Int = 0
+  ): OrderHeaderResult
+  communication: CustomerCommunication
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  store: Store
+  dynamicContent: String
+  externalAttributes: [CustomerExternalAttribute]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  googleUserId: String
+}
+
+type Product implements Document {
+  id: Int!
+  articleNumber: String!
+  name: String!
+  subName: String!
+  shortDescription: String!
+  description: String!
+
+  """
+  Product header if it differs from the actual product name, usually displayed
+  instead of the product name in the header tag at the product page.
+  """
+  mainHeader: String!
+  publishedDate: DateTime
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  canonicalCategory: Category
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  categories(
+    """Deprecated, this argument does not affect the result"""
+    includeHidden: Boolean = false
+  ): [Category]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  campaigns: [Category]
+  hasVariants: Boolean!
+  hasVariantsWithDifferingPrices: Boolean!
+  variants: ProductVariants
+  images(
+    """
+    Set this to false if you prefer to manually collate these images with the images found on the Variant.
+    """
+    includeVariantImages: Boolean = true
+
+    """
+    Limit the number of images you get back. Defaults to null, which will return all images.
+    """
+    limit: Int
+  ): [ProductImage]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  relatedProducts: [Product]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  badges: [ProductBadge]
+
+  """
+  The current price.
+  - Will be a Customer specific price if that Customer has a separate price list.
+  - Will be the member price if Customer is logged in and `Product.hasMemberPrice` is true.
+  - Will be the non-member price if Customer is not logged in and `Product.hasMemberPrice` is true.
+  """
+  price: Price
+  hidePrice: Boolean
+
+  """
+  The previous price (i.e. this will be higher than `price` if the product is
+  discounted). Will be a Customer specific previous price, if that Customer has
+  a separate price list.
+  """
+  previousPrice: Price
+
+  """
+  Default price for the product in the channel, disregards Customer specific prices.
+  """
+  defaultPrice: Price
+
+  """
+  Default previous price for the product in the channel, disregards Customer specific prices.
+  """
+  defaultPreviousPrice: Price
+
+  """Not in use. Always null."""
+  recommendedPrice: Price
+
+  """
+  The time interval of the discounted price. If the product has variants, the
+  time interval will be that of the variant which price is shown on the product.
+  """
+  priceDateSpan: ProductPriceDateSpan
+
+  """Indicates if this product and its variants has member prices."""
+  hasMemberPrice: Boolean
+
+  """
+  The price a Customer would get if member prices are active and the Customer is logged in.
+  - Will be null if `Product.hasMemberPrice` is false.
+  - Will be set if `Product.hasMemberPrice` is true.
+  """
+  memberPrice: Price
+
+  """
+  Specifies input field(s) for the Customer to populate on the Product that will then carry through to the Order.
+                      If 'required' is true the Product should not be purchasable until the field is populated.
+  """
+  customerComments: [ProductComment]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  stockStatus: StockStatus
+  customFields: [CustomField]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  warehouseStock(includeInactive: Boolean = false): [Warehouse]
+  head: HtmlHead
+
+  """
+  The primary route of this Product. NB: Carries a performance cost, as asking
+  for this will result in a separate API call in the backend.
+  """
+  primaryRoute: Route
+  breadcrumbText: String
+  recommendedProducts: RecommendedProducts
+
+  """
+  The product is recommended to only be purchasable in multiples of the
+  distributionPackageSize. (Different shops may have different levels of
+  leniency on this rule).
+  """
+  distributionPackageSize: Int!
+  barcode: String
+
+  """
+  Configurations on a product are used to assemble a complete product,
+  
+  For example, if the product is a ring then the ring may have two
+  configurations; measures of circumference and choice of engraving
+  
+  In this field, all the configurations of the product will be presented, the configuration name and its various options.
+  """
+  configurations: [ProductConfiguration]
+  hasConfigurations: Boolean!
+  hasFamilyMembers: Boolean!
+
+  """
+  Calculates the price of the product based on the configuration choices that's
+  been made. NB: Carries a performance cost, as asking for this will result in a
+  separate API call in the backend.
+  """
+  configurationPrice(options: [ProductConfigurationPriceInput!]): ProductConfigurationPrice
+
+  """Quantity suffix e.g pcs, box, etc."""
+  quantitySuffix: String
+  isPreOrder: Boolean
+  preOrder: ProductPreOrder
+  isPackage: Boolean
+
+  """
+  ## Description
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  ## Error Codes
+  ### InvalidAmountOfArticleNumbers
+  Number of input products doesn't match package products
+  ### InvalidArticleNumber
+  Product or variant article number doesn't match any products
+  ### UnableToGetPackagePrice
+  Failed to calculate package price
+  
+  """
+  package(articleNumbers: [PackagePriceInput]): Package
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  upsell: Upsell
+  inPackages: [Product!]
+  hasUpsell: Boolean
+
+  """
+  All other products in the same family as the product. NB: Carries a
+  performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  familyMembers: [Product!]
+
+  """Get Product History within the set number of days"""
+  history(
+    """number of days, default is 30"""
+    days: Int = 30
+  ): ProductHistory
+}
+
+type ProductAutoCompleteResult {
+  result: [Product]!
+}
+
+type ProductBadge {
+  name: String
+  url: Uri
+  location: ProductBadgeLocation
+  style: String
+  text: String
+}
+
+enum ProductBadgeLocation {
+  CUSTOM
+  TOP_LEFT
+  TOP_RIGHT
+  BOTTOM_LEFT
+  BOTTOM_RIGHT
+}
+
+type ProductComment {
+  name: String!
+  required: Boolean!
+}
+
+type ProductConfiguration {
+  name: String
+  options: [ProductConfigurationOption]!
+}
+
+"""
+Options by which you can configure a product.
+
+For instance, if you're selling rope the available options might be the dimensions; 10mm, 20mm, 30mm, etc.
+
+Price is either used as is, or if the configuration is using a price calculation
+(e.g. the rope is priced by length) it will be used in the calculation formula;
+e.g. (Length * Price).
+"""
+type ProductConfigurationOption {
+  id: ID!
+  name: String
+  price: Price
+
+  """
+  This will be set if the configuration requires price calculation, e.g. you might sell rope and price it by length.
+  """
+  priceCalculation: ProductConfigurationPriceCalculation
+}
+
+type ProductConfigurationPrice {
+  price: Price
+  previousPrice: Price
+}
+
+"""
+Describes how the price is calculated on a configuration option.
+
+E.g. the configuration is for a carpet and it has a price calculation formula that reads: 'Width * Length * Price / 10000'.
+
+In this case, the variables would contain 'Width' and 'Length' whereas the 'Price' is taken from the selected option.
+"""
+type ProductConfigurationPriceCalculation {
+  id: ID!
+  name: String
+  formula: String
+  variables: [ProductConfigurationPriceCalculationVariable]
+}
+
+type ProductConfigurationPriceCalculationVariable {
+  id: ID!
+  name: String
+}
+
+input ProductConfigurationPriceInput {
+  optionId: ID!
+}
+
+enum ProductCustomFieldType {
+  STRING
+  BOOL
+  LIST
+  HTML
+  MULTI_LEVEL_LIST
+}
+
+type ProductHistory {
+  previousPrice: [PriceHistory]
+}
+
+type ProductImage {
+  """
+  Alternate text for the image, commonly used for the alt attribute of img-tags.
+  """
+  alt: String
+
+  """
+  Extra information, commonly used for the title attribute of img-tag. Should be shown on hover.
+  """
+  title: String
+  sizes: [ProductImageSize]! @deprecated(reason: "Images will no longer be offered in different sizes. Instead use 'url' in conjunction with our image resizing service.")
+  url: Uri
+  modifiedDate: String
+}
+
+type ProductImageSize {
+  width: Int
+  height: Int
+  url: Uri
+}
+
+enum ProductOrderOptions {
+  ARTICLE_NUMBER
+  NAME
+  PUBLISH_DATE
+  PRICE
+  SUB_HEADING
+  CUSTOM
+  BESTSELLER
+}
+
+type ProductPreOrder {
+  fromDate: DateTime
+  toDate: DateTime
+}
+
+type ProductPriceDateSpan {
+  startDate: DateTime
+  endDate: DateTime
+}
+
+type ProductSearchResult {
+  result: [Product]!
+  filters: [Filter]
+  totalResults: Int
+}
+
+type ProductSortOrder {
+  text: String!
+  value: ProductOrderOptions!
+  isDefault: Boolean!
+  defaultDirection: SortDirection!
+}
+
+type ProductVariant {
+  id: String!
+  articleNumber: String!
+
+  """Variant values (combination of option values)"""
+  values: [String]!
+
+  """
+  The current price.
+  - Will be a Customer specific price if that Customer has a separate price list.
+  - Will be the member price if Customer is logged in and `Product.hasMemberPrice` is true.
+  - Will be the non-member price if Customer is not logged in and `Product.hasMemberPrice` is true.
+  """
+  price: Price
+
+  """
+  The previous price (i.e. this will be higher than `price` if the product is
+  discounted). Will be a Customer specific previous price, if that Customer has
+  a separate price list.
+  """
+  previousPrice: Price
+
+  """
+  Default price for the product in the channel, disregards Customer specific prices.
+  """
+  defaultPrice: Price
+
+  """
+  Default previous price for the product in the channel, disregards Customer specific prices.
+  """
+  defaultPreviousPrice: Price
+
+  """Not in use. Always null."""
+  recommendedPrice: Price
+
+  """The time interval of the discounted price."""
+  priceDateSpan: ProductPriceDateSpan
+
+  """
+  The price a Customer would get if member prices are active and the Customer is logged in.
+  - Will be null if `Product.hasMemberPrice` is false.
+  - Will be set if `Product.hasMemberPrice` is true.
+  """
+  memberPrice: Price
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  stockStatus: StockStatus
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  warehouseStock(includeInactive: Boolean = false): [Warehouse]
+  images: [ProductImage]
+  barcode: String
+
+  """Get Product History within the set number of days"""
+  history(
+    """number of days, default is 30"""
+    days: Int = 30
+  ): ProductVariantHistory
+}
+
+type ProductVariantHistory {
+  previousPrice: [PriceHistory]
+}
+
+type ProductVariantOption {
+  name: String
+  values: [String]!
+}
+
+type ProductVariants {
+  """Available product variant options."""
+  options: [ProductVariantOption]!
+
+  """Product variants, contains all possible values of options."""
+  values: [ProductVariant]!
+}
+
+type Query {
+  store(id: Int!): Store
+  stores(includeInactive: Boolean! = false): [Store]!
+  startPage(id: Int): StartPage
+  searchAutoComplete(term: String!): SearchAutoCompleteResult
+  search(term: String!): SearchResult
+
+  """get product, category or page by path."""
+  route(path: String!): Route
+  product(articleNumber: String, id: Int, barcode: String): Product
+  products(articleNumbers: [String], ids: [Int], barcodes: [String]): [Product]!
+
+  """Fetch a single page by ID."""
+  page(id: Int!): Page
+
+  """
+  Fetch all non-hidden pages. If you are using nested pages, only root level pages will be returned.
+  """
+  pages: [Page]!
+
+  """fetch order by id"""
+  order(
+    """Deprecated, please use the `orderId`-argument"""
+    id: Int
+    orderId: ID
+  ): Order
+
+  """Fetches my pages content"""
+  myPagesContent: MyPagesContent
+
+  """get customer product list by id, null gets default product list"""
+  customerProductList(id: ID, shareToken: String): CustomerProductList
+  customerProductLists: [CustomerProductList]!
+
+  """Fetches customer-unique offers"""
+  customerLoyalty: CustomerLoyalty
+
+  """Lookup a customer by a mobile phone number"""
+  customerLookup(phoneNumber: String): Customer
+  customer: Customer
+
+  """
+  Used in the sign up process when the shop has a third party customer repository, e.g. Voyado.
+  
+  Error codes: INVALID_VALUE (if `key` is null), ExternalCustomerLookupFailed
+  """
+  externalCustomerLookup(key: String): ExternalCustomerResult
+
+  """Get information on person by Key(personal id number or phone number)"""
+  personLookup(key: String!): PersonLookup
+
+  """
+  Returns content found, either by a list of content Ids, or filtered by tags.
+  In the case of filtering by ids, not found content Ids are listed as well.
+  """
+  content(ids: [String], tags: [String]): MultipleContent
+
+  """get channel by id, null gets default channel"""
+  channel(id: String): Channel
+
+  """get all channels"""
+  channels: [Channel]!
+
+  """get categories by channel id, culture, root and culture"""
+  categories(
+    """category id of root parent, null or omit means all"""
+    root: Int
+
+    """
+    number of levels to traverse in the category tree, null or omit means all
+    """
+    levels: Int = 1
+
+    """Deprecated, this argument does not affect the result"""
+    includeHidden: Boolean = false
+  ): [Category]!
+
+  """get category by id"""
+  category(id: ID!): Category
+  cart(id: String): Cart
+}
+
+input RangeFilterInput {
+  id: String!
+  min: Decimal
+  max: Decimal
+}
+
+type RecommendedProducts {
+  """Customers who bought this product also bought these products."""
+  bought(
+    """number of recommended products to fetch"""
+    count: Int = 4
+  ): [Product]
+
+  """Customers who viewed this product also viewed these products."""
+  viewed(
+    """number of recommended products to fetch"""
+    count: Int = 4
+  ): [Product]
+
+  """A shuffled top list of popular products."""
+  shuffledToplist(
+    """number of recommended products to fetch"""
+    count: Int = 4
+  ): [Product]
+}
+
+input RemoveFromCartInput {
+  cartId: String!
+  itemId: String!
+}
+
+input RemoveMultipleFromCartInput {
+  cartId: String!
+  itemIds: [String!]!
+}
+
+type RequestPasswordResetResult {
+  success: Boolean!
+}
+
+type ResetPassword {
+  token: Token!
+}
+
+"""
+Represents a route to either a Category, a Product, a Page or the StartPage.
+"""
+type Route {
+  id: String!
+  path: String!
+  canonicalPath: String
+  slug: String!
+
+  """
+  The Category, Product, Page or StartPage that the Route resolves to. NB:
+  Carries a performance cost, as asking for this will result in a separate API
+  call in the backend.
+  """
+  object: Document
+
+  """
+  Parents are resolved by traversing the path, starting from the end, and are
+  guaranteed to be returned in that order. NB: Carries a performance cost, as
+  asking for this will result in a different, slightly more expensive (the more
+  categories a shop has, the more expensive this gets), route query in the backend.
+  """
+  parents: [Route]
+
+  """
+  Alternative routes for this object, if it exists in another channel and/or in
+  another language.NB: Carries no additional performance cost.
+  """
+  alternateRoutes: [AlternateRoute]
+
+  """N.B. for troubleshooting routes only!"""
+  debug: String
+
+  """Breadcrumb texts; starting with the root parent, ending on this route."""
+  breadcrumbs: [String]
+}
+
+type SearchAutoCompleteResult {
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  products: ProductAutoCompleteResult
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  categories(first: Paging = 12): CategoryAutoCompleteResult
+}
+
+type SearchResult {
+  products(paging: PagingInput = {first: 12, offset: 0}, filters: FilterInput = {listFilters: [], rangeFilters: [], booleanFilters: [], multiListFilters: []}): ProductSearchResult
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  categories(paging: PagingInput = {first: 12, offset: 0}): CategorySearchResult
+}
+
+type SelectedProductConfiguration {
+  name: String
+  option: SelectedProductConfigurationOption!
+}
+
+type SelectedProductConfigurationOption {
+  id: ID!
+  name: String
+}
+
+input SetItemQuantityInput {
+  cartId: String!
+  itemId: String!
+  quantity: Int!
+}
+
+type Shipping {
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  freeShippingLimit: FreeShippingLimit
+}
+
+"""
+BillingAddress itself is a required field. Whether fields belonging to
+BillingAddress are required is determined by privateCustomerFields or
+businessCustomerFields, found on channel.settings.countrySettings.
+"""
+input SignUpBillingAddressInput {
+  mobilePhone: SignUpPropertyInput
+  phone: SignUpPropertyInput
+  region: SignUpPropertyInput
+  countryCode: SignUpPropertyInput
+  city: SignUpPropertyInput
+  postalCode: SignUpPropertyInput
+  streetName: SignUpPropertyInput
+  co: SignUpPropertyInput
+  department: SignUpPropertyInput
+  municipality: SignUpPropertyInput
+  companyAtt: SignUpPropertyInput
+  company: SignUpPropertyInput
+  lastName: SignUpPropertyInput
+  firstName: SignUpPropertyInput
+}
+
+input SignUpConsentInput {
+  id: String
+  value: Boolean
+}
+
+input SignUpDeliveryAddressInput {
+  mobilePhone: String
+  phone: String
+  region: String
+  countryCode: String
+  city: String
+  postalCode: String
+  streetName: String
+  co: String
+  department: String
+  municipality: String
+  companyAtt: String
+  company: String
+  lastName: String
+  firstName: String
+  addressName: String
+}
+
+input SignUpExternalAttribute {
+  name: String!
+  value: String!
+}
+
+input SignUpInput {
+  type: CustomerType!
+  pid: String
+  organizationNumber: String
+  emailAddress: String!
+  password: String
+
+  """Customer id for external system"""
+  externalId: String
+  billingAddress: SignUpBillingAddressInput!
+  deliveryAddresses: [SignUpDeliveryAddressInput]
+  preferences: SignUpPreferencesInput
+  consents: [SignUpConsentInput]
+  externalAttributes: [SignUpExternalAttribute]
+  dynamicContent: String
+  priceListAccessCode: String
+}
+
+input SignUpPreferencesCommunicationInput {
+  acceptsEmail: Boolean
+  acceptsPostal: Boolean
+  acceptsSms: Boolean
+  culture: String
+}
+
+input SignUpPreferencesInput {
+  type: SignUpPreferencesCommunicationInput
+  storeLocationId: Int
+}
+
+"""
+This input is used for fields that can be auto filled with PersonLookup
+"""
+input SignUpPropertyInput {
+  """
+  If the user has made no change this should contain the encrypted value from
+  PersonLookup, otherwise populate with the user input.
+  """
+  value: String
+
+  """Specifies if the value field is encrypted or not."""
+  hasChanged: Boolean
+}
+
+type SignUpResponse {
+  token: Token!
+}
+
+enum SortDirection {
+  ASCENDING
+  DESCENDING
+}
+
+type StartPage implements Document {
+  id: Int!
+  name: String!
+  images: [Image]
+  isActive: Boolean
+  content: String
+  items: [StartPageItem]
+
+  """
+  NB: Carries a performance cost, as asking for this will result in a separate API call in the backend.
+  """
+  head: HtmlHead
+
+  """The primary route of this StartPage"""
+  primaryRoute: Route
+  breadcrumbText: String
+
+  """
+  Get content data set via the Content Editor. NB: Carries a performance cost,
+  as asking for this will result in a separate API call in the backend.
+  """
+  data: Content
+}
+
+type StartPageItem {
+  id: Int!
+  row: Int
+  column: Int
+  item: StartPageItemObject!
+}
+
+union StartPageItemObject = Product | CustomItem
+
+type StockStatus {
+  """Globally unique id."""
+  id: ID!
+
+  """The stock status id, not globally unique."""
+  stockStatusId: ID!
+  text: String
+  buyable: Boolean!
+  stockNotificationEnabled: Boolean
+  stockDate: DateTime
+  maxOrderQuantity: Int
+}
+
+type Store {
+  id: Int!
+  externalId: String
+  name: String
+  city: String
+  region: String
+  address1: String
+  address2: String
+  description: String
+  other: String
+  openHours: String
+  contact: String
+  coordinates: Coordinates
+}
+
+type StringValue {
+  value: String
+}
+
+"""
+Authorization token that is used for customer actions such as login, delete or update 
+The token contains three different roles: 
+0: Standard. 
+1: Lite
+2: VoyadoSemiLogin
+"""
+type Token {
+  value: String!
+}
+
+type Tracking {
+  ga: GoogleAnalytics
+  ga4: GoogleAnalytics4
+  gtm: GoogleTagManager
+  fca: FacebookConversionsApi
+}
+
+input UpdateCartInput {
+  cartId: String
+  items: [UpdateCartItemInput!]
+}
+
+input UpdateCartItemInput {
+  id: String!
+  quantity: Int! = 1
+  comments: [InputComment]
+  preOrderDate: DateTime
+}
+
+type UpdateCartMutation {
+  cart: Cart
+}
+
+type UpdateCustomerGroupResult {
+  success: Boolean!
+}
+
+type UpdateCustomerPriceListResult {
+  success: Boolean!
+}
+
+input UpdateCustomerProductListInput {
+  id: ID!
+  typeId: ID!
+  name: String!
+  description: String
+}
+
+input UpdateCustomerProductListItemInput {
+  id: ID!
+  articleNumber: String!
+
+  """Default value is 1."""
+  quantity: Int
+  description: String
+}
+
+"""
+Responds with a boolean value whether the update has been successful or not
+"""
+type UpdatePasswordResult {
+  success: Boolean!
+}
+
+type Upsell {
+  id: ID!
+  items: [UpsellItem!]!
+}
+
+union UpsellDiscount = UpsellDiscountPercentage | UpsellDiscountValue
+
+type UpsellDiscountPercentage {
+  percentage: Decimal!
+}
+
+type UpsellDiscountValue {
+  valueIncVat: Decimal!
+  valueExVat: Decimal!
+  valueVat: Decimal!
+}
+
+type UpsellItem {
+  product: Product
+  minQuantity: Int!
+  discount: UpsellDiscount!
+}
+
+scalar Uri
+
+type Warehouse {
+  stockLevel: Int
+  location: Store
+}

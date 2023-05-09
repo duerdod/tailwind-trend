@@ -1,0 +1,32 @@
+query ProductPriceHistory($articleNumber: String!, $days: Int!) {
+  product(articleNumber: $articleNumber) {
+    id
+    articleNumber
+    history(days: $days) {
+      previousPrice {
+        timestamp
+        price {
+          incVat
+          exVat
+          vat
+        }
+      }
+    }
+
+    variants {
+      values {
+        articleNumber
+        history(days: $days) {
+          previousPrice {
+            timestamp
+            price {
+              incVat
+              vat
+              exVat
+            }
+          }
+        }
+      }
+    }
+  }
+}

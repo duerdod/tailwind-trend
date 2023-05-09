@@ -1,0 +1,794 @@
+{
+  "a_to_z_96baaedc": {
+    "message": "A-Z"
+  },
+  "about_70c18bba": {
+    "message": "Tietoja"
+  },
+  "add_to_cart_fe03d709": {
+    "message": "Lisää ostoskoriin"
+  },
+  "added_quantity_items_to_bag_96a4a656": {
+    "message": "Lisättiin { quantity } tuotetta ostoskoriin"
+  },
+  "added_to_bag_4be2af1": {
+    "message": "Lisätty ostoskoriin"
+  },
+  "address_e7cb7f63": {
+    "message": "Osoite"
+  },
+  "an_error_occured_please_try_again_9ee6abca": {
+    "message": "Ilmeni virhe. Yritäthän uudelleen!"
+  },
+  "an_error_occurred_details_e4aea7ad": {
+    "message": "Ilmeni virhe. Tarkennukset:"
+  },
+  "apply_781a2546": {
+    "message": "Käytä"
+  },
+  "apply_filters_26351a5c": {
+    "message": "Käytä suodattimia"
+  },
+  "are_you_sure_26795d3c": {
+    "message": "Oletko varma?"
+  },
+  "billingaddress_countrycode_97f1bc8e": {
+    "message": "Laskutusosoite.Maakoodi"
+  },
+  "cancel_caeb1e68": {
+    "message": "Keskeytä"
+  },
+  "cart_4f6dbcaa": {
+    "message": "Ostoskori"
+  },
+  "cart_total_c0110f50": {
+    "message": "Ostoskori yhteensä"
+  },
+  "categories_9d537a7a": {
+    "message": "Kategoriat"
+  },
+  "change_password_20192c50": {
+    "message": "Muuta salasana"
+  },
+  "change_password_d96f4e06": {
+    "message": "Muuta salasana"
+  },
+  "check_out_fcf51117": {
+    "message": "Kassalle"
+  },
+  "choose_country_351b807a": {
+    "message": "Valitse maa"
+  },
+  "city_69953629": {
+    "message": "Kaupunki"
+  },
+  "clear_all_filters_40e65e3b": {
+    "message": "Poista kaikki suodattimet"
+  },
+  "clear_filter_5b3a182d": {
+    "message": "Poista suodatin"
+  },
+  "clear_list_93c0d4e3": {
+    "message": "Tyhjennä lista"
+  },
+  "close_d634289d": {
+    "message": "Sulje"
+  },
+  "company_a53a19ad": {
+    "message": "Yritys"
+  },
+  "company_contact_name_dbedb9da": {
+    "message": "Yrityksen yhteyshenkilö"
+  },
+  "company_registration_number_4d68074": {
+    "message": "Yrityksen rekisterinumero"
+  },
+  "contact_a6e7f6da": {
+    "message": "Ota yhteyttä"
+  },
+  "contact_details_3e898892": {
+    "message": "Yhteystiedot"
+  },
+  "count_plural_0_one_1_item_other_count_items_e48de617": {
+    "message": "{ count, plural,  =0 {}  one {1 tuote}  other {{ count } tuotetta} }"
+  },
+  "country_b9f6d984": {
+    "message": "Maa"
+  },
+  "county_c41f243f": {
+    "message": "Maa"
+  },
+  "create_profile_33fafbf1": {
+    "message": "Luo profiili"
+  },
+  "create_profile_fc47c26d": {
+    "message": "Luo profiili"
+  },
+  "currency_d6b3d5f6": {
+    "message": "Valuutta"
+  },
+  "customercommentname_is_required_f5c2f377": {
+    "message": "{ customerCommentName } vaaditaan"
+  },
+  "delete_account_4e52440b": {
+    "message": "Poista tili"
+  },
+  "delete_account_81ef7d97": {
+    "message": "Poista tili"
+  },
+  "delivery_2a07e73e": {
+    "message": "Toimitus:"
+  },
+  "delivery_8864b1d9": {
+    "message": "Toimitus"
+  },
+  "delivery_address_872728d": {
+    "message": "Toimitusosoite"
+  },
+  "department_6abddd98": {
+    "message": "Osasto"
+  },
+  "desired_password_391ab563": {
+    "message": "Haluttu salasana"
+  },
+  "directions_eef85bfe": {
+    "message": "Tarkennus"
+  },
+  "discounts_dfde4231": {
+    "message": "Alennukset"
+  },
+  "distance_a377c748": {
+    "message": "Etäisyys"
+  },
+  "does_not_match_new_password_566ea944": {
+    "message": "Ei vastaa uutta salasanaa"
+  },
+  "e_mail_address_11245d70": {
+    "message": "Sähköpostiosoite"
+  },
+  "email_address_6e0443a5": {
+    "message": "Sähköpostiosoite"
+  },
+  "email_password_fe282e30": {
+    "message": "Sähköpostiosoite & salasana"
+  },
+  "enter_email_address_25b6381d": {
+    "message": "Anna sähköpostiosoite"
+  },
+  "express_1_2_working_days_5b7007b": {
+    "message": "Pikatoimitus 1–2 työpäivää"
+  },
+  "extra_address_b1f2c88": {
+    "message": "Vaihtoehtoinen osoite"
+  },
+  "failed_adding_to_bag_6911bfca": {
+    "message": "Ostoskoriin lisääminen epäonnistui"
+  },
+  "favourites_d8a7f913": {
+    "message": "Suosikit"
+  },
+  "field_does_not_match_required_format_1511ccd9": {
+    "message": "Kenttä ei vastaa vaadittua muotoa"
+  },
+  "filter_e3398407": {
+    "message": "Suodatin"
+  },
+  "find_product_in_store_7a4af069": {
+    "message": "Löydä tuote kaupasta"
+  },
+  "find_store_2d93488b": {
+    "message": "Etsi myymälä"
+  },
+  "find_store_ec52678f": {
+    "message": "Etsi myymälä"
+  },
+  "find_the_closest_store_using_your_location_696c8e5a": {
+    "message": "Löydä lähin myymäläsi käyttämällä sijaintiasi"
+  },
+  "first_name_75f38a3e": {
+    "message": "Etunimi"
+  },
+  "forgot_password_69eea15b": {
+    "message": "Unohtunut salasana"
+  },
+  "free_for_your_order_34aba239": {
+    "message": "Maksuton tilauksellesi"
+  },
+  "free_shipping_and_return_355b42d1": {
+    "message": "Maksuton toimitus ja palautus"
+  },
+  "go_to_country_517a8515": {
+    "message": "Siirry maahan { country }"
+  },
+  "got_it_2c06b54a": {
+    "message": "Ymmärrän!"
+  },
+  "hi_firstname_lastname_bc7684c1": {
+    "message": "Hei { firstName } { lastName }"
+  },
+  "high_to_low_b6eda134": {
+    "message": "korkeasta matalaan"
+  },
+  "hold_on_a_moment_5a9f3c1d": {
+    "message": "Odota hetki..."
+  },
+  "hold_on_a_moment_a3f09a64": {
+    "message": "Odota hetki..."
+  },
+  "home_351838cd": {
+    "message": "Koti"
+  },
+  "homepage_4b84763d": {
+    "message": "KOTISIVU"
+  },
+  "i_don_t_want_newsletters_a1a3e929": {
+    "message": "En halua vastaanottaa uutiskirjeitä"
+  },
+  "i_understand_please_delete_my_account_5f49bf66": {
+    "message": "Olen ymmärtänyt, poista käyttäjätilini"
+  },
+  "i_want_newsletters_58c52364": {
+    "message": "Haluan vastaanottaa uutiskirjeitä"
+  },
+  "image_not_found_2f99135": {
+    "message": "Kuvaa ei löydy"
+  },
+  "in_stock_859385c7": {
+    "message": "Varastossa"
+  },
+  "included_in_campaign_46a7230b": {
+    "message": "Kampanjaan sisältyen:"
+  },
+  "included_in_package_5d7f4d3d": {
+    "message": "Sisältyy pakettiin:"
+  },
+  "invalid_email_address_8d0d5e33": {
+    "message": "Virheellinen sähköpostiosoite"
+  },
+  "it_looks_like_you_are_visiting_us_from_country_do__832ec546": {
+    "message": "Näyttää siltä, että vierailet meillä maasta { country }. Haluatko vierailla maan { country } sivustolla?"
+  },
+  "join_the_newsletter_fbefaa77": {
+    "message": "Tilaa uutiskirje"
+  },
+  "km_km_24f9536d": {
+    "message": "{ km } km"
+  },
+  "language_6b3e2c7c": {
+    "message": "Kieli"
+  },
+  "learn_more_a79a7918": {
+    "message": "Lisätietoja"
+  },
+  "link_7262adec": {
+    "message": "Linkki"
+  },
+  "loading_more_data_e8df9877": {
+    "message": "Ladataan lisätietoja…"
+  },
+  "loading_package_details_31166b02": {
+    "message": "Paketin tietoja ladataan..."
+  },
+  "loading_page_currentpage_2c9871c1": {
+    "message": "Ladataan sivua { currentPage }…"
+  },
+  "loading_search_results_for_term_23278c26": {
+    "message": "Ladataan tuloksia hakusanalle { term }…"
+  },
+  "loading_your_saved_items_5293335e": {
+    "message": "Tallentamiasi tuotteita ladataan..."
+  },
+  "log_in_c9e240ef": {
+    "message": "Kirjaudu sisään"
+  },
+  "log_out_379ba28a": {
+    "message": "Kirjaudu ulos"
+  },
+  "login_6f3d6249": {
+    "message": "Kirjaudu sisään"
+  },
+  "login_failed_please_try_again_841d7c15": {
+    "message": "Sisäänkirjautuminen epäonnistui. Yritäthän uudelleen"
+  },
+  "look_up_my_info_6436db80": {
+    "message": "Katso omat tiedot"
+  },
+  "low_to_high_2400fc78": {
+    "message": "matalasta korkeaan"
+  },
+  "m_m_6aa9a961": {
+    "message": "{ m } m"
+  },
+  "maxorderquantity_is_the_maximum_order_quantity_96e527df": {
+    "message": "{ maxOrderQuantity } on suurin mahdollinen tilausmäärä"
+  },
+  "menu_39cb0e8e": {
+    "message": "Valikko"
+  },
+  "mobile_phone_number_cb092391": {
+    "message": "Matkapuhelinnumero"
+  },
+  "my_orders_40e3ddbe": {
+    "message": "Tilaukseni"
+  },
+  "my_orders_474fd888": {
+    "message": "Tilaukseni"
+  },
+  "my_pages_c8e29a68": {
+    "message": "Oma sivuni"
+  },
+  "my_profile_16c38091": {
+    "message": "Profiilini"
+  },
+  "my_profile_d97eb90d": {
+    "message": "Profiilini"
+  },
+  "n_a_d5d5a207": {
+    "message": "n/a"
+  },
+  "name_1aed4a1b": {
+    "message": "Nimi"
+  },
+  "national_id_social_security_number_ffa20629": {
+    "message": "Kansallinen henkilön-/sosiaaliturvatunnus"
+  },
+  "new_password_again_fa83f67e": {
+    "message": "Uusi salasana uudelleen"
+  },
+  "new_password_eb44a9a4": {
+    "message": "Uusi salasana"
+  },
+  "newsletters_a04708fd": {
+    "message": "Uutiskirjeet"
+  },
+  "next_40e12421": {
+    "message": "Seuraava"
+  },
+  "no_e16d9132": {
+    "message": "Ei"
+  },
+  "no_items_in_cart_cf9df6d4": {
+    "message": "Ei tuotteita ostoskorissa."
+  },
+  "no_orders_found_ed613bce": {
+    "message": "Tilauksia ei löytynyt."
+  },
+  "no_results_for_term_7528ef47": {
+    "message": "Ei tuloksia hakusanalle <Term />"
+  },
+  "no_valid_items_to_add_to_cart_c53b9043": {
+    "message": "Ei kelvollisia tuotteita ostoskoriin lisättäväksi"
+  },
+  "not_available_487d3648": {
+    "message": "Ei saatavilla"
+  },
+  "note_if_you_were_directed_here_via_a_link_we_are_g_47b83052": {
+    "message": "HUOMIO! Mikäli sinut ohjattiin tänne linkin kautta, olemme kiitollisia, jos kerrot meille mikä linkki oli kyseessä, jotta voimme ratkaista ongelman."
+  },
+  "notify_me_when_back_in_stock_7f40774": {
+    "message": "Ilmoita, kun tuotetta on jälleen varastossa"
+  },
+  "of_which_vat_9b4c95d5": {
+    "message": "josta alv:n osuus"
+  },
+  "ok_c47544a2": {
+    "message": "OK"
+  },
+  "old_password_c735e1a5": {
+    "message": "Vanha salasana"
+  },
+  "one_moment_301b2df": {
+    "message": "Pieni hetki"
+  },
+  "opening_hours_77ceb9c8": {
+    "message": "Aukioloajat"
+  },
+  "optionname_is_required_4ef88446": {
+    "message": "{ optionName } vaaditaan"
+  },
+  "or_ef4e808": {
+    "message": "tai"
+  },
+  "or_scroll_down_to_fill_in_the_rest_manually_d9502b2f": {
+    "message": "Tai selaa sivua alaspäin täyttääksesi loput tiedot manuaalisesti "
+  },
+  "order_date_9b7fe95f": {
+    "message": "Tilauspäivämäärä"
+  },
+  "order_number_fe66c52c": {
+    "message": "Tilausnumero"
+  },
+  "order_value_4a159b2c": {
+    "message": "Tilauksen arvo"
+  },
+  "out_of_stock_cf144338": {
+    "message": "Loppu varastosta"
+  },
+  "out_of_stock_ed56c3c": {
+    "message": "Loppu varastosta"
+  },
+  "package_34ed7777": {
+    "message": "Paketti"
+  },
+  "package_discount_66e25640": {
+    "message": "Paketti alennus"
+  },
+  "page_currentpage_of_totalpages_a773c744": {
+    "message": "Sivu { currentPage } yhteensä { totalPages } sivusta"
+  },
+  "payment_method_84a444f1": {
+    "message": "Maksutapa"
+  },
+  "person_lookup_failed_87cc2ec4": {
+    "message": "Henkilön haku epäonnistui"
+  },
+  "phone_70d50cdb": {
+    "message": "Puhelin:"
+  },
+  "please_enter_a_valid_quantity_f9adbf72": {
+    "message": "Anna kelvollinen määrä"
+  },
+  "please_enter_your_new_password_f261c25f": {
+    "message": "Anna uusi salasanasi"
+  },
+  "please_fill_in_your_contact_details_for_shipping_a_285963ce": {
+    "message": "Täytä yhteystietosi ostosten tekoa ja yhteydenpitoa varten."
+  },
+  "post_code_e64b6004": {
+    "message": "Postinumero"
+  },
+  "powered_by_jetshop_a3e0968f": {
+    "message": "Tarjoaja Jetshop"
+  },
+  "pre_order_date_required_8c33e235": {
+    "message": "Ennakkotilauspäivä vaaditaan"
+  },
+  "prev_f82cbc48": {
+    "message": "Edell."
+  },
+  "price_ffd8b80": {
+    "message": "Hinta"
+  },
+  "private_3883d133": {
+    "message": "Yksityinen"
+  },
+  "product_39cf144f": {
+    "message": "Tuote"
+  },
+  "product_description_3edb94a9": {
+    "message": "Tuotekuvaus"
+  },
+  "product_is_not_in_stock_fc5a972b": {
+    "message": "Tuotetta ei ole varastossa"
+  },
+  "product_matches_17fac93": {
+    "message": "Tuoteosumat"
+  },
+  "product_no_longer_available_b6ad7087": {
+    "message": "Tuotetta ei ole enää saatavilla."
+  },
+  "productcount_plural_1_add_product_to_cart_other_ad_b37e18fc": {
+    "message": "{ productCount, plural,     =1 {Lisää # tuotetta ostoskoriin}  other {Lisää # tuotetta ostoskoriin}}"
+  },
+  "productcount_plural_1_product_added_to_the_cart_ot_e20e0dc8": {
+    "message": "{ productCount, plural,     =1 {# tuotetta lisätty ostoskoriin.}  other {# tuotetta lisätty ostoskoriin.}}"
+  },
+  "productname_has_been_added_to_the_cart_fba79585": {
+    "message": "{ productName } on lisätty ostoskoriin"
+  },
+  "products_c5f0793": {
+    "message": "Tuotteet"
+  },
+  "quantity_20164bff": {
+    "message": "Määrä"
+  },
+  "recent_orders_1068c934": {
+    "message": "Viimeaikaiset tilaukset"
+  },
+  "region_939f2a6c": {
+    "message": "Alue"
+  },
+  "related_products_8fcc0081": {
+    "message": "Liittyvät tuotteet"
+  },
+  "repeat_desired_password_34086d81": {
+    "message": "Toista salasana"
+  },
+  "required_da89d67d": {
+    "message": "(Vaaditaan)"
+  },
+  "reset_95a81614": {
+    "message": "Resetoi"
+  },
+  "retry_ebd5f8ba": {
+    "message": "Yritä uudelleen"
+  },
+  "save_11a80ec3": {
+    "message": "Tallenna"
+  },
+  "saved_items_583185b1": {
+    "message": "Tallennetut tuotteet"
+  },
+  "search_280d00bd": {
+    "message": "Etsi"
+  },
+  "select_country_1da181c6": {
+    "message": "Valitse maa"
+  },
+  "select_missingoptions_to_see_store_status_in_store_a7433fed": {
+    "message": "Valitse { missingOptions } nähdäksesi varastosaldon kaupassa"
+  },
+  "select_option_3e8f2943": {
+    "message": "Valitse { option }"
+  },
+  "select_optionname_fc590c42": {
+    "message": "Valitse { optionName }"
+  },
+  "select_options_9ee7b227": {
+    "message": "Valitse vaihtoehdot"
+  },
+  "select_the_variants_b3aa2844": {
+    "message": "Valitse vaihtoehdot"
+  },
+  "select_your_country_9ee72cf7": {
+    "message": "Valitse maasi"
+  },
+  "selected_categories_863af37b": {
+    "message": "Valitut kategoriat"
+  },
+  "selected_products_1bd5b165": {
+    "message": "Valitut tuotteet"
+  },
+  "share_location_6d9a73cf": {
+    "message": "Jaa sijainti"
+  },
+  "shop_by_category_b9ba84ab": {
+    "message": "Osta kategorian mukaan"
+  },
+  "show_all_orders_3c6119ee": {
+    "message": "Näytä kaikki tilaukset"
+  },
+  "show_details_d6f1ca0c": {
+    "message": "Näytä yksityiskohdat"
+  },
+  "show_fewer_stores_56b2065a": {
+    "message": "Näytä vähemmän kauppoja"
+  },
+  "show_less_574a758b": {
+    "message": "Näytä vähemmän"
+  },
+  "show_more_fae1328": {
+    "message": "Näytä enemmän"
+  },
+  "signup_d25ec5f5": {
+    "message": "Rekisteröidy"
+  },
+  "social_security_number_7c8fc49b": {
+    "message": "Henkilötunnus"
+  },
+  "something_went_wrong_d238c551": {
+    "message": "Jokin meni pieleen"
+  },
+  "something_went_wrong_please_check_your_email_and_t_9dd179bd": {
+    "message": "Jokin meni vikaan. Tarkistathan sähköpostisi ja yritä uudelleen."
+  },
+  "something_went_wrong_please_check_your_input_or_tr_d8daab95": {
+    "message": "Jokin meni pieleen. Tarkista antamasi tiedot tai yritä myöhemmin uudelleen."
+  },
+  "something_went_wrong_please_try_again_37244f67": {
+    "message": "Jokin meni pieleen. Yritäthän uudelleen."
+  },
+  "something_went_wrong_please_try_again_fd8c66fd": {
+    "message": "Jokin meni pieleen. Yritäthän uudelleen!"
+  },
+  "something_went_wrong_saving_information_try_again_87e1303e": {
+    "message": "Jokin meni pieleen tietoja tallennettaessa. Haluatko yrittää uudelleen?"
+  },
+  "something_went_wrong_updating_password_is_your_old_c95e5bd1": {
+    "message": "Jokin meni pieleen salasanaa päivittäessä. Onko vanha salasanasi oikein kirjoitettu?"
+  },
+  "something_went_wrong_when_placeholder_e336fd86": {
+    "message": "Jokin meni pieleen suoritettaessa { placeholder }"
+  },
+  "something_went_wrong_when_retrieving_order_id_plea_994c3a5": {
+    "message": "Jokin meni vikaan tilausta { id } noudettaessa. Yritäthän myöhemmin uudelleen."
+  },
+  "sort_by_72dbba9c": {
+    "message": "Lajittele"
+  },
+  "sort_by_e75f9e3e": {
+    "message": "Lajittele"
+  },
+  "specifications_ee3fcf8e": {
+    "message": "Erittelyt"
+  },
+  "spend_price_more_to_qualify_for_free_shipping_76fdedab": {
+    "message": "Osta { price } arvosta enemmän saadaksesi maksuttoman toimituksen!"
+  },
+  "standard_2_5_working_days_d4ac0406": {
+    "message": "Standarditoimitus 2–5 työpäivää"
+  },
+  "submit_a3cc6859": {
+    "message": "Lähetä"
+  },
+  "submitting_75cdf9ab": {
+    "message": "Lähetetään…"
+  },
+  "successfully_added_83dcf29": {
+    "message": "Lisätty onnistuneesti!"
+  },
+  "surname_df38bed": {
+    "message": "Sukunimi"
+  },
+  "telephone_number_9cbafa6e": {
+    "message": "Puhelinnumero"
+  },
+  "the_address_provided_is_incorrect_please_check_the_1b76d82f": {
+    "message": "Annettu osoite on virheellinen. Tarkistathan sen kirjoitusasun ja yritä uudelleen."
+  },
+  "the_form_could_not_be_submitted_please_try_again_l_9a8b7579": {
+    "message": "Lomaketta ei voitu lähettää. Yritä myöhemmin uudelleen."
+  },
+  "there_are_no_products_in_your_saved_items_list_2870abb5": {
+    "message": "Tallennettujen tuotteiden listassasi ei ole tuotteita."
+  },
+  "this_could_be_due_to_the_following_a40f2a5": {
+    "message": "Tämä saattaa johtua seuraavasta:"
+  },
+  "this_field_is_required_fa58c4a": {
+    "message": "Tämä kenttä vaaditaan"
+  },
+  "this_is_where_you_find_our_stores_get_informed_abo_19de699f": {
+    "message": "Täältä löydät myymälämme. Vastaanota täällä tietoa sinua lähimmän myymälän varaston tilanteesta. Löydä ja valitse sinua lähimpänä sijaitseva myymälä."
+  },
+  "this_product_is_out_of_stock_c6eac862": {
+    "message": "Tämä tuote on loppunut varastosta."
+  },
+  "this_website_uses_cookies_to_ensure_you_get_the_be_f59eb226": {
+    "message": "Tämä verkkosivusto käyttää evästeitä parhaan mahdollisen käyttökokemuksen varmistamiseksi."
+  },
+  "to_checkout_63f3b715": {
+    "message": "Kassalle"
+  },
+  "total_71a4807": {
+    "message": "Yhteensä"
+  },
+  "total_excl_vat_ae61fef3": {
+    "message": "Yhteensä (ilman alv:a)"
+  },
+  "total_incl_vat_f281354b": {
+    "message": "Yhteensä (sis. alv)"
+  },
+  "total_plural_1_item_other_items_1c76aa07": {
+    "message": "{ total, plural,  =1 {# tuote}  other {# tuotetta} }"
+  },
+  "total_plural_1_item_other_items_matching_for_term_22b0ede7": {
+    "message": "{ total, plural,  =1 {# tuote}  other {# tuotetta} } yhteensopiva \"{ term }\" kanssa"
+  },
+  "total_price_1c872c0a": {
+    "message": "Kokonaishinta"
+  },
+  "totalproducts_products_b80002da": {
+    "message": "{ totalProducts } tuotetta"
+  },
+  "track_delivery_6339cf6f": {
+    "message": "Seuraa toimitusta:"
+  },
+  "trend_31ce9aff": {
+    "message": "Trendi"
+  },
+  "type_your_search_here_58fca7de": {
+    "message": "Kirjoita hakusi tähän"
+  },
+  "update_4d8ee62": {
+    "message": "Päivitä"
+  },
+  "update_information_95c5f1b4": {
+    "message": "Päivitä tiedot"
+  },
+  "updating_price_3f7c4661": {
+    "message": "Hintaa päivitetään..."
+  },
+  "vat_39a079c0": {
+    "message": "hinta sisältää alv:n"
+  },
+  "view_all_in_category_531e2499": {
+    "message": "Näytä kaikki sisään { category }"
+  },
+  "view_all_stores_d0f8a7f1": {
+    "message": "Katso kaikki kaupat"
+  },
+  "view_password_ec63cb11": {
+    "message": "Näytä salasana"
+  },
+  "visit_product_page_to_add_54331147": {
+    "message": "Vieraile tuotesivulla lisätäksesi"
+  },
+  "welcome_to_our_online_store_enter_your_social_secu_dbc50460": {
+    "message": "Tervetuloa verkkokauppaamme! Anna henkilötunnuksesi ja yritämme löytää tarvittavat tiedot. Voit myös täyttää ne manuaalisesti."
+  },
+  "welcome_to_our_online_store_we_need_to_create_a_pr_90e8e9ce": {
+    "message": "Tervetuloa verkkokauppaamme! Ennen kuin jatkat, meidän täytyy luoda profiili."
+  },
+  "what_is_your_email_address_631180c6": {
+    "message": "Mikä on sähköpostiosoitteesi?"
+  },
+  "when_your_account_is_deleted_all_order_history_wil_71260053": {
+    "message": "Kun käyttäjätilisi on poistettu, koko tilaushistoria tullaan poistamaan."
+  },
+  "whoops_54a74974": {
+    "message": "Hups"
+  },
+  "yes_dde87d5": {
+    "message": "Kyllä"
+  },
+  "you_are_now_subscribed_71495f41": {
+    "message": "Sinut on nyt rekisteröity."
+  },
+  "you_are_now_subscribed_7695dd6b": {
+    "message": "Sinut on nyt rekisteröity"
+  },
+  "you_are_trying_to_use_an_old_address_that_no_longe_1d4e8dff": {
+    "message": "Yrität käyttää vanhaa osoitetta, jota ei ole enää olemassa tai joka on saattanut muuttua."
+  },
+  "you_can_now_login_with_your_new_password_99ae2294": {
+    "message": "Voit nyt { login } uudella salasanallasi"
+  },
+  "you_have_already_signed_up_with_this_email_address_71af5f92": {
+    "message": "Olet jo rekisteröitynyt tällä sähköpostiosoitteella"
+  },
+  "you_have_already_subscribed_to_the_newsletter_8a2c3d54": {
+    "message": "Olet jo tilannut uutiskirjeen!"
+  },
+  "you_have_attempted_to_download_a_page_that_does_no_13db419e": {
+    "message": "Olet yrittänyt ladata sivun, jota ei löydy Jetshopin palvelimelta."
+  },
+  "you_may_have_used_an_old_bookmark_if_you_are_sure__1daf83b8": {
+    "message": "Olet saattanut käyttää vanhaa kirjanmerkkiä. Mikäli olet varma siitä, että olet käyttänyt oikeaa osoitetta, ongelma saattaa johtua tilapäisestä palvelukatkosta. Yritäthän myöhemmin uudelleen."
+  },
+  "your_password_has_been_reset_53d7f84e": {
+    "message": "Salasanasi on muutettu."
+  },
+  "your_password_has_been_successfully_updated_cacea448": {
+    "message": "Salasanasi on päivitetty onnistuneesti."
+  },
+  "your_password_reset_request_has_been_submitted_che_104311b6": {
+    "message": "Salasanasi vaihtopyyntö on vastaanotettu. Tarkasta sähköpostisi saadaksesi linkin salasanasi uusimiseen."
+  },
+  "your_password_reset_token_has_expired_or_is_invali_4f6d0945": {
+    "message": "Salasanan palautustunnus on vanhentunut tai virheellinen."
+  },
+  "your_preferences_have_been_updated_6729d3f8": {
+    "message": "Valintasi on päivitetty."
+  },
+  "z_to_a_75ce9568": {
+    "message": "Z - A"
+  },
+  "pid_is_invalid_2a8f005e": {
+    "message": "Määritetty sosiaaliturvatunnus ei ole kelvollinen"
+  },
+  "email_address_is_invalid_dd753229": {
+    "message": "Määritetty sähköpostiosoite ei ole kelvollinen"
+  },
+  "postal_code_is_invalid_438e6940": {
+    "message": "Määritetty postnumber ei ole kelvollinen"
+  },
+  "postal_code_is_required_ca3b7a32": {
+    "message": "Postinumero vaaditaan."
+  },
+  "this_pid_is_already_registered_83895f84": {
+    "message": "Määritetty sosiaaliturvatunnus on jo rekisteröity"
+  },
+  "your_email_address_is_already_registered_3d806453": {
+    "message": "Määritetty sähköpostiosoite on jo rekisteröitynyt"
+  },
+  "pid_is_required_68787e3": {
+    "message": "Sosiaaliturvatunnus on pakollinen."
+  },
+  "email_address_is_required_24d62494": {
+    "message": "Sähköpostiosoite on tarpeen"
+  },
+  "free_gift_c1c2ae5a": {
+    "message": "Ilmainen lahja"
+  }
+}

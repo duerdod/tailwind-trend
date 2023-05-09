@@ -1,0 +1,7 @@
+#import "./PackageProductFragment.gql"
+
+query PackageProductQuery($articleNumber: String) {
+  product(articleNumber: $articleNumber) {
+    ...PackageProductFragment
+  }
+}

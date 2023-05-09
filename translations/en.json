@@ -1,0 +1,794 @@
+{
+  "a_to_z_96baaedc": {
+    "message": "A to Z"
+  },
+  "about_70c18bba": {
+    "message": "About"
+  },
+  "add_to_cart_fe03d709": {
+    "message": "Add to cart"
+  },
+  "added_quantity_items_to_bag_96a4a656": {
+    "message": "Added { quantity } items to bag"
+  },
+  "added_to_bag_4be2af1": {
+    "message": "Added to bag"
+  },
+  "address_e7cb7f63": {
+    "message": "Address"
+  },
+  "an_error_occured_please_try_again_9ee6abca": {
+    "message": "An error occured. Please try again!"
+  },
+  "an_error_occurred_details_e4aea7ad": {
+    "message": "An error occurred. Details:"
+  },
+  "apply_781a2546": {
+    "message": "Apply"
+  },
+  "apply_filters_26351a5c": {
+    "message": "Apply filters"
+  },
+  "are_you_sure_26795d3c": {
+    "message": "Are you sure?"
+  },
+  "billingaddress_countrycode_97f1bc8e": {
+    "message": "billingAddress.countryCode"
+  },
+  "cancel_caeb1e68": {
+    "message": "Cancel"
+  },
+  "cart_4f6dbcaa": {
+    "message": "Cart"
+  },
+  "cart_total_c0110f50": {
+    "message": "Cart total"
+  },
+  "categories_9d537a7a": {
+    "message": "Categories"
+  },
+  "change_password_20192c50": {
+    "message": "Change Password"
+  },
+  "change_password_d96f4e06": {
+    "message": "Change password"
+  },
+  "check_out_fcf51117": {
+    "message": "Check out"
+  },
+  "choose_country_351b807a": {
+    "message": "Choose country"
+  },
+  "city_69953629": {
+    "message": "City"
+  },
+  "clear_all_filters_40e65e3b": {
+    "message": "Clear all filters"
+  },
+  "clear_filter_5b3a182d": {
+    "message": "Clear filter"
+  },
+  "clear_list_93c0d4e3": {
+    "message": "Clear list"
+  },
+  "close_d634289d": {
+    "message": "Close"
+  },
+  "company_a53a19ad": {
+    "message": "Company"
+  },
+  "company_contact_name_dbedb9da": {
+    "message": "Company contact name"
+  },
+  "company_registration_number_4d68074": {
+    "message": "Company registration number"
+  },
+  "contact_a6e7f6da": {
+    "message": "Contact"
+  },
+  "contact_details_3e898892": {
+    "message": "Contact Details"
+  },
+  "count_plural_0_one_1_item_other_count_items_e48de617": {
+    "message": "{ count, plural,\n     =0 {}\n    one {1 item}\n  other {{ count } items}\n}"
+  },
+  "country_b9f6d984": {
+    "message": "Country"
+  },
+  "county_c41f243f": {
+    "message": "County"
+  },
+  "create_profile_33fafbf1": {
+    "message": "Create profile"
+  },
+  "create_profile_fc47c26d": {
+    "message": "Create Profile"
+  },
+  "currency_d6b3d5f6": {
+    "message": "Currency"
+  },
+  "customercommentname_is_required_f5c2f377": {
+    "message": "{ customerCommentName } is required"
+  },
+  "delete_account_4e52440b": {
+    "message": "Delete account"
+  },
+  "delete_account_81ef7d97": {
+    "message": "Delete Account"
+  },
+  "delivery_2a07e73e": {
+    "message": "Delivery:"
+  },
+  "delivery_8864b1d9": {
+    "message": "Delivery"
+  },
+  "delivery_address_872728d": {
+    "message": "Delivery Address"
+  },
+  "department_6abddd98": {
+    "message": "Department"
+  },
+  "desired_password_391ab563": {
+    "message": "Desired password"
+  },
+  "directions_eef85bfe": {
+    "message": "Directions"
+  },
+  "discounts_dfde4231": {
+    "message": "Discounts"
+  },
+  "distance_a377c748": {
+    "message": "Distance"
+  },
+  "does_not_match_new_password_566ea944": {
+    "message": "Does not match new password"
+  },
+  "e_mail_address_11245d70": {
+    "message": "E-mail address"
+  },
+  "email_address_6e0443a5": {
+    "message": "Email address"
+  },
+  "email_password_fe282e30": {
+    "message": "Email & Password"
+  },
+  "enter_email_address_25b6381d": {
+    "message": "Enter email address"
+  },
+  "express_1_2_working_days_5b7007b": {
+    "message": "Express 1–2 working days"
+  },
+  "extra_address_b1f2c88": {
+    "message": "Extra address"
+  },
+  "failed_adding_to_bag_6911bfca": {
+    "message": "Failed adding to bag"
+  },
+  "favourites_d8a7f913": {
+    "message": "Favourites"
+  },
+  "field_does_not_match_required_format_1511ccd9": {
+    "message": "Field does not match required format"
+  },
+  "filter_e3398407": {
+    "message": "Filter"
+  },
+  "find_product_in_store_7a4af069": {
+    "message": "Find product in store"
+  },
+  "find_store_2d93488b": {
+    "message": "Find Store"
+  },
+  "find_store_ec52678f": {
+    "message": "Find store"
+  },
+  "find_the_closest_store_using_your_location_696c8e5a": {
+    "message": "Find the closest store using your location"
+  },
+  "first_name_75f38a3e": {
+    "message": "First name"
+  },
+  "forgot_password_69eea15b": {
+    "message": "Forgot password"
+  },
+  "free_for_your_order_34aba239": {
+    "message": "Free for your order"
+  },
+  "free_shipping_and_return_355b42d1": {
+    "message": "Free shipping and return"
+  },
+  "go_to_country_517a8515": {
+    "message": "Go to { country }"
+  },
+  "got_it_2c06b54a": {
+    "message": "Got it!"
+  },
+  "hi_firstname_lastname_bc7684c1": {
+    "message": "Hi, { firstName } { lastName }"
+  },
+  "high_to_low_b6eda134": {
+    "message": "high to low"
+  },
+  "hold_on_a_moment_5a9f3c1d": {
+    "message": "Hold on a moment..."
+  },
+  "hold_on_a_moment_a3f09a64": {
+    "message": "Hold on a moment…"
+  },
+  "home_351838cd": {
+    "message": "Home"
+  },
+  "homepage_4b84763d": {
+    "message": "HOMEPAGE"
+  },
+  "i_don_t_want_newsletters_a1a3e929": {
+    "message": "I don''t want newsletters"
+  },
+  "i_understand_please_delete_my_account_5f49bf66": {
+    "message": "I understand, please delete my account"
+  },
+  "i_want_newsletters_58c52364": {
+    "message": "I want newsletters"
+  },
+  "image_not_found_2f99135": {
+    "message": "Image Not Found"
+  },
+  "in_stock_859385c7": {
+    "message": "In Stock"
+  },
+  "included_in_campaign_46a7230b": {
+    "message": "Included in campaign:"
+  },
+  "included_in_package_5d7f4d3d": {
+    "message": "Included in package:"
+  },
+  "invalid_email_address_8d0d5e33": {
+    "message": "Invalid email address"
+  },
+  "it_looks_like_you_are_visiting_us_from_country_do__832ec546": {
+    "message": "It looks like you are visiting us from { country }. Do you want to visit our { country } site?"
+  },
+  "join_the_newsletter_fbefaa77": {
+    "message": "Join the newsletter"
+  },
+  "km_km_24f9536d": {
+    "message": "{ km } km"
+  },
+  "language_6b3e2c7c": {
+    "message": "Language"
+  },
+  "learn_more_a79a7918": {
+    "message": "Learn more"
+  },
+  "link_7262adec": {
+    "message": "Link"
+  },
+  "loading_more_data_e8df9877": {
+    "message": "Loading more data…"
+  },
+  "loading_package_details_31166b02": {
+    "message": "Loading package details..."
+  },
+  "loading_page_currentpage_2c9871c1": {
+    "message": "Loading page { currentPage }…"
+  },
+  "loading_search_results_for_term_23278c26": {
+    "message": "Loading search results for { term }…"
+  },
+  "loading_your_saved_items_5293335e": {
+    "message": "Loading your saved items…"
+  },
+  "log_in_c9e240ef": {
+    "message": "Log in"
+  },
+  "log_out_379ba28a": {
+    "message": "Log Out"
+  },
+  "login_6f3d6249": {
+    "message": "Login"
+  },
+  "login_failed_please_try_again_841d7c15": {
+    "message": "Login failed. Please try again"
+  },
+  "look_up_my_info_6436db80": {
+    "message": "Look up my info"
+  },
+  "low_to_high_2400fc78": {
+    "message": "low to high"
+  },
+  "m_m_6aa9a961": {
+    "message": "{ m } m"
+  },
+  "maxorderquantity_is_the_maximum_order_quantity_96e527df": {
+    "message": "{ maxOrderQuantity } is the maximum order quantity"
+  },
+  "menu_39cb0e8e": {
+    "message": "Menu"
+  },
+  "mobile_phone_number_cb092391": {
+    "message": "Mobile phone number"
+  },
+  "my_orders_40e3ddbe": {
+    "message": "My orders"
+  },
+  "my_orders_474fd888": {
+    "message": "My Orders"
+  },
+  "my_pages_c8e29a68": {
+    "message": "My Pages"
+  },
+  "my_profile_16c38091": {
+    "message": "My Profile"
+  },
+  "my_profile_d97eb90d": {
+    "message": "My profile"
+  },
+  "n_a_d5d5a207": {
+    "message": "n/a"
+  },
+  "name_1aed4a1b": {
+    "message": "Name"
+  },
+  "national_id_social_security_number_ffa20629": {
+    "message": "National ID/Social Security number"
+  },
+  "new_password_again_fa83f67e": {
+    "message": "New password again"
+  },
+  "new_password_eb44a9a4": {
+    "message": "New password"
+  },
+  "newsletters_a04708fd": {
+    "message": "Newsletters"
+  },
+  "next_40e12421": {
+    "message": "Next"
+  },
+  "no_e16d9132": {
+    "message": "No"
+  },
+  "no_items_in_cart_cf9df6d4": {
+    "message": "No items in cart."
+  },
+  "no_orders_found_ed613bce": {
+    "message": "No orders found"
+  },
+  "no_results_for_term_7528ef47": {
+    "message": "No results for <Term />"
+  },
+  "no_valid_items_to_add_to_cart_c53b9043": {
+    "message": "No valid items to add to cart"
+  },
+  "not_available_487d3648": {
+    "message": "Not available"
+  },
+  "note_if_you_were_directed_here_via_a_link_we_are_g_47b83052": {
+    "message": "NOTE! If you were directed here via a link we are grateful if you inform us as to which link it was so that we can resolve the problem."
+  },
+  "notify_me_when_back_in_stock_7f40774": {
+    "message": "Notify me when back in stock"
+  },
+  "of_which_vat_9b4c95d5": {
+    "message": "of which VAT"
+  },
+  "ok_c47544a2": {
+    "message": "OK"
+  },
+  "old_password_c735e1a5": {
+    "message": "Old password"
+  },
+  "one_moment_301b2df": {
+    "message": "One moment…"
+  },
+  "opening_hours_77ceb9c8": {
+    "message": "Opening hours"
+  },
+  "optionname_is_required_4ef88446": {
+    "message": "{ optionName } is required"
+  },
+  "or_ef4e808": {
+    "message": "or"
+  },
+  "or_scroll_down_to_fill_in_the_rest_manually_d9502b2f": {
+    "message": "Or scroll down to fill in the rest manually"
+  },
+  "order_date_9b7fe95f": {
+    "message": "Order Date"
+  },
+  "order_number_fe66c52c": {
+    "message": "Order Number"
+  },
+  "order_value_4a159b2c": {
+    "message": "Order value"
+  },
+  "out_of_stock_cf144338": {
+    "message": "Out of Stock"
+  },
+  "out_of_stock_ed56c3c": {
+    "message": "Out of stock"
+  },
+  "package_34ed7777": {
+    "message": "Package"
+  },
+  "package_discount_66e25640": {
+    "message": "Package Discount"
+  },
+  "page_currentpage_of_totalpages_a773c744": {
+    "message": "Page { currentPage } of { totalPages }"
+  },
+  "payment_method_84a444f1": {
+    "message": "Payment method"
+  },
+  "person_lookup_failed_87cc2ec4": {
+    "message": "Person lookup failed."
+  },
+  "phone_70d50cdb": {
+    "message": "Phone:"
+  },
+  "please_enter_a_valid_quantity_f9adbf72": {
+    "message": "Please enter a valid quantity"
+  },
+  "please_enter_your_new_password_f261c25f": {
+    "message": "Please enter your new password"
+  },
+  "please_fill_in_your_contact_details_for_shipping_a_285963ce": {
+    "message": "Please fill in your contact details for shipping and communication."
+  },
+  "post_code_e64b6004": {
+    "message": "Post code"
+  },
+  "pre_order_date_required_8c33e235": {
+    "message": "Pre-order date required"
+  },
+  "prev_f82cbc48": {
+    "message": "Prev"
+  },
+  "price_ffd8b80": {
+    "message": "Price"
+  },
+  "private_3883d133": {
+    "message": "Private"
+  },
+  "product_39cf144f": {
+    "message": "Product"
+  },
+  "product_description_3edb94a9": {
+    "message": "Product description"
+  },
+  "product_is_not_in_stock_fc5a972b": {
+    "message": "Product is not in stock"
+  },
+  "product_matches_17fac93": {
+    "message": "Product Matches"
+  },
+  "product_no_longer_available_b6ad7087": {
+    "message": "Product no longer available."
+  },
+  "productcount_plural_1_add_product_to_cart_other_ad_b37e18fc": {
+    "message": "{ productCount, plural,\n     =1 {Add # product to cart}\n  other {Add # products to cart}\n}"
+  },
+  "productcount_plural_1_product_added_to_the_cart_ot_e20e0dc8": {
+    "message": "{ productCount, plural,\n     =1 {# product added to the cart.}\n  other {# products added to the cart.}\n}"
+  },
+  "productname_has_been_added_to_the_cart_fba79585": {
+    "message": "{ productName } has been added to the cart"
+  },
+  "products_c5f0793": {
+    "message": "Products"
+  },
+  "quantity_20164bff": {
+    "message": "Quantity"
+  },
+  "recent_orders_1068c934": {
+    "message": "Recent Orders"
+  },
+  "region_939f2a6c": {
+    "message": "Region"
+  },
+  "related_products_8fcc0081": {
+    "message": "Related products"
+  },
+  "repeat_desired_password_34086d81": {
+    "message": "Repeat desired password"
+  },
+  "required_da89d67d": {
+    "message": "(Required)"
+  },
+  "reset_95a81614": {
+    "message": "Reset"
+  },
+  "retry_ebd5f8ba": {
+    "message": "Retry"
+  },
+  "save_11a80ec3": {
+    "message": "Save"
+  },
+  "saved_items_583185b1": {
+    "message": "Saved items"
+  },
+  "search_280d00bd": {
+    "message": "Search"
+  },
+  "select_country_1da181c6": {
+    "message": "Select country"
+  },
+  "select_missingoptions_to_see_store_status_in_store_a7433fed": {
+    "message": "Select { missingOptions } to see store status in store"
+  },
+  "select_option_3e8f2943": {
+    "message": "Select { option }"
+  },
+  "select_optionname_fc590c42": {
+    "message": "Select { optionName }"
+  },
+  "select_options_9ee7b227": {
+    "message": "Select options"
+  },
+  "select_the_variants_b3aa2844": {
+    "message": "Select the variants"
+  },
+  "select_your_country_9ee72cf7": {
+    "message": "Select your country"
+  },
+  "selected_categories_863af37b": {
+    "message": "Selected Categories"
+  },
+  "selected_products_1bd5b165": {
+    "message": "Selected Products"
+  },
+  "share_location_6d9a73cf": {
+    "message": "Share location"
+  },
+  "shop_by_category_b9ba84ab": {
+    "message": "Shop by category"
+  },
+  "show_all_orders_3c6119ee": {
+    "message": "Show All Orders"
+  },
+  "show_details_d6f1ca0c": {
+    "message": "Show details"
+  },
+  "show_fewer_stores_56b2065a": {
+    "message": "Show fewer stores"
+  },
+  "show_less_574a758b": {
+    "message": "Show less"
+  },
+  "show_more_fae1328": {
+    "message": "Show more"
+  },
+  "signup_d25ec5f5": {
+    "message": "Signup"
+  },
+  "social_security_number_7c8fc49b": {
+    "message": "Social Security Number"
+  },
+  "something_went_wrong_d238c551": {
+    "message": "Something went wrong"
+  },
+  "something_went_wrong_please_check_your_email_and_t_9dd179bd": {
+    "message": "Something went wrong. Please check your email and try again."
+  },
+  "something_went_wrong_please_check_your_input_or_tr_d8daab95": {
+    "message": "Something went wrong. Please check your input, or try again later."
+  },
+  "something_went_wrong_please_try_again_37244f67": {
+    "message": "Something went wrong. Please try again."
+  },
+  "something_went_wrong_please_try_again_fd8c66fd": {
+    "message": "Something went wrong, please try again!"
+  },
+  "something_went_wrong_saving_information_try_again_87e1303e": {
+    "message": "Something went wrong saving information. Try again?"
+  },
+  "something_went_wrong_updating_password_is_your_old_c95e5bd1": {
+    "message": "Something went wrong updating password. Is your old password correct?"
+  },
+  "something_went_wrong_when_placeholder_e336fd86": {
+    "message": "Something went wrong when { placeholder }"
+  },
+  "something_went_wrong_when_retrieving_order_id_plea_994c3a5": {
+    "message": "Something went wrong when retrieving order { id }. Please try again later."
+  },
+  "sort_by_72dbba9c": {
+    "message": "Sort by"
+  },
+  "sort_by_e75f9e3e": {
+    "message": "Sort By"
+  },
+  "specifications_ee3fcf8e": {
+    "message": "Specifications"
+  },
+  "spend_price_more_to_qualify_for_free_shipping_76fdedab": {
+    "message": "Spend { price } more to qualify for free shipping!"
+  },
+  "standard_2_5_working_days_d4ac0406": {
+    "message": "Standard 2–5 working days"
+  },
+  "submit_a3cc6859": {
+    "message": "Submit"
+  },
+  "submitting_75cdf9ab": {
+    "message": "Submitting…"
+  },
+  "successfully_added_83dcf29": {
+    "message": "Successfully added!"
+  },
+  "surname_df38bed": {
+    "message": "Surname"
+  },
+  "telephone_number_9cbafa6e": {
+    "message": "Telephone number"
+  },
+  "the_address_provided_is_incorrect_please_check_the_1b76d82f": {
+    "message": "The address provided is incorrect. Please check the spelling and try again."
+  },
+  "the_form_could_not_be_submitted_please_try_again_l_9a8b7579": {
+    "message": "The form could not be submitted. Please try again later."
+  },
+  "there_are_no_products_in_your_saved_items_list_2870abb5": {
+    "message": "There are no products in your saved items list."
+  },
+  "this_could_be_due_to_the_following_a40f2a5": {
+    "message": "This could be due to the following:"
+  },
+  "this_field_is_required_fa58c4a": {
+    "message": "This field is required"
+  },
+  "this_is_where_you_find_our_stores_get_informed_abo_19de699f": {
+    "message": "This is where you find our stores. Get informed about the stock status in your local store here. Find and select the store that is closest to you."
+  },
+  "this_product_is_out_of_stock_c6eac862": {
+    "message": "This product is out of stock."
+  },
+  "this_website_uses_cookies_to_ensure_you_get_the_be_f59eb226": {
+    "message": "This website uses cookies to ensure you get the best experience."
+  },
+  "to_checkout_63f3b715": {
+    "message": "To checkout"
+  },
+  "total_71a4807": {
+    "message": "Total"
+  },
+  "total_excl_vat_ae61fef3": {
+    "message": "Total excl. VAT"
+  },
+  "total_incl_vat_f281354b": {
+    "message": "Total incl. VAT"
+  },
+  "total_plural_1_item_other_items_1c76aa07": {
+    "message": "{ total, plural,\n     =1 {# item}\n  other {# items}\n}"
+  },
+  "total_plural_1_item_other_items_matching_for_term_22b0ede7": {
+    "message": "{ total, plural,\n     =1 {# item}\n  other {# items}\n} matching for \"{ term }\""
+  },
+  "total_price_1c872c0a": {
+    "message": "Total Price"
+  },
+  "totalproducts_products_b80002da": {
+    "message": "{ totalProducts } Products"
+  },
+  "track_delivery_6339cf6f": {
+    "message": "Track delivery:"
+  },
+  "trend_31ce9aff": {
+    "message": "Trend"
+  },
+  "type_your_search_here_58fca7de": {
+    "message": "Type your search here"
+  },
+  "update_4d8ee62": {
+    "message": "Update"
+  },
+  "update_information_95c5f1b4": {
+    "message": "Update information"
+  },
+  "updating_price_3f7c4661": {
+    "message": "Updating price... "
+  },
+  "vat_39a079c0": {
+    "message": "+ VAT"
+  },
+  "view_all_in_category_531e2499": {
+    "message": "View all in { category }"
+  },
+  "view_all_stores_d0f8a7f1": {
+    "message": "View all stores"
+  },
+  "view_password_ec63cb11": {
+    "message": "View password"
+  },
+  "visit_product_page_to_add_54331147": {
+    "message": "Visit product page to add"
+  },
+  "welcome_to_our_online_store_enter_your_social_secu_dbc50460": {
+    "message": "Welcome to our online store! Enter your Social Security and we will try to fetch the required information. You can also fill it in manually."
+  },
+  "welcome_to_our_online_store_we_need_to_create_a_pr_90e8e9ce": {
+    "message": "Welcome to our online store! We need to create a profile before you continue."
+  },
+  "what_is_your_email_address_631180c6": {
+    "message": "What is your email address?"
+  },
+  "when_your_account_is_deleted_all_order_history_wil_71260053": {
+    "message": "When your account is deleted, all order history will be erased."
+  },
+  "whoops_54a74974": {
+    "message": "Whoops"
+  },
+  "yes_dde87d5": {
+    "message": "Yes"
+  },
+  "you_are_now_subscribed_71495f41": {
+    "message": "You are now subscribed."
+  },
+  "you_are_now_subscribed_7695dd6b": {
+    "message": "You are now subscribed"
+  },
+  "you_are_trying_to_use_an_old_address_that_no_longe_1d4e8dff": {
+    "message": "You are trying to use an old address that no longer exists or that may have changed."
+  },
+  "you_can_now_login_with_your_new_password_99ae2294": {
+    "message": "You can now { login } with your new password"
+  },
+  "you_have_already_signed_up_with_this_email_address_71af5f92": {
+    "message": "You have already signed up with this email address"
+  },
+  "you_have_already_subscribed_to_the_newsletter_8a2c3d54": {
+    "message": "You have already subscribed to the newsletter!"
+  },
+  "you_have_attempted_to_download_a_page_that_does_no_13db419e": {
+    "message": "You have attempted to download a page that does not exist on Jetshop''s\n          server."
+  },
+  "you_may_have_used_an_old_bookmark_if_you_are_sure__1daf83b8": {
+    "message": "You may have used an old bookmark. If you are sure that you have used the correct address to the site, the problem may be caused by a temporary service disruption. Please try again later."
+  },
+  "your_password_has_been_reset_53d7f84e": {
+    "message": "Your password has been reset."
+  },
+  "your_password_has_been_successfully_updated_cacea448": {
+    "message": "Your password has been successfully updated."
+  },
+  "your_password_reset_request_has_been_submitted_che_104311b6": {
+    "message": "Your password reset request has been submitted. Check your email for a link to reset your password."
+  },
+  "your_password_reset_token_has_expired_or_is_invali_4f6d0945": {
+    "message": "Your password reset token has expired, or is invalid."
+  },
+  "your_preferences_have_been_updated_6729d3f8": {
+    "message": "Your preferences have been updated."
+  },
+  "z_to_a_75ce9568": {
+    "message": "Z to A"
+  },
+  "pid_is_invalid_2a8f005e": {
+    "message": "The specified social security number is not valid."
+  },
+  "email_address_is_invalid_dd753229": {
+    "message": "The specified email address is not valid."
+  },
+  "postal_code_is_invalid_438e6940": {
+    "message": "The specified postnumber is not valid."
+  },
+  "postal_code_is_required_ca3b7a32": {
+    "message": "Zip code is required.."
+  },
+  "this_pid_is_already_registered_83895f84": {
+    "message": "The specified social security number is already registered."
+  },
+  "your_email_address_is_already_registered_3d806453": {
+    "message": "The specified e-mail address is already registered."
+  },
+  "pid_is_required_68787e3": {
+    "message": "Social Security number is mandatory."
+  },
+  "email_address_is_required_24d62494": {
+    "message": "Email address is required."
+  },
+  "the_price_has_not_changed_in_the_last_days_days_7f5c65f8": {
+    "message": "The price has not changed in the last { days } days"
+  },
+  "free_gift_c1c2ae5a": {
+    "message": "Free gift"
+  }
+}

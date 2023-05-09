@@ -1,0 +1,7 @@
+query Title {
+  startPage {
+    head {
+      title
+    }
+  }
+}
