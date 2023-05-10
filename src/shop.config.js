@@ -2,17 +2,18 @@ import * as translations from '../translations';
 import channelsQuery from './ChannelsQuery.gql';
 import homeCategoriesQuery from './components/Layout/Header/HomeCategoriesQuery.gql';
 import routeQuery from './components/RouteQuery.gql';
-import {
-  LoadableStandardCategoryPage,
-  LoadableWindowedCategoryPage
-} from './components/CategoryPage/CategoryPage';
-import { theme } from './components/Theme';
 import createFacebookTracker from '@jetshop/core/server/tracking/facebook';
-import ProductPage from './components/ProductPage/ProductPage.loadable';
-import ContentPage from './components/ContentPage/ContentPage.loadable';
 
 const config = {
-  theme,
+  theme: {
+    breakpoints: {
+      xs: '20rem',
+      sm: '40rem',
+      md: '50rem',
+      lg: '64rem',
+      xl: '80rem'
+    }
+  },
   apolloConfig: {
     shopid: process.env.REACT_APP_SHOP_ID || 'demostore',
     graphQLURI:
@@ -67,12 +68,7 @@ const config = {
   loginPath: '/login',
   pathsWithNoAuthRequired: ['/login', '/reset-password', '/forgot-password'],
   preload: {
-    routeQuery,
-    preloadComponents: {
-      Product: [ProductPage],
-      Category: [LoadableStandardCategoryPage, LoadableWindowedCategoryPage],
-      Page: [ContentPage]
-    }
+    routeQuery
   },
   usePrimaryRouteForProducts: false,
   useTrackingConsentAPI: true

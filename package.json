@@ -50,6 +50,7 @@
     "format-message-estree-util": "npm:@jetshop/format-message-estree-util"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.14",
     "@jetshop/core": "5.17.0-alpha.89df5ca2",
     "@jetshop/flight-shortcodes": "^2.0.10",
     "@jetshop/intl": "5.17.0-alpha.89df5ca2",
@@ -58,9 +59,12 @@
     "prop-types": "^15.6.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-intersection-observer": "^9.4.3",
     "react-modal": "^3.4.5",
     "react-slider": "^1.1.4",
-    "striptags": "^3.1.1"
+    "snappy-react-grid": "^0.3.0",
+    "striptags": "^3.1.1",
+    "use-resize-observer": "^9.1.0"
   },
   "devDependencies": {
     "@graphql-cli/codegen": "^1.17.18",
