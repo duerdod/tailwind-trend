@@ -50,12 +50,13 @@
     "format-message-estree-util": "npm:@jetshop/format-message-estree-util"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.14",
     "@jetshop/core": "5.17.0-alpha.3b17485d",
+    "@jetshop/flight-shortcodes": "^2.0.10",
     "@jetshop/intl": "5.17.0-alpha.3b17485d",
     "@jetshop/react-scripts": "5.17.0-alpha.3b17485d",
-    "@headlessui/react": "^1.7.14",
-    "@jetshop/flight-shortcodes": "^2.0.10",
     "@react-google-maps/api": "~1.7.0",
+    "object-fit-images": "^3.2.4",
     "prop-types": "^15.6.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
