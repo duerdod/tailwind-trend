@@ -1,6 +1,6 @@
 import React from 'react';
 import t from '@jetshop/intl';
-import Image from '../../ui/Image';
+import Image, { transparentDataImg } from '../../ui/Image';
 import { Price } from '../../ui/Price';
 import { ProductLink } from '../../ui/Links/ProductLink';
 
@@ -49,7 +49,7 @@ export function ProductCard({
             critical={loadImageEagerly}
           />
         ) : (
-          <Image sizes={[0]} src={'transparentDataImg'} />
+          <Image sizes={[0]} src={transparentDataImg} />
         )}
         <section className="product-card-detail">
           <header>
